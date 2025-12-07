@@ -37,7 +37,7 @@ updated = '05.09.2025'
 | :---- | :----- |
 | [Bacterial Plasmid Preparation Culture]({{< relref "methodes/bacteria/plasmid_prep_culture.md" >}}) | usually 100 mg/L |
 | [Bacterial Expression Culture]({{< relref "methodes/bacteria/expression_culture.md" >}}) | usually 100 mg/L |
-| [Luria-Bertani Agarose Medium]({{< relref "recipes/bacteria/LB-agar.md" >}}) | usually 100 mg/L |
+| [Luria-Bertani Agarose Medium]({{< relref "recipes/bacteria/lb-agar.md" >}}) | usually 100 mg/L |
 {{< /tab >}}
 
 {{< tab >}}
