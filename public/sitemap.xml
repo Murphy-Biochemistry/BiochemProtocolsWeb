@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/methodes/bacteria/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/bacteria/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/bacteria/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/bacteria/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/buffers/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/buffers/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/methodes/proteins/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/proteins/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/proteins/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/proteins/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/methodes/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/methodes/sds-page--western-blotting/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/sds-page--western-blotting/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/sds-page--western-blotting/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/sds-page--western-blotting/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/bacteria/ampicillin/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/bacteria/ampicillin/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/methodes/bacteria/expression_culture/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/bacteria/expression_culture/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/methodes/bacteria/plasmid_prep_culture/</loc>
+    <loc>http://localhost:1313/Laboratory/methodes/bacteria/plasmid_prep_culture/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/recipes/bacteria/lb-agar/</loc>
+    <loc>http://localhost:1313/Laboratory/recipes/bacteria/lb-agar/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/Laboratory/</loc>
     <lastmod>2025-12-07T12:53:56+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/Laboratory/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/Laboratory/tags/</loc>
   </url>
 </urlset>
