@@ -5,15 +5,15 @@
     {{ else }}
         <ul>
             {{ range .Sections }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
                 <ul>
                     {{ range .RegularPages }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
                     {{ end }}  
                 </ul> 
             {{ end }}
             {{ range .RegularPages }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
     {{ end }}
