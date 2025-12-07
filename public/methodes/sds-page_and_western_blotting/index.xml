@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDS-Page &amp; Western Blotting on Laboratory</title>
+    <link>http://localhost:1313/Laboratory/methodes/sds-page_and_western_blotting/</link>
+    <description>Recent content in SDS-Page &amp; Western Blotting on Laboratory</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Dec 2025 21:00:04 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/Laboratory/methodes/sds-page_and_western_blotting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SDS-PAGE</title>
+      <link>http://localhost:1313/Laboratory/methodes/sds-page_and_western_blotting/sds-page/</link>
+      <pubDate>Sun, 07 Dec 2025 21:00:04 +0100</pubDate>
+      <guid>http://localhost:1313/Laboratory/methodes/sds-page_and_western_blotting/sds-page/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
