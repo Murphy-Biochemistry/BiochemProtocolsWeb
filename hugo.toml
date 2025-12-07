@@ -9,8 +9,3 @@ title = 'Laboratory'
 
 [security]
   enableInlineShortcodes = true
-
-[module]
-  [[module.mounts]]
-    source = "layouts/_shortcodes"
-    target = "layouts/shortcodes"
