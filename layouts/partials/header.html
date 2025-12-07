@@ -1,11 +1,11 @@
 <header>
     <h1>{{ .Title }}</h1>
 
-    {{ if gt (len (trim (default "" .Params.subtitle) " \t\n\r")) 0 }}
-        <h3>{{  default "" .Params.subtitle }}</h3>
+    {{ with .Params.Subtitle }}
+        <h3>{{ . }}</h3>
     {{ end }}
 
-    {{ if gt (len (trim (default "" .Params.author) " \t\n\r")) 0 }}
-        <h5>Author: {{ default "" .Params.author }}</h5>
+    {{ with .Params.Author }}
+        <h5>{{ . }}</h5>
     {{ end }}
 </header>
