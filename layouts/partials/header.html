@@ -1,11 +1,11 @@
 <header>
     <h1>{{ .Title }}</h1>
 
-    {{ with .Params.Subtitle }}
-        <h3>{{ . }}</h3>
+    {{ if and (isset .Params "subtitle") (ne .Params.Subtitle "") }}
+        <h3>{{ .Params.Subtitle }}</h3>
     {{ end }}
 
-    {{ with .Params.Author }}
-        <h5>Author: {{ . }}</h5>
+    {{ if and (isset .Params "author") (ne .Params.author "") }}
+        <h5>Author: {{ .Params.author }}</h5>
     {{ end }}
 </header>
