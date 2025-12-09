@@ -6,6 +6,7 @@ title = 'SDS-Page & Western Blotting'
 subtitle = ''
 author = ''
 version = ''
+version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
 +++
 

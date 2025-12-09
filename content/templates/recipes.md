@@ -6,7 +6,8 @@ title = 'Recepies Template'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-version = 'Version 1.0'
+version = 'Version 1.0.1'
+version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '08.12.2025'
 +++
 
@@ -31,15 +32,19 @@ updated = '08.12.2025'
 | :-- | :-- | :-- | :-- |
 | [Chemical <sup>SDB</sup>](https://www.carlroth.com/.../) |  g/mol  |  |  |
 |  |  g/mol |  |  |
+|  |  g/mol |  |  |
+|  |  g/mol |  |  |
 
 {{< /tab >}}
 
 {{< tab >}}
 ## Recipe
-| Material/Step | Volume/Mass | molar/%/comment |
-| :-- | :-- | :-- |
-|  |  |  |
-|  |  |  |
+|  | Material/Step | Volume/Mass | molar/%/comment |
+| :-- | :-- | :-- | :-- |
+| <input type="checkbox"> |  |  |  |
+| <input type="checkbox"> |  |  |  |
+| <input type="checkbox"> |  |  |  |
+| <input type="checkbox"> |  |  |  |
 {{< /tab >}}
 
 {{< tab >}}

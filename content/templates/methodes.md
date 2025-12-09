@@ -7,6 +7,7 @@ subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.0.1'
+version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '08.12.2025'
 +++
 
@@ -65,19 +66,18 @@ updated = '08.12.2025'
 {{< tab >}}
 ## Procedure:
 ### Heading 1:
-1.	
-2.  
-3. 
-4. 
+1. <input type="checkbox">
+2. <input type="checkbox">
+3. <input type="checkbox">
+4. <input type="checkbox">
 ### Heading 2:
-1.  
-2.  
-3. 
-4. 
-
+1. <input type="checkbox">
+2. <input type="checkbox">
+3. <input type="checkbox">
+4. <input type="checkbox">
 ### Heading 3:
-1.  
-2.  
-3. 
-4. 
+1. <input type="checkbox">
+2. <input type="checkbox">
+3. <input type="checkbox">
+4. <input type="checkbox">
 {{< /tab >}}

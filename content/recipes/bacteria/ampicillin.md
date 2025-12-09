@@ -7,6 +7,7 @@ subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.0.0'
+version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '05.09.2025'
 +++
 
@@ -24,12 +25,12 @@ updated = '05.09.2025'
 
 {{< tab >}}
 ## Recipe
-| Material/Step | Volume/Mass | molar/%/comment |
-| :---- | :----- | :----- |
-| ampicillin | 2 g | 286 mM (100 mg/mL) |
-| dsH<sub>2</sub>O | 20 mL | |
-| filter through 0.22 µm syringe filter | | |
-| aliquot in 1 mL fractions  | | |
+|  | Material/Step | Volume/Mass | molar/%/comment |
+|  :-- | :---- | :----- | :----- |
+| <input type="checkbox"> | ampicillin | 2 g | 286 mM (100 mg/mL) |
+| <input type="checkbox"> | dsH<sub>2</sub>O | 20 mL | |
+| <input type="checkbox"> | filter through 0.22 µm syringe filter | | |
+| <input type="checkbox"> | aliquot in 1 mL fractions  | | |
 {{< /tab >}}
 
 {{< tab >}}

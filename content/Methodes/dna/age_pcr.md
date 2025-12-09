@@ -2,19 +2,14 @@
 date = '2025-12-07T20:56:58+01:00'
 draft = false
 construction = false
-title = 'Agarose Gel Electrophoresis (AGE)'
+title = 'Agarose Gel Electrophoresis (AGE) following polymerase chain reaction (PCR)'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
-version = 'Version 1.0.1'
+version = 'Version 1.0.0'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '09.12.2025'
 +++
-
-{{< infobox type="info" title="" >}}
-⚠️ Each Sample must have a concentration of at least 20 ng/µL, as 20 ng is the least amount that can be detected using EtBr.
-{{< /infobox >}}
-
 {{< infobox type="danger" title="" >}}
 ‼️ EtBr is a carcinogen and can migrate through normal nitril gloves. If possible use an alternative ike Roti GelStain. If no alternative is available use specially for EtBr approved gloves.
 {{< /infobox >}}
@@ -98,36 +93,9 @@ updated = '09.12.2025'
 5. <input type="checkbox"> Let the gel solidify for approximately 30 minutes.
 
 ### Preparing the DNA:
-{{< infobox type="info" title="" >}}
-⚠️ Prepare a mastermix when doing multiple samples with similar DNA concentration containing dsH<sub>2</sub>O and DNA loading buffer 5x. Use number of samples plus at least one for the mastermix volume multiplyer.
-{{< /infobox >}}
-1. <input type="checkbox"> Prepare a Mastermix:
-
-|  | Volume V [µL] | Reagent | Concentration c<sub>1</sub> [ng/µL] <br> Mass m<sub>1</sub> [ng] | Concentration c<sub>2</sub> [ng/µL] <br> Mass m<sub>2</sub> [ng] |
-| :-- | :-- | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | <span class="age_mm" data-base="1">1</span> µL | DNA loading buffer | 5x |  |
-| <input type="checkbox"> | <span class="age_mm" data-base="3">3</span> µL | dsH<sub>2</sub>O |  |  |
-| <input type="checkbox"> | = <span class="age_mm" data-base="4">4</span> µL |  |  |  |  
-
-{{< infobox type="info" title="Mastermix Calculator" >}}
-<div id="mastermix-calculator-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
-{{< age_mastermix-factor >}}
-{{< /infobox >}}
-
-2.	<input type="checkbox"> Mix the DNA and the loading buffer to a final volume according to the capacity of the wells:
-
-|  | Volume V [µL] | Reagent | Concentration c<sub>1</sub> [ng/µL] <br> Mass m<sub>1</sub> [ng] | Concentration c<sub>2</sub> [ng/µL] <br> Mass m<sub>2</sub> [ng] |
-| :-- | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | <span class="age_well" data-base="4">4</span> µL | DNA loading buffer mastermix |  | 1x |
-| <input type="checkbox"> | <span class="age_well" data-base="1">1</span> µL | DNA sample | minimum 20 ng/µL | minimum 20 ng |
-| <input type="checkbox"> | = <span class="age_well" data-base="5">5</span> µL |  |  |  |
-
-{{< infobox type="info" title="Sample Preparation Calculator" >}}
-{{< age_well-factor >}}
-{{< /infobox >}}
-
-{{< infobox type="info" title="" >}}
-If DNA sample has a concentration of less than 20 ng/µL, increase the DNA sample volume and decrease the dsH<sub>2</sub>O volume each by the same amount.
+1.	<input type="checkbox"> Mix the whole PCR reaction mixture with the appropriate amount of DNA loading buffer.
+{{< infobox type="info" title="DNA Loading Buffer Volume Calculator" >}}
+{{< age_pcr-buffer >}}
 {{< /infobox >}}
 
 ### Running the Gel:
@@ -139,6 +107,10 @@ DNA is negatively charged and runs from the cathode (-) to the anode (+).
 2.	<input type="checkbox"> Fill the electrophoresis chamber with TAE buffer until the gel is overlain.
 3.	<input type="checkbox"> Pipet the DNA ladder in the first (and last) well(s).
 4.	<input type="checkbox"> Pipet the samples into the other wells.
+{{< infobox type="info" title="Subsequent Purification" >}}
+⚠️ For downstream purification, divide each DNA sample between two wells. Load a small portion of the sample into one well for UV imaging, and load the remaining volume into a second well for gel extraction. UV light is mutagenic and can damage or alter DNA, so the band intended for purification should not be exposed to UV light. Instead, determine its position by imaging only the well containing the smaller aliquot. The DNA Ladder should not be used to determain the position, as the smaller aliquot is used to confirm the presence of DNA at the correct migration distance.
+{{< /infobox >}}
+
 5.	<input type="checkbox"> Let the gel run at the indicated voltage below (default 80 V) for approximately 1 hour depending on the gels percentage.
 
 | Purpose | Voltage [V/cm]| Voltage for x cm |

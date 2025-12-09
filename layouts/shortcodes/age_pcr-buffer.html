@@ -1,0 +1,22 @@
+<p>
+  Volume PCR reaction:
+  <select id="pcr-reaction-volume" style="width:80px;">
+    <option value="25">25 µL</option>
+    <option value="50">50 µL</option>
+    <option value="75">75 µL</option>
+    <option value="100">100 µL</option>
+  </select>
+
+  DNA loading buffer factor:
+  <select id="buffer-factor" style="width:80px;">
+    <option value="5">5x</option>
+    <option value="6">6x</option>
+    <option value="10">10x</option>
+  </select>
+
+  <button id="calc-dna-buffer">Calculate</button>
+</p>
+
+<div id="dna-buffer-output"></div>
+
+<script src="{{ "js/buffer_age_pcr.js" | relURL }}"></script>
