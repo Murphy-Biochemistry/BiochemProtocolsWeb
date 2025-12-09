@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const isLast = (idx === table1Spans.length - 1);
 
-      const newVol = Math.round(base * overallFactor);
+      const newVol = parseFloat((base * overallFactor).toFixed(2));
 
       if (isLast) {
         clean += `= <b>${newVol} µL</b><br>`;

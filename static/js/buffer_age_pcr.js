@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const factor = parseFloat(bufferFactor.value); // 5 or 6
 
         // Volume of loading buffer per sample
-        const bufferVol = rxVol / factor;
+        const bufferVol = rxVol / (factor-1);
 
         let result = "";
         result += `= <b>${bufferVol.toFixed(2)} µL</b><br>`;

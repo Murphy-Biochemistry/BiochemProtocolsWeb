@@ -9,6 +9,7 @@ facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and S
 version = 'Version 1.0.1'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '09.12.2025'
+todo = true
 +++
 
 {{< infobox type="info" title="" >}}
@@ -66,7 +67,7 @@ updated = '09.12.2025'
 | 2,000–50,000 | 0.5 | 0.25 |
 | 1,000–20,000 | 0.6 | 0.30 |
 | 800–12,000 | 0.7 | 0.35 |
-| **800–10,000 (default)** | **0.8** | **0.35** |
+| **800–10,000 (default)** | **0.8** | **0.40** |
 | 600–10,000 | 0.9 | 0.45 |
 | 400–8,000 | 1.0 | 0.50 |
 | 300–7,000 | 1.2 | 0.60 |
@@ -105,12 +106,14 @@ updated = '09.12.2025'
 
 |  | Volume V [µL] | Reagent | Concentration c<sub>1</sub> [ng/µL] <br> Mass m<sub>1</sub> [ng] | Concentration c<sub>2</sub> [ng/µL] <br> Mass m<sub>2</sub> [ng] |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| <input type="checkbox"> | <span class="age_mm" data-base="1">1</span> µL | DNA loading buffer | 5x |  |
+| <input type="checkbox"> | <span  id="buffer-vol" class="age_mm" data-base="1">1</span> µL | DNA loading buffer | {{< buffer_age-select target="buffer-vol" >}} |  |
 | <input type="checkbox"> | <span class="age_mm" data-base="3">3</span> µL | dsH<sub>2</sub>O |  |  |
 | <input type="checkbox"> | = <span class="age_mm" data-base="4">4</span> µL |  |  |  |  
 
 {{< infobox type="info" title="Mastermix Calculator" >}}
 <div id="mastermix-calculator-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+
+Chosen DNA loading buffer: <span id="chosen-buffer-display">—</span>
 {{< age_mastermix-factor >}}
 {{< /infobox >}}
 
@@ -151,3 +154,9 @@ DNA is negatively charged and runs from the cathode (-) to the anode (+).
 - [Imaging following agarose gel electrophoresis (AGE)]({{< relref "methodes/dna/imaging_age.md" >}})
 - [Purification of DNA from agarose gel electrophoresis (AGE)]({{< relref "methodes/dna/purification_age.md" >}})
 {{< /tab >}}
+
+
+
+<!--
+to-do:
+make buffer volume and factor selectable between 5x 6x and 10x and change Volume accordingly. Variable Volume output should still be usable for the Mastermix Calculator.

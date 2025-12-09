@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         cells.forEach((cell, index) => {
             const base = parseFloat(cell.dataset.base);
-            const vol = (base * factor).toFixed(2);
+            const vol = (base * (factor+1)).toFixed(2);
 
             const row = cell.closest("tr");
             const reagentCell = row.children[2];
