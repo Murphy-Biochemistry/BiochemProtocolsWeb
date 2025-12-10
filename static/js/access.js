@@ -7,7 +7,7 @@
   }
 
   // === Login-Seite freigeben ===
-  if (path.startsWith("/Laboratory/login")) return;
+  if (path.startsWith("/Laboratory/access")) return;
 
   // === Statische Assets freigeben ===
   const publicPrefixes = [
@@ -39,5 +39,5 @@
   } catch (_) {}
 
   // === Redirect auf Login ===
-  window.location.href = "/Laboratory/login/";
+  window.location.href = "/Laboratory/access/";
 })();

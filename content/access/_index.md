@@ -1,5 +1,5 @@
 ---
-title: "Login"
+title: "Access"
 ---
 
 Gib deinen Zugangscode ein.

@@ -1,83 +1,77 @@
-
-<!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head><script src="/Laboratory/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Laboratory/livereload" data-no-instant defer></script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Login</title>
-  <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 2rem; max-width: 520px; margin: auto; }
-    h1 { margin-bottom: .5rem; }
-    input { padding: .6rem; width: 100%; box-sizing: border-box; margin-top: .5rem; }
-    button { padding: .7rem; width: 100%; margin-top: .8rem; }
-    .msg { margin-top: .75rem; color: #b00020; }
-    .hint { color: #555; font-size: .9rem; margin-top: .5rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Laboratory/css/styles.css">
+    <title>Document</title>
 </head>
+
+<script src="/Laboratory/js/theme_toggle.js"></script>
+<script src="/Laboratory/js/age_buffer_select.js"></script>
+<script src="/Laboratory/js/age_mastermix_prep_calc.js"></script>
+<script src="/Laboratory/js/age_sample_prep_calc.js"></script>
+<script src="/Laboratory/js/pcr_mastermix_prep_calc.js"></script>
+<script src="/Laboratory/js/age_following_pcr_buffer.js"></script>
+<script src="/Laboratory/js/transformation_from_pcr_mastermix_prep_calc.js"></script>
+
+<script src="/Laboratory/js/access.js"></script>
+
 <body>
-  <h1>Zugangscode eingeben</h1>
-  <p class="hint">Gib den Code ein, den du erhalten hast. Der Zugriff bleibt für 30 Tage auf diesem Gerät.</p>
 
-  <input id="codeInput" type="text" placeholder="Zugangscode" autocomplete="off" />
-  <button id="checkBtn">Freischalten</button>
-  <p id="message" class="msg" role="status" aria-live="polite"></p>
+    <nav class="nav">
+    <a href="/Laboratory/"><img class="nav" src="/Laboratory/images/3biochem_white.png" alt="Logo"></a>
+    <ul class="nav">
+        <li class="nav"><a href="/Laboratory/">Home</a></li>
+        <li class="nav"><a href="/Laboratory/materials">Materials</a></li>
+        <li class="nav"><a href="/Laboratory/recipes">Recipes</a></li>
+        <li class="nav"><a href="/Laboratory/methodes">Methodes</a></li>
+    </ul>
+</nav>
 
-  <script>
-  
-  const validCodes = "[\"düolr\",\"stlsfo\"]";
-  
-
-  
-  function setCookie(name, value, days) {
-    const expires = new Date();
-    expires.setDate(expires.getDate() + days);
-    document.cookie = name + "=" + encodeURIComponent(value) + "; path=/; expires=" + expires.toUTCString() + "; SameSite=Lax";
-  }
-
-  function getCookie(name) {
-    const m = document.cookie.split("; ").find(c => c.startsWith(name + "="));
-    return m ? decodeURIComponent(m.split("=")[1]) : null;
-  }
-
-  document.getElementById("checkBtn").addEventListener("click", tryCode);
-  document.getElementById("codeInput").addEventListener("keydown", (e) => { if (e.key === "Enter") tryCode(); });
-
-  function tryCode() {
-    const code = document.getElementById("codeInput").value.trim();
-    const msgEl = document.getElementById("message");
-    msgEl.textContent = "";
-
-    if (!code) {
-      msgEl.textContent = "Bitte einen Code eingeben.";
-      return;
-    }
+    <header>
+    <h1>Login</h1>
 
     
-    if (validCodes.includes(code)) {
-      setCookie("access_ok", "true", 30); 
-      msgEl.style.color = "green";
-      msgEl.textContent = "Code akzeptiert — Du wirst weitergeleitet…";
 
-      
-      const target = localStorage.getItem("requested_path") || "/";
-      localStorage.removeItem("requested_path");
-      
-      setTimeout(() => { window.location.href = target; }, 350);
-    } else {
-      msgEl.style.color = "#b00020";
-      msgEl.textContent = "Code ungültig. Bitte erneut versuchen.";
-    }
-  }
+    
+    
+    
+</header>
+    
+    <main>
 
-  
-  (function autoCheckFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const urlCode = params.get("code");
-    if (urlCode) {
-      document.getElementById("codeInput").value = urlCode;
-      tryCode();
-    }
-  })();
-  </script>
+            
+    
+        
+            <ul>
+            
+            </ul>
+        
+    
+
+
+    </main>
+
+    <footer>
+    <div class="footer">© 2025 Spike Murphy Müller · All Rights Reserved</div>
+    <ul class="nav">
+        <li class="nav"><a href="/Laboratory/terms_of_use">Terms of Use</a></li>
+        <li class="nav"><a href="/Laboratory/privacy_policy">Privicy Policy</a></li>
+        <li class="nav"><a href="/Laboratory/legal_notice">Legal Notice</a></li>
+    </ul>
+</nav>
+    <ul class="footer">
+        <li class="footer">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
 </body>
+
+
 </html>
