@@ -15,6 +15,10 @@ body {
     margin: 15px 0;
     border-left: 2px solid #2b3950;
 }
+.tab:hover {
+    background: #eff5ff;
+    border-left-color: #1e2a3f;
+}
 /* ========== Tabs (light) ========== */
 /* ========== Tables (light) ========== */
 table {
@@ -398,3 +402,42 @@ body.darkmode footer {
     color: #c2e1ff;
 }
 /* ========== Footer (dark) ========== */
+/* ========== Countdown Timer (dark) ========== */
+body.darkmode .countdown-display {
+    background: #1f2937;
+    border: 1px solid #334155;
+    color: #dce9ff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+body.darkmode .countdown-start,
+body.darkmode .countdown-reset {
+    background: #111827;
+    border: 1px solid #334155;
+    color: #dce9ff;
+}
+body.darkmode .countdown-start:hover,
+body.darkmode .countdown-reset:hover {
+    border-color: #60a5fa;
+    box-shadow: 0 1px 3px rgba(96,165,250,0.4);
+}
+body.darkmode .countdown-row {
+    /* bleibt gleich – kein Override nötig */
+}
+body.darkmode .countdown-bell {
+    color: #dce9ff;
+}
+body.darkmode .countdown-bell.muted {
+    opacity: 0.3;
+}
+body.darkmode .blink {
+    border-color: #f87171 !important;
+}
+@keyframes blinkBorderDark {
+    0%   { box-shadow: 0 0 0 0 rgba(248,113,113,0.8); }
+    50%  { box-shadow: 0 0 10px 3px rgba(248,113,113,0.4); }
+    100% { box-shadow: 0 0 0 0 rgba(248,113,113,0.8); }
+}
+body.darkmode .blink {
+    animation: blinkBorderDark 1s infinite;
+}
+/* ========== Countdown Timer (dark) ========== */

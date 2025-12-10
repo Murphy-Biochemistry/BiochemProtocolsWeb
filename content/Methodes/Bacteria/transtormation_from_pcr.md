@@ -11,7 +11,6 @@ version_explaination = 'first: major revisions - second: minor revisions - third
 updated = '10.12.2025'
 +++
 
-
 {{< tab >}}
 ## Materials
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications| Location |
@@ -70,12 +69,16 @@ updated = '10.12.2025'
 | :-- | :-- | :-- | :-- | :-- |
 | <input type="checkbox"> | 8.5-9.5 µL | dsH<sub>2</sub>O |  |  |
 | <input type="checkbox"> | 2.5 µL | buffer | 10x |  |
-| <input type="checkbox"> | 1 µL | ATP | 12.5 mM | 500 µM |
+| <input type="checkbox"> | 1 µL | DTT/ATP | 250 mM/12.5 mM | 10 mM/500 µM |
 | <input type="checkbox"> | 1 µL | T4 DNA ligase | 1 U/µL |  |
 | <input type="checkbox"> | 1-2µL | restriction enzyme(s) of choice |  |  |
 |  | = 15µL |  |  |  |
 
 <!-- anpassen mittels sample volume +1-->
+
+{{< infobox type="info" title="" >}}
+⚠️ DTT protects ATP from degradation and can help to form a reducing environment in the reaction which protects enzyme function by inhibiting formation of disulfid bridges.
+{{< /infobox >}}
 
 1. Prepare the reaction mix:
 
