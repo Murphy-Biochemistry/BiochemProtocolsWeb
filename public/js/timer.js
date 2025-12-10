@@ -3,6 +3,30 @@ const audioCache = {};
 document.addEventListener("DOMContentLoaded", () => {
     const timers = document.querySelectorAll(".countdown-wrapper");
 
+    // ===== WAKLOCK =====
+    let wakeLock = null;
+
+    async function requestWakeLock() {
+        if (!("wakeLock" in navigator)) return; 
+        try {
+            wakeLock = await navigator.wakeLock.request("screen");
+            wakeLock.addEventListener("release", () => {
+                console.log("WakeLock released");
+            });
+            console.log("WakeLock active");
+        } catch (err) {
+            console.warn("WakeLock error:", err);
+        }
+    }
+
+    // WakeLock reaktivieren, wenn Tab wieder sichtbar
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") {
+            requestWakeLock();
+        }
+    });
+
+    // ===== TIMER PRO INSTANZ =====
     timers.forEach(timer => {
         const display = timer.querySelector(".countdown-display");
         const bell = timer.querySelector(".countdown-bell");
@@ -21,12 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
         let remaining = startSeconds;
         let elapsed = 0;
         let mode = "down";
+
         let interval = null;
+
+        // ABSOLUTE REALZEIT
+        // Zeitpunkt, zu dem wir *wirklich* gestartet haben
+        let absoluteStart = null;
+        let previousElapsed = 0; // Zeit die bereits vergangen ist (bei Pausen wichtig)
 
         // ===== SOUND =====
         const audioPath = timer.getAttribute("data-sound");
 
-        // nur ONE Audio per Dateipfad erzeugen
         if (!audioCache[audioPath]) {
             audioCache[audioPath] = new Audio(audioPath);
         }
@@ -34,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const audio = audioCache[audioPath];
 
         audio.volume = 0.5;
-        audio.loop = true;   // niemals loop!
+        audio.loop = true; 
         let soundAllowed = true;
 
         let alarmActive = false;
@@ -93,25 +122,47 @@ document.addEventListener("DOMContentLoaded", () => {
                 : format(elapsed);
         }
 
-        // ===== Timer =====
+        // ===== TIMER (mit echter Zeit) =====
         function startCountdown() {
             if (interval) return;
 
+            // WakeLock aktivieren – wichtig für iPad/Mac!
+            requestWakeLock();
+
+            // Falls zum ersten Mal gestartet:
+            if (absoluteStart === null) {
+                absoluteStart = Date.now();
+            }
+
+            // Falls nach Pause / Sleep fortgesetzt:
+            absoluteStart = Date.now() - (previousElapsed * 1000);
+
             interval = setInterval(() => {
+
+                const delta = Math.floor((Date.now() - absoluteStart) / 1000);
+
+                previousElapsed = delta; // merken für Pause/Fortsetzung
+
                 if (mode === "down") {
+                    remaining = startSeconds - delta;
+
                     if (remaining > 0) {
-                        remaining--;
                         updateDisplay();
                     } else {
                         mode = "up";
                         display.classList.add("blink");
                         startSoundFor15s();
+
+                        elapsed = -remaining;
+
+                        updateDisplay();
                     }
+
                 } else {
-                    elapsed++;
+                    elapsed = delta - startSeconds;
                     updateDisplay();
                 }
-            }, 1000);
+            }, 200);
         }
 
         function resetTimer() {
@@ -120,6 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             remaining = startSeconds;
             elapsed = 0;
+            previousElapsed = 0;
+            absoluteStart = null;
             mode = "down";
 
             display.classList.remove("blink");

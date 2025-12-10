@@ -58,10 +58,6 @@ updated = '10.12.2025'
 | E. coli C41(DE3) | toxic protein expression | lacUV5 promoter <br> for IPTG induced expression of t-RNA polymerase |
 | E. coli C43(DE3) | toxic membrane protein expression | lacUV5 promoter <br> for IPTG induced expression of t-RNA polymerase |
 
-### Preparations:
-1. <input type="checkbox"> Thaw a reaction tube of competent bacteria on ice.
-2. <input type="checkbox"> Thaw the Plasmid on ice.
-3. <input type="checkbox"> Pre-warm 1000 µL of LB medium to 37 °C.
 ### Vector Generation from PRC Produkt:
 1. Prepare the mastermix:
 
@@ -95,10 +91,13 @@ updated = '10.12.2025'
 {{< timer time="2:00:00" >}}
 </div>
 
+### Transformation Preparations:
+1. <input type="checkbox"> Thaw a reaction tube of competent bacteria per transformation on ice.
+3. <input type="checkbox"> Pre-warm 1000 µL of LB medium to 37 °C.
 ### Transformation:
 1. <input type="checkbox"> Add 10 µL of the reaction a one shot of 50–100 µL of competent cells.
 2. <input type="checkbox"> Store the residual 15 µL of the reaction mix as a backup @ 4°C for short time storage or at -20°C for longtime storage.
-3. <input type="checkbox"> Mix by flicking or gentle stirring.
+3. <input type="checkbox"> Mix the bacteria by flicking or gentle stirring.
 4. <input type="checkbox"> Incubate on ice for 30 minutes.
 {{< timer time="0:30:00" >}}
 5. <input type="checkbox"> Incubate in a heating block or water bath @ 42 °C for 45 to 60 seconds.

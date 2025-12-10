@@ -15,10 +15,10 @@ body {
     margin: 15px 0;
     border-left: 2px solid #2b3950;
 }
-/*.tab:hover {
+.tab:hover {
     background: #eff5ff;
     border-left-color: #1e2a3f;
-}*/
+}
 /* ========== Tabs (light) ========== */
 /* ========== Tables (light) ========== */
 table {
@@ -309,10 +309,10 @@ body.darkmode .tab {
     margin: 15px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
-/* body.darkmode .tab:hover {
+body.darkmode .tab:hover {
     background: #263447;
     border-left-color: #93c5fd;
-}*/
+}
 /* ========== Tabs (dark) ========== */
 /* ========== Tables (dark) ========== */
 body.darkmode table {
