@@ -10,3 +10,15 @@ title = 'BiochemProtocols'
 [security]
   enableInlineShortcodes = true
 
+# Labjournal #
+[outputFormats.JournalIndex]
+  mediaType = "application/json"
+  baseName = "journal"
+  isPlainText = true
+  notAlternative = true
+[outputFormats.Body]
+  mediaType = "text/html"
+  baseName = "body"
+  isPlainText = true
+  notAlternative = true
+# Labjournal #

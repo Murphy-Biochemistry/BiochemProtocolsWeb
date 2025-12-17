@@ -10,6 +10,8 @@ version = 'Version 1.0.0'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '16.12.2025'
 finished = true
+tested = false
+to-do = ''
 +++
 
 #### for 1000 µL

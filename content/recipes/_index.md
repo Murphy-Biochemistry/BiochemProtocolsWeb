@@ -8,6 +8,9 @@ author = ''
 version = ''
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
+outputs = ["html", "JournalIndex"]
+[cascade]
+outputs = ["html", "Body"]
 +++
 
 

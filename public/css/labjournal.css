@@ -1,0 +1,180 @@
+/* ========== Lab Journal Container ========== */
+#elj-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  font-family: system-ui, sans-serif;
+
+  background: linear-gradient(135deg, #ffffff, #eaf5ff);
+  border-radius: 12px;
+  border: 1px solid #d2e9ff;
+  box-shadow: 0 2px 6px rgb(116, 136, 162);
+}
+
+/* ========== Header ========== */
+#elj-header {
+  padding: 0.75rem;
+  border-bottom: 1px solid #b8c8e6;
+}
+
+#elj-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.4rem;
+}
+
+#elj-toolbar button,
+#elj-toolbar input[type="color"] {
+  margin-right: 0.3rem;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+
+  background: #e8f0ff;
+  border: 1px solid #b8c8e6;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #2d4c7f;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+#elj-toolbar button:hover {
+  background: #d9e7ff;
+  border-color: #a7bae0;
+}
+
+/* ========== Editor ========== */
+#elj-editor {
+  flex: 1;
+  min-height: 0;
+  padding: 0.75rem;
+  outline: none;
+  overflow-y: auto;
+  min-height: 50vh;
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #ffffff, #f3f8ff);
+  border-top: 1px solid #d2e9ff;
+  border-bottom: 1px solid #d2e9ff;
+  color: #111827;
+}
+
+/* ========== Footer ========== */
+#elj-footer {
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+
+  border-top: 1px solid #b8c8e6;
+  background: linear-gradient(135deg, #ffffff, #eaf5ff);
+}
+
+#elj-footer input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #d2e9ff;
+  font-size: 0.85rem;
+}
+
+#elj-footer input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.25);
+}
+
+/* ========== Saved Entries ========== */
+#elj-entries {
+  margin-top: 2rem;
+}
+
+.elj-entry {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid #d2e9ff;
+}
+
+.elj-entry h3 {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.elj-entry h4 {
+  margin-top: 0.25rem;
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #2d4c7f;
+}
+
+/* ========================================================= */
+/* ======================= Dark Mode ======================= */
+/* ========================================================= */
+
+body.darkmode #elj-container {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  border: 1px solid #334155;
+  box-shadow: 0 2px 6px rgb(29, 47, 68);
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+body.darkmode #elj-header {
+  border-bottom: 1px solid #334155;
+}
+
+body.darkmode #elj-title {
+  color: #e2eeff;
+}
+
+body.darkmode #elj-toolbar button,
+body.darkmode #elj-toolbar input[type="color"] {
+  background: #1f2937;
+  border: 1px solid #334155;
+  color: #dce9ff;
+}
+
+body.darkmode #elj-toolbar button:hover {
+  background: #263447;
+  border-color: #60a5fa;
+}
+
+body.darkmode #elj-editor {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  border-top: 1px solid #334155;
+  border-bottom: 1px solid #334155;
+  color: #e2eeff;
+}
+
+body.darkmode #elj-footer {
+  background: linear-gradient(135deg, #1f2937, #111827);
+  border-top: 1px solid #334155;
+}
+
+body.darkmode #elj-footer input {
+  background: #1f2937;
+  border: 1px solid #334155;
+  color: #e2eeff;
+}
+
+body.darkmode #elj-footer input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96,165,250,0.35);
+}
+
+body.darkmode .elj-entry {
+  border-top: 1px solid #334155;
+}
+
+body.darkmode .elj-entry h3 {
+  color: #e2eeff;
+}
+
+body.darkmode .elj-entry h4 {
+  color: #93c5fd;
+}

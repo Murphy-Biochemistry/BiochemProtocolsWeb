@@ -9,6 +9,9 @@ facility = ''
 version = ''
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = ''
+finished = false
+tested = false
+to-do = ''
 +++
 
 ## Bacterial Recombinant Protein Expression
@@ -23,5 +26,5 @@ updated = ''
 → [Bacterial Transformation Following PCR and Gel Extraction]({{< relref "transtormation_from_pcr" >}}) 
 → [Bacterial Plasmid Preparation Culture]({{< relref "plasmid_prep_culture" >}}) 
 → [Bacterial Transformation]({{< relref "transformation" >}}) 
-→ [Bacterial Expression Culture]({{< relref "expression_culture" >}}) 
+→ [Bacterial Protein Expression Culture]({{< relref "protein_expression_culture" >}}) 
 → Suitable Protein Purification Methode

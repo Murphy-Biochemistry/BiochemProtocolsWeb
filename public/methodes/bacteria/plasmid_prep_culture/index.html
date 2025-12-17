@@ -1,5 +1,5 @@
 <html lang="en">
-<head>
+<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
@@ -30,6 +30,8 @@
 
 <script src="/BiochemProtocols/js/access.js"></script>
 
+
+
 <body>
 
     <nav class="nav">
@@ -44,6 +46,7 @@
         <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
         <li class="nav"><a href="/BiochemProtocols/methodes">Methodes</a></li>
         <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
     </ul>
 </nav>
 
@@ -77,6 +80,12 @@
       </tr>
   </thead>
   <tbody>
+      <tr>
+          <td style="text-align: left">laminar airflow workbench</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
       <tr>
           <td style="text-align: left">shaker incubator</td>
           <td style="text-align: left"></td>
@@ -194,7 +203,7 @@
 <h3 id="preparation">Preparation:</h3>
 <ol>
 <li><input type="checkbox"> <a href="/BiochemProtocols/methodes/bacteria/transformation/">Transform a suitable strain of bacteria and plate transformed bacteria on a LB-agar Plate containing appropriate selection markers (Antibiotic, X-Gal).</a></li>
-<li><input type="checkbox"> Prepare 6 mL LB-medium per clone.</li>
+<li><input type="checkbox"> Prepare 6 mL of sterile LB medium per clone.</li>
 </ol>
 <h3 id="culture">Culture:</h3>
 <div class="infobox info">
@@ -203,8 +212,8 @@
 </div>
 <ol>
 <li><input type="checkbox"> Transfer 1 mL of the 6 mL LB medium into a photometer cuvette for the zero value.</li>
-<li><input type="checkbox"> Transfer 5 mL of LB-medium into the sterile 15 mL falcon tube or liquid culturing tube.</li>
-<li><input type="checkbox"> Supplement the 5 mL of LB-medium with a suitable antibiotic.</li>
+<li><input type="checkbox"> Transfer 5 mL of LB medium into the sterile 15 mL falcon tube or liquid culturing tube.</li>
+<li><input type="checkbox"> Supplement the 5 mL of LB medium with a suitable antibiotic.</li>
 </ol>
 <div class="infobox warning">
   <strong></strong>
@@ -214,8 +223,12 @@
 <li><input type="checkbox"> Pick a suitable clone with a pipette tip.</li>
 <li><input type="checkbox"> Optionally streak pipette tip over fresh plate as a backup.</li>
 <li><input type="checkbox"> Drop the pipette tip into the prepared medium.</li>
-<li><input type="checkbox"> Incubate the culture @ 37 °C and shaking @ 250 rpm for approximately 2–4 h until an OD<sub>600</sub> ~ 0.4–0.8 (best 0.6) is reached or incubate @ 30 °C and shaking @ 250 rpm overnight.</li>
+<li><input type="checkbox"> Incubate the culture @ 37 °C and shaking @ 250 rpm for approximately 2–4 h until an OD<sub>600</sub> ~ 0.4–0.8 (best 0.6) is reached.</li>
 </ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>Incubation @ 30 °C and shaking @ 250 rpm overnight is also possible.</div>
+</div>
 <div style="display:flex; gap:20px; align-items:center;">
 <div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
@@ -382,7 +395,7 @@
 <p><button class="time-btn" onclick="downloadExcel()">Download Excel</button></p>
 </div>
 </div>
-<h3 id="proceed-with-the-appropriate-plasmid-prep-protocol">Proceed with the appropriate Plasmid Prep Protocol</h3>
+<h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol:</h3>
 <ul>
 <li><a href="/BiochemProtocols/methodes/dna/nucleospin_plasmid_prep/">NucleoSpin® Plasmid Preparation</a></li>
 </ul>
@@ -457,7 +470,7 @@
   window.labelPrintData = {
     title: "\"Bacterial Plasmid Preparation Culture\"",
     version: "\"Version 1.0.1\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/methodes/bacteria/plasmid_prep_culture/\""
+    url: "\"http://localhost:1313/BiochemProtocols/methodes/bacteria/plasmid_prep_culture/\""
   };
 </script>
 

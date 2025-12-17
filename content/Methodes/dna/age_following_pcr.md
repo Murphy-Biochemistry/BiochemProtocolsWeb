@@ -9,7 +9,11 @@ facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and S
 version = 'Version 1.0.0'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '09.12.2025'
+finished = false
+tested = false
+to-do = ''
 +++
+
 {{< infobox type="danger" title="" >}}
 ‼️ EtBr is a carcinogen and can migrate through normal nitril gloves. If possible use an alternative ike Roti GelStain. If no alternative is available use specially for EtBr approved gloves.
 {{< /infobox >}}

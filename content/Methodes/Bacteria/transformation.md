@@ -9,12 +9,16 @@ facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and S
 version = 'Version 1.0.1'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '20.12.2025'
+finished = false
+tested = false
+to-do = ''
 +++
 
 {{< tab >}}
 ## Materials
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications| Location |
 | :-- | :-- | :-- | :-- |
+| laminar airflow workbench |  |  |  |
 | [heating block <sup>manual</sup>](link) |  | with shaker function |  |
 | bucket of ice |  |  |  |
 
@@ -98,7 +102,7 @@ updated = '20.12.2025'
 {{< /infobox >}}
 
 ### Procede with Suitable Protocol:
-- 	[Bacterial Expression Culture]({{< relref "/methodes/bacteria/expression_culture.md" >}})
+- 	[Bacterial Expression Culture]({{< relref "/methodes/bacteria/protein_expression_culture.md" >}})
 - 	[Bacterial Plasmid Preparation Culture]({{< relref "/methodes/bacteria/plasmid_prep_culture.md" >}})
 {{< /tab >}}
 

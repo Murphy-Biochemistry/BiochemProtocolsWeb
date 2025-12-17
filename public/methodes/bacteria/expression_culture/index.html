@@ -1,5 +1,5 @@
 <html lang="en">
-<head>
+<head><script src="/BiochemProtocols/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocols/livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
@@ -30,6 +30,12 @@
 
 <script src="/BiochemProtocols/js/access.js"></script>
 
+
+  <script src="/BiochemProtocols/js/math.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 <body>
 
     <nav class="nav">
@@ -44,6 +50,7 @@
         <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
         <li class="nav"><a href="/BiochemProtocols/methodes">Methodes</a></li>
         <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
     </ul>
 </nav>
 
@@ -65,10 +72,822 @@
 
             
     
-        
+        <div class="tab">
+  <h2 id="materials">Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">laminar airflow workbench</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">shaker incubator</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">photometer</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for measuring OD<sub>600</sub></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">centrifuge</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for 50 mL falcon tubes @ 3,000-6,000 g</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">centrifuge</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">microfuge for 1.5 mL tubes @ 20,000 g</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">end-over-end rotator</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for fitting 10 50m mL falcon tubes/culture</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ultrasonicator</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">bucket of ice</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">pipetmans and sterile pipette tips</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pipetting aid and serological pipette</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">photometer cuvette</td>
+          <td style="text-align: left">2/culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">liquid culture tubes or sterile falcon tubes 15 mL</td>
+          <td style="text-align: left">1/culture</td>
+          <td style="text-align: left">for pre culture</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sterile reaction tube 1.5 mL</td>
+          <td style="text-align: left">1/workflow <br> 2/culture <br> 20/culture</td>
+          <td style="text-align: left">for antibiotic aliquot <br> for culture aliquots (pre- and post-induction) <br> for centrifugation following lysis</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Erlenmeyer Flask 1 L</td>
+          <td style="text-align: left">1/culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sterile falcon tubes 50 mL</td>
+          <td style="text-align: left">10/culture <br> 1/culture</td>
+          <td style="text-align: left">for harvesting <br> for recombining supernatants</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Luria-Bertani liquid medium</td>
+          <td style="text-align: left">6 mL/culture <br> 250m mL/culture</td>
+          <td style="text-align: left">for the pre culture <br> for the main culture</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Luria-Bertani agarose plate</td>
+          <td style="text-align: left">1/culture</td>
+          <td style="text-align: left">for clone backup</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">suitable antibiotic</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">stock solution, tpically 1000x</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/general_buffers/pbs/">phosphate-buffered saline (PBS)</a></td>
+          <td style="text-align: left">50 µL/culture <br> 50 µL/culture</td>
+          <td style="text-align: left">for pre-induction aliquot <br> for post-induction aliquot</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="">SDS-PAGE sample buffer 2x</a></td>
+          <td style="text-align: left">50 µL/culture <br> 50 µL/culture</td>
+          <td style="text-align: left">for pre-induction aliquot <br> for post-induction aliquot</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer_1x/">tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer</a></td>
+          <td style="text-align: left">20 mL/clone</td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">suitable induction chemical <br> e.g. Anhydrotetracycline AHT 2 mg/mL <br> e.g. Isopropyl-β-D-thiogalactopyranosid IPTG 1 M</td>
+          <td style="text-align: left"><br> e.g. 50 µL <br> e.g. 250 µL</td>
+          <td style="text-align: left"><br> for a final concentration of 0.2 µg/mL  <br> for a final concentration of 0.5 mM</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">phenylmethylsulfonylfluorid <em>PMSF</em> 1 M</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/aprotenin/">aprotenin</a></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/leupeptin/">leupeptin</a></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pepstatin A</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sucrose</td>
+          <td style="text-align: left">4 g/clone</td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Triton-X-100</td>
+          <td style="text-align: left">100 µL/clone</td>
+          <td style="text-align: left">for 20 mL supplemented lysis buffer</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">LB agar plate with transformed bacteria</td>
+          <td style="text-align: left">1/plasmid</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+<div class="tab">
+  <h2 id="procedure">Procedure:</h2>
+<h3 id="preparation">Preparation:</h3>
+<ol>
+<li><input type="checkbox"> <a href="/BiochemProtocols/methodes/bacteria/transformation/">Transform a suitable strain of bacteria and plate transformed bacteria on a LB-agar Plate containing appropriate selection markers (Antibiotic, X-Gal).</a></li>
+<li><input type="checkbox"> Prepare 6 mL of sterile LB medium per clone.</li>
+<li><input type="checkbox"> Prepare additional 500 mL of sterile LB medium in a 1 L Erlenmeyer flask per clone.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ Adjust volume as needed. The Erlenmeyer flask should be able to hold at least double the volume of LB medium used to allow for sufficient airation.</div>
+</div>
+<h3 id="pre-culture">Pre-Culture:</h3>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ To reduce risk of contamination, all subsequent steps can be carried out under laminar airflow.</div>
+</div>
+<ol>
+<li><input type="checkbox"> Transfer 1 mL of the 6 mL LB medium into a photometer cuvette for the zero value.</li>
+<li><input type="checkbox"> Transfer 5 mL of LB medium into the sterile 15 mL falcon tube or liquid culturing tube.</li>
+<li><input type="checkbox"> Supplement the 5 mL of LB medium with a suitable antibiotic.</li>
+</ol>
+<div class="infobox warning">
+  <strong></strong>
+  <div>❗️ To minimize exposure to microorganisms, all subsequent steps should be carried out under laminar airflow.</div>
+</div>
+<ol start="3">
+<li><input type="checkbox"> Pick a suitable clone with a pipette tip.</li>
+<li><input type="checkbox"> Optionally streak pipette tip over fresh plate as a backup.</li>
+<li><input type="checkbox"> Drop the pipette tip into the prepared medium.</li>
+<li><input type="checkbox"> Incubate the culture @ 37 °C and shaking @ 250 rpm for approximately 2–4 h until an OD<sub>600</sub> ~ 0.4–0.8 (best 0.6) is reached.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>Incubation @ 30 °C and shaking @ 250 rpm overnight is also possible.</div>
+</div>
+<div style="display:flex; gap:20px; align-items:center;">
+<div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<ol start="7">
+<li><input type="checkbox"> Document the start time and refer to <a href="">BiochemProtocols bacterial growth calculator</a>.</li>
+</ol>
+<p><button class="time-btn" id="showTimeBtn">Current Time</button>
+<span class="time-display" id="currentTime"></span></p>
+<ol start="8">
+<li><input type="checkbox"> Measure the OD600 after 120 minutes and then every 60 minutes and until an OD600 of approximately 2.000 is reached.</li>
+</ol>
+<div class="growthcalc-wrapper">
+<div class="growthcalc">
+<h2>BiochemProtocols Bacterial Growth Time Calculator</h2>
+<p><button class="time-btn" onclick="fillStartTime()">Use Current Time</button> <button class="time-btn" onclick="calcGrowth()">Calculate</button></p>
+<table class="growth-table">
+<thead>
+<tr><th>Time [hh:mm]</th><th>OD<sub>600</sub></th><th>Doubling Time [min]</th></tr>
+</thead>
+<tbody id="gcRows">
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h0" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m0" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od0" type="number" step="0.001" value="0.000" readonly></td>
+  <td><input class="gc-dt" id="gc-dt0" type="number" step="0.1" value="20"></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h1" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m1" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od1" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt1"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h2" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m2" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od2" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt2"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h3" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m3" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od3" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt3"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h4" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m4" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od4" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt4"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h5" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m5" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od5" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt5"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h6" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m6" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od6" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt6"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h7" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m7" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od7" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt7"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h8" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m8" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od8" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt8"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h9" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m9" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od9" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt9"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h10" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m10" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od10" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt10"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h11" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m11" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od11" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt11"></span></td>
+</tr>
+</tbody>
+</table>
+<h3>Projected Times</h3>
+<ul class="proj-list">
+  <li><strong>OD<sub>600</sub> = 0.400:</strong> <span id="proj04">–</span></li>
+  <li><strong>OD<sub>600</sub> = 0.600:</strong> <span id="proj06">–</span></li>
+  <li><strong>OD<sub>600</sub> = 0.800:</strong> <span id="proj08">–</span></li>
+  <li>
+    <input id="projCustomOD" type="number" step="0.001" placeholder="Custom OD">
+    <span id="projCustom">–</span>
+  </li>
+</ul>
+<p><button class="time-btn" onclick="downloadExcel()">Download Excel</button></p>
+</div>
+</div>
+<h3 id="expression-culture">Expression Culture:</h3>
+<ol>
+<li><input type="checkbox"> Transfer 1 mL of the 500 mL LB medium into a photometer cuvette for the zero value.</li>
+<li><input type="checkbox"> Supplement the 500 mL LB-medium with suitable antibiotic.</li>
+<li><input type="checkbox"> Inoculate the 500 mL LB-medium with the pre-culture.</li>
+<li><input type="checkbox"> Incubate batch @ 37 °C and shaking @ 250 rpm for approximately 2–4 h until an OD600 of 0.4 to 0.8 (best 0.6) is reached.</li>
+</ol>
+<div style="display:flex; gap:20px; align-items:center;">
+<div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<ol start="5">
+<li><input type="checkbox"> Take a 1 mL aliquot prior to induction, pellet and resuspend in 50 µL PBS and 50 µL 2x SDS-Page sample buffer for later SDS-PAGE analysis.</li>
+<li><input type="checkbox"> Induce expression according to plasmid instructions.</li>
+</ol>
+<div class="infobox info">
+  <strong>Typical Induction Chemicals</strong>
+  <div>Anhydrotetracycline <em>AHT</em> to a final concentration of 0.2 µg/mL (50 µL of a 2 mg/mL stock).
+Isopropyl-β-D-thiogalactopyranosid <em>IPTG</em> to a final concentration of 0.5 mM (250 µL of a 1 M stock).</div>
+</div>
+<ol start="7">
+<li><input type="checkbox"> Incubate @ 30 °C and shaking @ 250 rpm for 2–4 h for expression of the protein.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ Incubation @ 25 °C and shaking @ 250 rpm overnight is also possible and may yield higher protein quantity and less protein aggregates. The final expression time and OD<sub>600</sub> can be documented once when starting the harvest.</div>
+</div>
+<div style="display:flex; gap:20px; align-items:center;">
+<div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<ol start="8">
+<li><input type="checkbox"> Document the start time and refer to BiochemProtocols bacterial growth calculator.</li>
+</ol>
+<p><button class="time-btn" id="showTimeBtn">Current Time</button>
+<span class="time-display" id="currentTime"></span> <!-- update so multiple can be on one page or split protocol in two pages --></p>
+<ol start="9">
+<li><input type="checkbox"> Measure the OD<sub>600</sub> after 120 minutes and then every 60 minutes and until an OD<sub>600</sub> of approximately 2.000 is reached.</li>
+</ol>
+<div class="infobox info">
+  <strong>Bacterial Growth Phases</strong>
+  <div>⚠️ Cells should be harvested at the end of the logarythmic growth phase, typically at an OD<sub>600</sub> of approximately 2.000, and before stationary phase is reached at an OD<sub>600</sub> of 2.500–4.000.</div>
+</div>
+<div class="growthcalc-wrapper">
+<div class="growthcalc">
+<h2>BiochemProtocols Bacterial Growth Time Calculator</h2>
+<p><button class="time-btn" onclick="fillStartTime()">Use Current Time</button> <button class="time-btn" onclick="calcGrowth()">Calculate</button></p>
+<table class="growth-table">
+<thead>
+<tr><th>Time [hh:mm]</th><th>OD<sub>600</sub></th><th>Doubling Time [min]</th></tr>
+</thead>
+<tbody id="gcRows">
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h0" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m0" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od0" type="number" step="0.001" value="0.000" readonly></td>
+  <td><input class="gc-dt" id="gc-dt0" type="number" step="0.1" value="20"></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h1" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m1" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od1" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt1"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h2" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m2" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od2" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt2"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h3" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m3" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od3" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt3"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h4" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m4" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od4" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt4"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h5" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m5" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od5" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt5"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h6" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m6" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od6" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt6"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h7" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m7" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od7" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt7"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h8" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m8" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od8" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt8"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h9" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m9" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od9" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt9"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h10" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m10" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od10" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt10"></span></td>
+</tr>
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input class="gc-hh" id="gc-h11" type="number" min="0" max="23" placeholder="hh">
+      <span class="gc-colon">:</span>
+      <input class="gc-mm" id="gc-m11" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+  <td><input class="gc-od" id="gc-od11" type="number" step="0.001" placeholder="0.000"></td>
+  <td><span class="gc-dt-out" id="gc-dt11"></span></td>
+</tr>
+</tbody>
+</table>
+<h3>Projected Times</h3>
+<ul class="proj-list">
+  <li><strong>OD<sub>600</sub> = 0.400:</strong> <span id="proj04">–</span></li>
+  <li><strong>OD<sub>600</sub> = 0.600:</strong> <span id="proj06">–</span></li>
+  <li><strong>OD<sub>600</sub> = 0.800:</strong> <span id="proj08">–</span></li>
+  <li>
+    <input id="projCustomOD" type="number" step="0.001" placeholder="Custom OD">
+    <span id="projCustom">–</span>
+  </li>
+</ul>
+<p><button class="time-btn" onclick="downloadExcel()">Download Excel</button></p>
+</div>
+</div> <!-- update so multiple can be on one page or split protocol in two pages -->
+<h3 id="preparations-1-h-before-harvesting">Preparations 1 h before Harvesting:</h3>
+<ol>
+<li><input type="checkbox"> Pre-cool a centrifuge to 4 °C for harvesting @ 3000–6000 g.</li>
+<li><input type="checkbox"> Pre-cool the ultrasonicator to 4 °C.</li>
+<li><input type="checkbox"> <del>Prepare 20 mL lysis buffer per 500 mL bacterial culture volume by supplementing 20 mL of ice-cold Tris-HCl-NaCl-MgCl2-Buffer with 20 µL PMSF 1 M for a final concentration of 1 mM and 2 complete mini protease inhibitor cocktail tablets, 4 g of Saccharose for a final concentration of 20 % and 100 µL Triton X-100 for a final concentration of 0.5 %.</del> <!-- update --></li>
+<li><input type="checkbox"> <del>Rotate lysis buffer end-over-end @ 4 °C for 5–10 minutes to suspend the protease inhibitor cocktail tablets.</del> <!-- update --></li>
+</ol>
+<h3 id="cell-harvesting">Cell harvesting:</h3>
+<ol>
+<li><input type="checkbox"> Take a 1 mL aliquot prior to harvest, pellet and resuspend in 50 µL PBS and 50 µL 2x SDS-Page sample buffer for later SDS-PAGE analysis.</li>
+<li><input type="checkbox"> Transfer the 500 mL culture into 10 x 50 mL falcon tubes.</li>
+<li><input type="checkbox"> Harvest cells by centrifugation @ 3000–6000 g and @ 4 °C for 10 minutes.</li>
+</ol>
+<div class="infobox info">
+  <strong>Equation for  G-Force ($F_g$) from Rotor Radius ($r_r$) and Revolutions per Minute ($rpm$)</strong>
+  <div><p>Rotor radius in meters (SI): $F_g = 1.118 \cdot 10^{-3} \cdot r_r \cdot rpm^2$<br>
+Rotor radius in centimeters: $F_g = 1.118 \cdot 10^{-5} \cdot r_r \cdot rpm^2$</p>
+<p>Sorvall SS-34 fixed angle rotor: $1.118 \cdot 10^{-5} \ cm^{-1} \ min ^{2} \cdot 10.7 \ cm \cdot (6000 \ min^{-1})^2 = 4300 \ g$</p>
+</div>
+</div>
+<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="4">
+<li><input type="checkbox"> Discard supernatant.</li>
+<li><input type="checkbox"> Use pellet immediately of freeze @ –20 °C.</li>
+</ol>
+<h3 id="pellet-resuspension">Pellet Resuspension:</h3>
+<ol>
+<li><input type="checkbox"> Overlay bacteria pellet from 500 mL culture volume with 20 mL freshly prepared lysis buffer (2 mL/pellet).</li>
+<li><input type="checkbox"> Break up the pellet with a pipette.</li>
+<li><input type="checkbox"> Resuspend @4 °C rotating end-over-end for 10-20 minutes to reach homogeneity.</li>
+<li><input type="checkbox"> Pre-cool a centrifuge to 4 °C for sedimenting cell components @ 20,000 g in 1.5 mL reaction tubes.</li>
+</ol>
+<div style="display:flex; gap:20px; align-items:center;">
+<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<h3 id="cell-lysis-and-dna-shearing">Cell Lysis and DNA Shearing:</h3>
+<ol>
+<li><input type="checkbox"> Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:00:15" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:15</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="2">
+<li><input type="checkbox"> Cool suspended bacteria on ice-water for 60 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="3">
+<li><input type="checkbox"> Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:00:15" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:15</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="4">
+<li><input type="checkbox"> Cool suspended bacteria on ice-water for 60 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="5">
+<li>Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:00:15" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:15</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="6">
+<li><input type="checkbox"> Cool suspended bacteria on ice-water for 60 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="7">
+<li><input type="checkbox"> Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:00:15" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:15</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="8">
+<li><input type="checkbox"> Cool suspended bacteria on ice-water for 60 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="9">
+<li><input type="checkbox"> Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:00:15" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:15</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="10">
+<li><input type="checkbox"> Cool suspended bacteria on ice-water for 60 seconds.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="infobox info">
+  <strong></strong>
+  <div>When doing multiple samples, just cycle through the samples, which gives them enaugh time to cool down between sonifications.</div>
+</div>
+<ol start="11">
+<li><input type="checkbox"> Transfer the lysate in 20 sterile 1.5 mL reaction tubes.</li>
+<li><input type="checkbox"> Centrifuge @ 20,000 g and @ 4 °C for 20 minutes.</li>
+</ol>
+<div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="13">
+<li><input type="checkbox"> Decant supernatant into a fresh 50 mL tube.</li>
+</ol>
+<h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol:</h3>
+<ul>
+<li></li>
+</ul>
+
+</div>
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/methodes/bacteria/expression_culture/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Bacterial Expression Culture</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.1.1</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Bacterial Expression Culture\"",
+    version: "\"Version 1.1.1\"",
+    url: "\"http://localhost:1313/BiochemProtocols/methodes/bacteria/expression_culture/\""
+  };
+</script>
+
+
         <div style="text-align: right;">
         <br>
-         Version 1.0.0
+         Version 1.1.1
         </div>
     
 

@@ -1,0 +1,52 @@
+<div id="elj-container">
+  <!-- HEADER -->
+  <div id="elj-header">
+    <div id="elj-title">BiochemProtocol’s Electronic Lab Journal</div>
+
+    <div id="elj-toolbar">
+      <button type="button" data-cmd="bold"><b>B</b></button>
+      <button type="button" data-cmd="italic"><i>I</i></button>
+      <button type="button" data-cmd="underline"><u>U</u></button>
+      <button type="button" data-cmd="strikeThrough"><s>S</s></button>
+      <button type="button" data-cmd="subscript">X<sub>2</sub></button>
+      <button type="button" data-cmd="superscript">X<sup>2</sup></button>
+
+      <span class="elj-separator"></span>
+
+      <!-- AUTO-POPULATED DROPDOWNS -->
+      <br>
+      <select id="recipe-select">
+        <option value="">Add recipe…</option>
+      </select>
+      <br>
+      <select id="method-select">
+        <option value="">Add method…</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- EDITOR -->
+  <div id="elj-editor" contenteditable="true"></div>
+
+  <!-- FOOTER -->
+  <div id="elj-footer">
+    <input type="text" id="elj-project" placeholder="Project tag">
+    <button id="elj-save">Save</button>
+  </div>
+
+  <!-- SAVED ENTRIES -->
+  <div id="elj-entries"></div>
+
+  <button id="elj-clear-all" class="danger">
+  🗑 Remove all journal entries
+</button>
+</div>
+
+<link rel="stylesheet" href="{{ "css/labjournal.css" | relURL }}">
+
+<script>
+  /* Make Hugo baseURL available to JS (critical for subpaths) */
+  window.eljBaseURL = "{{ .Site.BaseURL }}";
+</script>
+
+<script src="{{ "js/labjournal.js" | relURL }}"></script>

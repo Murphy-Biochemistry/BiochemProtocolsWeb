@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Primer Reconstitution form Lyophilisate",
+    "path": "/BiochemProtocols/recipes/dna/primer_reconstitution/"
+  },
+  {
+    "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer 1x",
+    "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer_1x/"
+  },
+  {
+    "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer Stock 10x",
+    "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer_10x/"
+  },
+  {
+    "title": "Phosphate-Buffered Saline (PBS) Stock 10x",
+    "path": "/BiochemProtocols/recipes/general_buffers/pbs/"
+  },
+  {
+    "title": "Inoue Transformation Buffer",
+    "path": "/BiochemProtocols/recipes/bacteria/transformation_buffer_1x/"
+  },
+  {
+    "title": "Inoue Transformation Buffer Stock 10x",
+    "path": "/BiochemProtocols/recipes/bacteria/transformation_buffer_10x/"
+  },
+  {
+    "title": "Leupeptin hemisulfate Stock 10 mM",
+    "path": "/BiochemProtocols/recipes/bacteria/leupeptin/"
+  },
+  {
+    "title": "Aprotenin Stock 1.54 mM",
+    "path": "/BiochemProtocols/recipes/bacteria/aprotenin/"
+  },
+  {
+    "title": "Ampicillin Stock 100 mg/mL",
+    "path": "/BiochemProtocols/recipes/bacteria/ampicillin/"
+  },
+  {
+    "title": "Luria-Bertani Agarose Medium",
+    "path": "/BiochemProtocols/recipes/bacteria/lb-agar/"
+  }]

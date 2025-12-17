@@ -9,6 +9,9 @@ facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and S
 version = 'Version 1.0.1'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '12.12.2025'
+finished = true
+tested = true
+to-do = 'alt switch for centrifuge'
 +++
 
 {{< tab >}}
@@ -16,9 +19,8 @@ updated = '12.12.2025'
 | Equipment & Devices⠀⠀⠀ | Amount | Specifications| Location |
 | :-- | :-- | :-- | :-- |
 | heating block |  |  |  |
+| centrifuge |  | for 15 mL tubes @ 5,000 g |  |
 | centrifuge |  | microfuge for 1.5 mL tubes @ 11,000 g |  |
-|  |  |  |  |
-|  |  |  |  |
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications| Location |
 | :-- | :-- | :-- | :-- |

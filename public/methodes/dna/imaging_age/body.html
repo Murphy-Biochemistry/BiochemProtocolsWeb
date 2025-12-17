@@ -1,0 +1,81 @@
+<article class="elj-body">
+  <p>imaging in general, but add that lanes with samples for gel extraction need to be cut off prior to imaging.</p>
+<div class="infobox info">
+  <strong>Subsequent Purification</strong>
+  <div>⚠️ For downstream purification, cut away all lanes with samples that are intended for later gel extraction. UV light is mutagenic and can damage or alter DNA, so the band intended for purification should not be exposed to UV light. Instead, determine its position by imaging only the well containing the corresponding sample intended for UV imaging.</div>
+</div>
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/methodes/dna/imaging_age/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Imaging following agarose gel electrophoresis (AGE)</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.0</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Imaging following agarose gel electrophoresis (AGE)\"",
+    version: "\"Version 1.0.0\"",
+    url: "\"http://localhost:1313/BiochemProtocols/methodes/dna/imaging_age/\""
+  };
+</script>
+
+
+</article>

@@ -10,7 +10,8 @@ version = 'Version 1.0.0'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '05.09.2025'
 finished = true
-to-do = "alternative button syringe filter <-> vacuum filter"
+tested = false
+to-do = 'alternative button syringe filter <-> vacuum filter'
 +++
 
 #### for 20 mL
@@ -40,7 +41,7 @@ to-do = "alternative button syringe filter <-> vacuum filter"
 | Usecase | Specifications |
 | :---- | :----- |
 | [Bacterial Plasmid Preparation Culture]({{< relref "methodes/bacteria/plasmid_prep_culture.md" >}}) | usually 100 mg/L |
-| [Bacterial Expression Culture]({{< relref "methodes/bacteria/expression_culture.md" >}}) | usually 100 mg/L |
+| [Bacterial Expression Culture]({{< relref "methodes/bacteria/protein_expression_culture.md" >}}) | usually 100 mg/L |
 | [Luria-Bertani Agarose Medium]({{< relref "recipes/bacteria/lb-agar.md" >}}) | usually 100 mg/L |
 {{< /tab >}}
 

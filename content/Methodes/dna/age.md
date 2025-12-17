@@ -9,7 +9,9 @@ facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and S
 version = 'Version 1.0.1'
 version_explaination = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
 updated = '09.12.2025'
-todo = true
+finished = false
+tested = false
+to-do = ''
 +++
 
 {{< infobox type="info" title="" >}}

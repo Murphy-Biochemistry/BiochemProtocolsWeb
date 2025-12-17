@@ -30,6 +30,10 @@
 
 <script src="{{ "js/access.js" | relURL }}"></script>
 
+{{ if .Params.math }}
+  {{ partial "math.html" . }}
+{{ end }}
+
 <body>
 
     {{ partial "navigation" . }}
