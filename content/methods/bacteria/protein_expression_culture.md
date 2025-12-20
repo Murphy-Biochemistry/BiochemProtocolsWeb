@@ -186,7 +186,7 @@ Sorvall SS-34 fixed angle rotor: $1.118 \cdot 10^{-5} \ cm^{-1} \ min ^{2} \cdot
 
 1. {{< checkbox >}} Overlay bacteria pellet from 500 mL culture volume with 20 mL freshly prepared lysis buffer (2 mL/pellet).
 {{< infobox type="info" title="" >}}
-⚠️ For subsequent purification using affinity chromatographie collumns, try and keep lysate as concentrated as possible and therefore the volume as littly as possible. Try using only 5 mL and increase the volume only when resuspention is not possible.
+⚠️ For subsequent purification using affinity chromatography columns, try and keep lysate as concentrated as possible and therefore the volume as little as possible. Try using only 5 mL and increase the volume only when resuspention is not possible.
 {{< /infobox >}}
 
 2. {{< checkbox >}} Break up the pellet with a pipette.
@@ -226,14 +226,14 @@ Sorvall SS-34 fixed angle rotor: $1.118 \cdot 10^{-5} \ cm^{-1} \ min ^{2} \cdot
 8. {{< checkbox >}} Cool suspended bacteria on ice-water for 60 seconds.
 {{< timer time="0:01:00" >}}
 
-9. {{< checkbox >}} Ultrasonicate resuspended bacteria @ output control 5 and @ duty cycle 50% for 15 seconds.
+9. {{< checkbox >}} Ultrasonicate resuspended bacteria @ output control 5 and @ 50% duty cycle for 15 seconds.
 {{< timer time="0:00:15" >}}
 
 10. {{< checkbox >}} Cool suspended bacteria on ice-water for 60 seconds.
 {{< timer time="0:01:00" >}}
 
 {{< infobox type="info" title="" >}}
-When doing multiple samples, just cycle through the samples, which gives them enaugh time to cool down between sonifications.
+When doing multiple samples, just cycle through the samples, which gives them enough time to cool down between sonifications.
 {{< /infobox >}}
 
 11. {{< checkbox >}} Transfer the lysate in 20 sterile 1.5 mL reaction tubes.
@@ -245,7 +245,7 @@ When doing multiple samples, just cycle through the samples, which gives them en
 
 ### Precede with Suitable Protocol
 
-- [StrepTag Gravity Flow Protein Purification]({{< relref "/methods/bacteria/streptag_protein_purification" >}})
+- [StrepTag Gravity Flow Protein Purification]({{< relref "/methods/proteins/streptag_protein_purification" >}})
 - [MagStrep® Strep-Tactin®XT Beads Protein Purification](Link) <!-- TODO: insert link-->
 - [Gluthatione-Sepharose Protein Purification](Link) <!-- TODO: insert link-->
 {{< /tab >}}
@@ -266,3 +266,6 @@ When doing multiple samples, just cycle through the samples, which gives them en
 {{< save_page >}}
 
 {{< save_journal_label >}}
+
+
+{{< timer time="0:00:30" >}}

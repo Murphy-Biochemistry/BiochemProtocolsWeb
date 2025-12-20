@@ -135,20 +135,27 @@ document.addEventListener("DOMContentLoaded", () => {
         function startCountdown() {
             if (interval) return;
 
+            // 🔓 UNLOCK AUDIO (CRITICAL)
+            if (audio.paused) {
+                audio.play()
+                    .then(() => {
+                        audio.pause();
+                        audio.currentTime = 0;
+                    })
+                    .catch(() => {});
+            }
+
             // WakeLock anfordern
             requestWakeLock();
 
-            // ERSTER START
             if (absoluteStart === null) {
                 absoluteStart = Date.now();
             } else {
-                // FORTSETZEN NACH PAUSE / SCHLAF
                 absoluteStart = Date.now() - previousElapsed * 1000;
             }
 
             interval = setInterval(() => {
                 const delta = Math.floor((Date.now() - absoluteStart) / 1000);
-
                 previousElapsed = delta;
 
                 if (mode === "down") {
@@ -157,17 +164,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (remaining > 0) {
                         updateDisplay();
                     } else {
-                        // Countdown fertig → Countup beginnt
                         mode = "up";
                         display.classList.add("blink");
                         startSoundFor15s();
-
                         elapsed = -remaining;
                         updateDisplay();
                     }
-
                 } else {
-                    // Countup
                     elapsed = delta - startSeconds;
                     updateDisplay();
                 }
