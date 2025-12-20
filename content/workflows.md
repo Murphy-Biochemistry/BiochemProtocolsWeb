@@ -23,7 +23,7 @@ tested = false
 → [Imaging following agarose gel electrophoresis (AGE)]({{< relref "imaging_age" >}})
 → [Purification of DNA from Agarose Gel Electrophoresis (AGE)]({{< relref "purification_age" >}})
 → [Chemically Competent Bacteria Generation]({{< relref "chemically_competent_bacteria" >}})
-→ [Bacterial Transformation Following PCR and Gel Extraction]({{< relref "transtormation_from_pcr" >}})
+→ [Bacterial Transformation Following PCR and Gel Extraction]({{< relref "transformation_from_pcr" >}})
 → [Bacterial Plasmid Preparation Culture]({{< relref "plasmid_prep_culture" >}})
 → [Bacterial Transformation]({{< relref "transformation" >}})
 → [Bacterial Protein Expression Culture]({{< relref "protein_expression_culture" >}})

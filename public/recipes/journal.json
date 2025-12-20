@@ -1,6 +1,10 @@
 [
   {
-    "title": "Anhydrotetracycline Hydrochloride",
+    "title": "Isopropyl-β-D-thiogalactopyranosid Stock 0.5 M",
+    "path": "/BiochemProtocols/recipes/bacteria/iptg/"
+  },
+  {
+    "title": "Anhydrotetracycline Hydrochloride Stock 4.2 mM",
     "path": "/BiochemProtocols/recipes/bacteria/aht/"
   },
   {
@@ -34,6 +38,10 @@
   {
     "title": "Pepstatin A Stock 1 mM",
     "path": "/BiochemProtocols/recipes/bacteria/pepstatin/"
+  },
+  {
+    "title": "Luria-Bertani Medium",
+    "path": "/BiochemProtocols/recipes/bacteria/lb/"
   },
   {
     "title": "Leupeptin Hemisulphate Stock 10 mM",
