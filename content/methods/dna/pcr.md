@@ -145,3 +145,5 @@ Alternatively prepare samples individually by pipetting the following volumes in
 {{< save_page >}}
 
 {{< save_journal_label >}}
+
+{{< alignment_test >}}

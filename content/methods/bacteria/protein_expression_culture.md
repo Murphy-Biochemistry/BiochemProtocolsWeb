@@ -53,7 +53,7 @@ math = true
 | suitable induction chemical <br> e.g. [anhydrotetracycline *AHT*]({{< relref "aht.md" >}}) <!-- TODO: add recipe, then add link--> 2 mg/mL <br> e.g. [isopropyl-β-D-thiogalactopyranosid *IPTG*]({{< relref "iptg.md" >}}) <!-- TODO: add recipe, then add link--> 1 M | <br> e.g. 50 µL <br> e.g. 500 µL | <br> for a final concentration of 0.2 µg/mL  <br> for a final concentration of 0.5 mM | |
 | [tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer]({{< relref "bacterial_lysis_buffer.md" >}}) | | for 20 mL supplemented lysis buffer | |
 | [phenylmethylsulfonyl fluoride *PMSF*]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> 100 mM | 200 µL | for 20 mL supplemented lysis buffer (1 mM) | |
-| [aprotenin]({{< relref "/recipes/bacteria/aprotenin.md" >}}) 1.54 mM | 20 µL | for 20 mL supplemented lysis buffer (1.54 µM) | |
+| [aprotinin]({{< relref "/recipes/bacteria/aprotinin.md" >}}) 1.54 mM | 20 µL | for 20 mL supplemented lysis buffer (1.54 µM) | |
 | [leupeptin]({{< relref "/recipes/bacteria/leupeptin.md" >}}) 10mM | 20 µL | for 20 mL supplemented lysis buffer (10 µM) | |
 | [pepstatin A]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> 1mM | 200µL | for 20 mL supplemented lysis buffer (10µM) | |
 | sucrose | 3.423 g/clone | for 20 mL supplemented lysis buffer (500mM, 17.1 %) | |
@@ -162,8 +162,25 @@ Isopropyl-β-D-thiogalactopyranosid *IPTG* to a final concentration of 0.5 mM (2
 
 1. {{< checkbox >}} Pre-cool a centrifuge to 4 °C for harvesting @ 3000–6000 g.
 2. {{< checkbox >}} Pre-cool the ultrasonicator to 4 °C.
-3. {{< checkbox >}} Prepare 20 mL supplemented bacterial lysis buffer per 500 mL bacterial culture volume by supplementing 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer with with 20 µL Aprotenin 1.54 mM for a final concentration of 1.54 µM, 20 µL Leupeptin 10 mM for a final concentration of 10 mM, 200 µL Pepstatin A 1 mM for a final concentration of 10 µM and 200 µL PMSF 100 mM for a final concentration of 1 mM (stable for approximately 2 h).
-4. {{< checkbox >}} <del>Rotate supplemented bacterial lysis buffer end-over-end @ 4 °C for 5–10 minutes to suspend the protease inhibitor cocktail tablets.</del> <!-- update -->
+3. {{< checkbox >}} Prepare 20 mL supplemented bacterial lysis buffer per 500 mL bacterial culture volume (stable for approximately 2 h):
+
+- pre-cool 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer
+- discard 540 µL
+- supplement 20 µL aprotinin 1.54 mM for a final concentration of 1.54 µM
+- supplement 20 µL leupeptin 10 mM for a final concentration of 10 µM
+- supplement 200 µL pepstatin A 1 mM for a final concentration of 10 µM
+- supplement 200 µL PMSF 100 mM for a final concentration of 1 mM
+- supplement 3.423 g sucrose for a final concentration of 500mM (17.1 %)
+- supplement 100 µL Triton-X-100 for a final concentration of 0.5 %
+
+4. {{< checkbox >}} Rotate supplemented bacterial lysis buffer end-over-end @ 4 °C for 5–10 minutes.
+
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+{{< timer time="0:05:00" >}}
+{{< timer time="0:10:00" >}}
+</div>
+<!-- markdownlint-enable MD033 -->
 
 ### Cell harvesting
 
@@ -267,5 +284,4 @@ When doing multiple samples, just cycle through the samples, which gives them en
 
 {{< save_journal_label >}}
 
-
-{{< timer time="0:00:30" >}}
+{{< alignment_test >}}

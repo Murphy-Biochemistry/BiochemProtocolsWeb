@@ -98,6 +98,8 @@ Incubation @ 30 °C and shaking @ 250 rpm overnight is also possible.
 
 {{< save_journal_label >}}
 
+{{< alignment_test >}}
+
 <!-- markdownlint-disable MD033 -->
 <div id="growth-calc-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
 <!-- markdownlint-enable MD033 -->

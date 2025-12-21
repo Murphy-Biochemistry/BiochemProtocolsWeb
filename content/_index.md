@@ -41,3 +41,11 @@ Use of any information on this site is entirely at your own risk.
 The authors and maintainers of this website assume no liability for any damages, injuries, or consequences that may arise from the use or misuse of the information provided.  
 
 *If you are unsure about any procedure or safety requirement, always seek guidance from qualified professionals or your institution’s safety officers.*
+
+### Labels
+
+Labels can be printed on HERMA 4390 label sheets.  
+The on-screen preview may not accurately represent the final print layout.  
+Before printing, please save the printout as a PDF to verify alignment using the test page:
+
+{{< alignment_test >}}

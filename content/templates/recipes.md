@@ -168,3 +168,5 @@ add class="calc_recipe_mol"
 {{< save_page >}}
 
 {{< save_journal_label >}}
+
+{{< alignment_test >}}

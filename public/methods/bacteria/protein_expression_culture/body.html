@@ -187,7 +187,7 @@
           <td style="text-align: left"></td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/aprotenin/">aprotenin</a> 1.54 mM</td>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/aprotinin/">aprotinin</a> 1.54 mM</td>
           <td style="text-align: left">20 µL</td>
           <td style="text-align: left">for 20 mL supplemented lysis buffer (1.54 µM)</td>
           <td style="text-align: left"></td>
@@ -346,9 +346,27 @@ Isopropyl-β-D-thiogalactopyranosid <em>IPTG</em> to a final concentration of 0.
 <ol>
 <li><input type="checkbox"> Pre-cool a centrifuge to 4 °C for harvesting @ 3000–6000 g.</li>
 <li><input type="checkbox"> Pre-cool the ultrasonicator to 4 °C.</li>
-<li><input type="checkbox"> Prepare 20 mL supplemented bacterial lysis buffer per 500 mL bacterial culture volume by supplementing 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer with with 20 µL Aprotenin 1.54 mM for a final concentration of 1.54 µM, 20 µL Leupeptin 10 mM for a final concentration of 10 mM, 200 µL Pepstatin A 1 mM for a final concentration of 10 µM and 200 µL PMSF 100 mM for a final concentration of 1 mM (stable for approximately 2 h).</li>
-<li><input type="checkbox"> <del>Rotate supplemented bacterial lysis buffer end-over-end @ 4 °C for 5–10 minutes to suspend the protease inhibitor cocktail tablets.</del> <!-- update --></li>
+<li><input type="checkbox"> Prepare 20 mL supplemented bacterial lysis buffer per 500 mL bacterial culture volume (stable for approximately 2 h):</li>
 </ol>
+<ul>
+<li>pre-cool 20 mL of ice-cold Tris-HCl-NaCl-MgCl2 bacterial lysis buffer</li>
+<li>discard 540 µL</li>
+<li>supplement 20 µL aprotinin 1.54 mM for a final concentration of 1.54 µM</li>
+<li>supplement 20 µL leupeptin 10 mM for a final concentration of 10 µM</li>
+<li>supplement 200 µL pepstatin A 1 mM for a final concentration of 10 µM</li>
+<li>supplement 200 µL PMSF 100 mM for a final concentration of 1 mM</li>
+<li>supplement 3.423 g sucrose for a final concentration of 500mM (17.1 %)</li>
+<li>supplement 100 µL Triton-X-100 for a final concentration of 0.5 %</li>
+</ul>
+<ol start="4">
+<li><input type="checkbox"> Rotate supplemented bacterial lysis buffer end-over-end @ 4 °C for 5–10 minutes.</li>
+</ol>
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<!-- markdownlint-enable MD033 -->
 <h3 id="cell-harvesting">Cell harvesting</h3>
 <ol>
 <li><input type="checkbox"> Take a 1 mL aliquot prior to harvest, pellet and resuspend in 50 µL PBS and 50 µL 2x SDS-Page sample buffer for later SDS-PAGE analysis.</li>
@@ -1793,6 +1811,10 @@ Rotor radius in centimeters: $F_g = 1.118 \cdot 10^{-5} \cdot r_r \cdot rpm^2$</
   };
 </script>
 
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<button class="time-btn" id="label-alignment-test">
+  Print alignment test for HERMA 4390 labels.
+</button>
+
+<script src="/BiochemProtocols/js/alignment_test.js"></script>
 
 </article>

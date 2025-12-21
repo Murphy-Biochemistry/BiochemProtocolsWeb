@@ -122,3 +122,5 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 {{< save_page >}}
 
 {{< save_journal_label >}}
+
+{{< alignment_test >}}

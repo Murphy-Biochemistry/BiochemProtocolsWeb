@@ -25,6 +25,12 @@ git push
 rm -rf public
 hugo
 git add .
+git commit -m "fix: xxxxx"
+git push
+
+rm -rf public
+hugo
+git add .
 git commit -m "add: xxxxx"
 git push
 

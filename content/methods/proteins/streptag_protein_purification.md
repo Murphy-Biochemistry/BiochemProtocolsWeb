@@ -150,3 +150,5 @@ tested = false
 {{< save_page >}}
 
 {{< save_journal_label >}}
+
+{{< alignment_test >}}
