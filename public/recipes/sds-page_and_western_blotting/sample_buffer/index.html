@@ -74,8 +74,278 @@
 
             
     
-        <h1>🚧 Under Construction 🚧</h1>
-        <h3>This page will be available soon.</h3>
+        <!-- DONE: tested = true, delete -->
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<!-- markdownlint-disable MD033 -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Material</th>
+          <th style="text-align: left">Molecular Weight</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">tris-HCl 0.5 M pH 6.8 <a href="https://www.carlroth.com/.../"><sup>SDS</sup></a></td>
+          <td style="text-align: left">121.136 g/mol</td>
+          <td style="text-align: left">stock solution</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="trishcl500_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sodium dodecyl sulfate <em>SDS</em> 347 mM (10 %)</td>
+          <td style="text-align: left">288.38 g/mol</td>
+          <td style="text-align: left">stock solution</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="sds10_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">glycerol 9.23 M (85 %)</td>
+          <td style="text-align: left">92.094 g/mol</td>
+          <td style="text-align: left">stock solution</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="glycerol85_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/sds-page_and_western_blotting/bromphenol_blue/">3,3-Bis(3,5-dibromo-4-hydroxyphenyl)-2,1λ6-benzoxathiole-1,1(3H)-dione (= bromphenol blue) 1.49 mM (0.1%)</a></td>
+          <td style="text-align: left">669.99 g/mol</td>
+          <td style="text-align: left">stock solution</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="bromphenoleblue_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left">18.015 g/mol</td>
+          <td style="text-align: left">liquid</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<!-- markdownlint-enable MD033 -->
+
+</div>
+<div class="tab">
+  <h2 id="recipe">Recipe</h2>
+<div class="calc-recipe-x-controls">
+  <label>
+    Concentration:
+    <select class="calc-factor">
+      <option value="1" selected>1×</option>
+      <option value="2">2×</option>
+      <option value="4">4×</option>
+      <option value="5">5×</option>
+      <option value="10">10×</option>
+    </select>
+  </label>
+  <label>
+    Final Volume:
+    <select class="calc-volume">
+      <option value="2">2 L</option>
+      <option value="1" selected>1 L</option>
+      <option value="0.5">500 mL</option>
+      <option value="0.1">100 mL</option>
+      <option value="0.02">20 mL</option>
+      <option value="0.01">10 mL</option>
+      <option value="0.005">5 mL</option>
+    </select>
+  </label>
+</div>
+<!-- { {< calculators/calc_recipe_vol >}} -->
+<!-- { {< calculators/calc_recipe_mol >}} -->
+<!-- markdownlint-disable MD033 -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Material/Step</th>
+          <th style="text-align: left">Volume/Mass</th>
+          <th style="text-align: left">molar/%/comment</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">tris-HCl</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="125" data-mass-unit="mL">125 mL</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="62.5">62.5 mM</span></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">glycerol</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="125" data-mass-unit="mL">125 mL</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="1154">1154 mM (10.6 %)</span></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">SDS</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="200" data-mass-unit="mL">200 mL</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="69.4">69.4 mM</span></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">bromphenol blue</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="20" data-mass-unit="mL">20 mL</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="0.0298">0.0298 mM</span></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-vol="530">530 mL (0.002% w/v)</span> <!-- TODO: calculate % as well --></td>
+          <td style="text-align: left">to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span></td>
+      </tr>
+  </tbody>
+</table>
+<!-- markdownlint-enable MD033 -->
+<!-- Calc Recipe x (only use one x/vol/mol):
+
+for factoring 1x/5x/10x buffers (default 1000mL, 1x)
+into the <span> (new or from alt_switch)
+
+add class="calc_recipe_x" 
+
+for masses add data-default-mass="e"
+for volumes add data-default-vol="e"
+for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
+
+e = value
+
+-->
+
+</div>
+<div class="tab">
+  <h2 id="use-cases">Use Cases</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Use Case</th>
+          <th style="text-align: left">Specifications</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+<div class="tab">
+  <h2 id="storage">Storage</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Conditions</th>
+          <th style="text-align: left">Duration</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">@ 25 °C</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">@ 4 °C</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">@ -20 °C</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">@ –80 °C</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/sds-page_and_western_blotting/sample_buffer/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">SDS-PAGE Laemmli Sample Buffer</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.0</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"SDS-PAGE Laemmli Sample Buffer\"",
+    version: "\"Version 1.0.0\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/sample_buffer/\""
+  };
+</script>
+
+<button class="time-btn" id="label-alignment-test">
+  Print alignment test for HERMA 4390 labels.
+</button>
+
+<script src="/BiochemProtocols/js/alignment_test.js"></script>
+
+        <div style="text-align: right;">
+        <br>
+        22.12.2025 Version 1.0.0
+        </div>
     
 
 

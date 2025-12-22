@@ -1,125 +1,6 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
-    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
-    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
-    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
-    <title>Document</title>
-</head>
-
-<script src="/BiochemProtocols/js/theme_toggle.js"></script>
-<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
-<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
-<script src="/BiochemProtocols/js/timer.js"></script>
-<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
-<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
-
-<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
-<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
-<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
-
-<script src="/BiochemProtocols/js/comment_box.js"></script>
-
-<script src="/BiochemProtocols/js/save_page.js"></script>
-
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
-<script src="/BiochemProtocols/js/save_journal_label.js"></script>
-
-<script src="/BiochemProtocols/js/access.js"></script>
-
-
-
-<body>
-
-    <nav class="nav">
-    <a href="/BiochemProtocols/"><img class="nav" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul class="nav">
-        <li class="nav"><a href="/BiochemProtocols/">Home</a></li>
-        <li class="nav"><a href="/BiochemProtocols/materials">Materials</a></li>
-        <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
-        <li class="nav"><a href="/BiochemProtocols/methods">Methods</a></li>
-        <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
-        <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
-    </ul>
-</nav>
-
-    <header>
-    <h1>Recipes Template</h1>
-
-    
-
-    
-        <h5>Spike Murphy Müller ¹</h5>
-    
-    
-    
-</header>
-    
-    <main>
-
-            
-    
-        <!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<article class="elj-body">
+  <!-- DONE: tested = true, delete -->
 <!--_____________________________delete_____________________________-->
-<p>Bookmark: command + option + K
-Comment: command + shift + 7 <!-- --></p>
-<p>anchor (jump to position on site):
-referral: <a href="#name-anchor"></a>
-landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div></p>
-<!-- Material Table:
-
-for switching alternatives
-into the <span>
-
-add an id="alt_pagename_m_c_reagent1" for the default
-add an id="alt_pagename_m_c_reagent2" for the alternative 
-
-m = methods table
-c = m for material, mw for molecular weight, specs for specifications, l for location
-
-add the shortcode:
-{ {< alternative_switches/alt_pagename_reagent1 >}}
-
--->
-<!-- Recipe Table:
-
-for switching alternatives 
-into the <span>
-
-add an id="alt_pagename_r_d_reagent1" for the default
-add an id="alt_pagename_r_d_reagent2" for the alternative 
-
-r = recipe table
-d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
-
--->
-<!-- Calc Recipe x (only use one x/vol/mol):
-
-for factoring 1x/5x/10x buffers (default 1000mL, 1x)
-into the <span> (new or from alt_switch)
-
-add class="calc_recipe_x" 
-
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
-
-e = value
-
--->
 <!-- Calc Recipe vol (only use one x/vol/mol):
 
 for factoring volumes (default volume 1000mL)
@@ -133,34 +14,7 @@ for molarities add data-default-mol="e"
 
 e = value
 
--->
-<!-- Calc Recipe mol (only use one x/vol/mol):
-
-for factoring molarity (default 1000mL, 1 M)
-into the <span>  (new or from alt_switch)
-
-add class="calc_recipe_mol" 
-
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e"
-
-e = value
-
--->
 <!--_____________________________delete_____________________________-->
-<div class="infobox info">
-  <strong></strong>
-  <div>⚠️ Info</div>
-</div>
-<div class="infobox warning">
-  <strong></strong>
-  <div>❗️ Attention</div>
-</div>
-<div class="infobox danger">
-  <strong></strong>
-  <div>‼️ Danger</div>
-</div>
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <!-- markdownlint-disable MD033 -->
@@ -212,7 +66,20 @@ e = value
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
 <!-- { {< calculators/calc_recipe_x >}} -->
-<!-- { {< calculators/calc_recipe_vol >}} -->
+<div class="calc-recipe-vol-controls">
+  <label>
+    Final Volume:
+    <select class="calc-volume">
+      <option value="2">2 L</option>
+      <option value="1" selected>1 L</option>
+      <option value="0.5">500 mL</option>
+      <option value="0.1">100 mL</option>
+      <option value="0.02">20 mL</option>
+      <option value="0.01">10 mL</option>
+      <option value="0.005">5 mL</option>
+    </select>
+  </label>
+</div>
 <!-- { {< calculators/calc_recipe_mol >}} -->
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -312,7 +179,7 @@ e = value
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/templates/recipes/">
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/sds-page_and_western_blotting/bromphenol_blue/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -339,10 +206,10 @@ e = value
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Recipes Template</div>
+      <div class="line title">Bromphenol Blue Stock 1.49 mM (0.1%) </div>
       <br>
       <div class="line date" id="label-date"></div>
-      <div class="line version">Version 1.0.2</div>
+      <div class="line version">Version 1.1.0</div>
     </div>
   </div>
 
@@ -379,9 +246,9 @@ e = value
 
 <script>
   window.labelPrintData = {
-    title: "\"Recipes Template\"",
-    version: "\"Version 1.0.2\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/templates/recipes/\""
+    title: "\"Bromphenol Blue Stock 1.49 mM (0.1%) \"",
+    version: "\"Version 1.1.0\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/bromphenol_blue/\""
   };
 </script>
 
@@ -391,34 +258,4 @@ e = value
 
 <script src="/BiochemProtocols/js/alignment_test.js"></script>
 
-        <div style="text-align: right;">
-        <br>
-        18.12.2025 Version 1.0.2
-        </div>
-    
-
-
-    </main>
-
-    <footer class="site-footer">
-    <div class="footer-rights">  </div>
-    <ul class="footer-nav">
-        <li><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
-        <li><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
-        <li><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
-    </ul>
-</nav>
-    <ul class="footer-controls">
-        <li class="footer-controls">
-            <label class="switchbox">
-                <input type="checkbox" id="theme-toggle">
-            <span class="slider"></span>
-            </label>
-        </li>
-    </ul>
-</footer>
-
-</body>
-
-
-</html>
+</article>

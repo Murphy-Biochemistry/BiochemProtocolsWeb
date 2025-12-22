@@ -2,13 +2,13 @@
 date = '2025-12-07T21:00:04+01:00'
 draft = false
 construction = false
-title = 'SDS-PAGE'
+title = 'Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.1.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
+updated = '22.12.2025'
 finished = false
 tested = false
 +++
@@ -28,7 +28,7 @@ tested = false
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| SDS-PAGE Hoeffer [<sup>manual</sup>](link) | 1/run <br> 1/run <br> 1/run <br> 1/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 1-2/run | casting stand <br> electrophoresis tank <br> electrophoresis chamber <br> glass plates <br> spacers 1.5 mm <br> grey clamps <br> black screws <br> well comb | |
+| SDS-PAGE Hoeffer Chamber [<sup>manual</sup>](link) | 1/run <br> 1/run <br> 1/run <br> 1/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 2-4/run <br> 1-2/run | casting stand <br> electrophoresis tank <br> electrophoresis chamber <br> glass plates <br> spacers 1.5 mm <br> grey clamps <br> black screws <br> well comb | |
 
 | Containers & Consumables | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
@@ -45,16 +45,19 @@ tested = false
 | deionized sterilized water *dsH<sub>2</sub>O* | | squirt bottle | |
 | ethanol *EtOH* | | 70%, squirt bottle | |
 | propane-2-ol (= isopropanol) | 1 mL/gel | | |
-| separating gel| **15 ml/gel** <br> 4.100 mL/gel <br> 5.640 mL/gel <br> 5.000 mL/gel <br> 0.150 mL/gel <br> 0.010 mL/gel <br> 0.100 mL/gel | <br> | <br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 1 M (pH 8.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
-| collecting gel| **5 ml/gel** <br> 2.520 mL/gel <br> 1.680 mL/gel <br> 0.670 mL/gel <br> 0.050 mL/gel <br> 0.005 mL/gel <br> 0.075 mL/gel | <br> | <br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 0,375 M (pH 6.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
-| SDS-PAGE running buffer | 3000 mL/run | | |
-| SDS-PAGE sample buffer | | e.g. Laemmli sample buffer 2x or 4x | |
-| dithiothreitol DTT 1M | 500 µL <br> ~500 µL | 500 µL for cathode buffer <br> for sample preparation | |
+| separating gel | 15 ml/gel <br><br> **for a default 10% gel** <br> 4.100 mL/gel <br> 5.640 mL/gel <br> 5.000 mL/gel <br> 0.150 mL/gel <br> 0.010 mL/gel <br> 0.100 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 1 M (pH 8.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
+| collecting gel | 5 ml/gel <br><br> **for a default 4% gel** <br> 2.520 mL/gel <br> 1.680 mL/gel <br> 0.670 mL/gel <br> 0.050 mL/gel <br> 0.005 mL/gel <br> 0.075 mL/gel | <br><br><br> deionized sterilized water *dsH<sub>2</sub>O* <br> tris-HCl 0,375 M (pH 6.8) <br> acrylamide (gas stabilized) 4.22 M (30 %) <br> sodium dodecyl sulfate *SDS* 347 mM (10 %) <br> N,N,N',N'-tetramethylethylenediamine *TEMED* <br> ammonium persulfate *APS* 438 mM (10 %) | |
+| [SDS-PAGE running buffer]({{< relref "sds-page_running_buffer.md" >}}) | 3000 mL/run | | |
+| SDS-PAGE sample buffer | | e.g. Laemmli sample buffer 2x or 4x | | <!-- TODO: add link -->
+| dithiothreitol DTT 1M | 500 µL <br> ~500 µL | 500 µL for 1mM in cathode buffer <br> for sample preparation | |
 
 | Biological Materials⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
-| protein samples | | with known approximate protein concentration <br> refer to [Bradford Assay]({{< relref "bradford_assay.md" >}}) <br> refer to  [Lowry Assay]({{< relref "lowry_assay.md" >}}) | |
-| protein ladder | | e.g. SpectraTM Multicolor Broad Range Protein Ladder, Thermo Scientific #26634 | |
+| protein samples | | with known approximate protein concentration (~12.5-250 ng/µL) <br> refer to [Bradford Assay]({{< relref "bradford_assay.md" >}}) <br> refer to  [Lowry Assay]({{< relref "lowry_assay.md" >}}) | |
+| protein ladder | | | |
+| BSA samples | 6 x 3 µL | **for protein concentration determination:** <br> 750 ng/µL <br> 375 ng/µL <br> 187.5 ng/µL <br> 93.75 ng/µL <br> 46.875 ng/µL <br> 23.4375 ng/µL | |
+
+<!-- TODO: alt button protein sample (with BSA) <-> cell lysate (no BSA) -->
 
 {{< /tab >}}
 
@@ -128,13 +131,43 @@ tested = false
 
 {{< /infobox >}}
 
-### Sample Preparation
+### BSA Standard Preparation
 
-1. {{< checkbox >}} Prepare a Stock of SDS-PAGE Sample-Buffer + DTT (see below, e.g. 10 Samples ~ 100µl SDS-PAGE Sample-Buffer + 20µl DTT 1M + 20µl dsH<sub>2</sub>O)
+{{< infobox type="info" title="Concentration Linearity" >}}
+⚠️ Depending on the method, quantification of protein samples is only linear in the range of 100 to 2000 ng per band. BSA samples cover this concentration range.
+{{< /infobox >}}
+
+1. {{< checkbox >}} Prepare serial dilution of BSA with 750 ng/µL, 375 ng/µL, 187.5 ng/µL, 93.75 ng/µL, 46.875 ng/µL and 23.4375.
+1. {{< checkbox >}} Prepare a Stock of SDS-PAGE Sample-Buffer + DTT (refer to calculator below)
 
 | Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
 | :-- | :-- | :-- | :-- |
-| SDS-PAGE Sample Buffer | 10 µL | 2x | 1x |
+| SDS-PAGE Sample Buffer | 10 µL | 2x | |
+| DTT | 2 µL | 1 M | 100 mM |
+| dsH<sub>2</sub>O | 5 µL | | |
+| | = 17 µL | | |
+
+ <!-- TODO: calc and enhance-->
+
+2. {{< checkbox >}} Prepare the BSA samples.
+
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| :-- | :-- | :-- | :-- |
+| mastermix | 17 µL | | |
+| BSA sample | 3 µl | | |
+| | = 20 µL | | |
+
+### Sample Preparation
+
+{{< infobox type="info" title="Concentration Linearity" >}}
+⚠️ Depending on the method, quantification of protein samples is only linear in the range of 100 to 2000 ng per band. Sample quantity per band should be in the range covered by the BSA standard to allow for somewhat accurate quantification. Cell lysates can contain up to 20 µg of proteins.
+{{< /infobox >}}
+
+1. {{< checkbox >}} Prepare a Stock of SDS-PAGE Sample-Buffer + DTT (refer to calculator below).
+
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| :-- | :-- | :-- | :-- |
+| SDS-PAGE Sample Buffer | 10 µL | 2x | |
 | DTT | 2 µL | 1 M | 100 mM |
 | | = 12 µL | | |
 
@@ -145,16 +178,17 @@ tested = false
 | Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
 | :-- | :-- | :-- | :-- |
 | mastermix | 12 µL | | |
-| Sample | 8 µl | | 100 ng ≤ purified protein ≤2 µg <br> cell lysate ≤ 20 µg |
+| dsH<sub>2</sub>O | 0 µL | | |
+| Sample | 8 µl | | |
 | | = 20 µL | | |
 
  <!-- TODO: calc and enhance-->
 
-| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub> |
+| Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub>/mass m<sub>2</sub> |
 | :-- | :-- | :-- | :-- |
 | SDS-PAGE Sample Buffer | 10 µL | 2x | 1x |
 | DTT | 2 µL | 1 M | 100 mM |
-| Sample | 8 µl | | 100 ng ≤ purified protein ≤2 µg <br> cell lysate ≤ 20 µg |
+| Sample | 8 µl | **purified protein:** 12.5-250 ng/µL <br> **cell lysate:** ≤ 2500 ng/µL | **purified protein:** 100-2000 ng <br> **cell lysate:** ≤ 20 µg |
 | | = 20 µL | | |
 
  <!-- TODO: calc and enhance-->

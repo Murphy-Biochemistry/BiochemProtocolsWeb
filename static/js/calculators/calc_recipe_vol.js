@@ -78,12 +78,12 @@ function formatMolarity(mM) {
 }
 
 /* ---------- VOLUME (mL → L → µL) ---------- */
-function formatVolume(mL) {
+function formatVolume_vol(mL) {
   if (mL >= 1000) {
-    return `${formatNumber(mL / 1000, 2)} L`;
+    return `${formatNumber(mL / 1000, 3)} L`;
   }
   if (mL >= 1) {
-    return `${formatNumber(mL, 2)} mL`;
+    return `${formatNumber(mL, 3)} mL`;
   }
   return `${formatNumber(mL * 1000, 0)} µL`;
 }

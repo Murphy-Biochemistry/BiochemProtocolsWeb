@@ -14,22 +14,22 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">phosphate buffered saline <em>PBS</em> 10x</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left">stock solution</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="tbs_10x"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left">tris base <a href="https://www.carlroth.com/medias/SDS-4855-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDg5MDd8YXBwbGljYXRpb24vcGRmfGFEaG1MMmd4T1M4NU1qQTJOekV3TVRRd09UVTRMMU5FUWw4ME9EVTFYMFJGWDBWT0xuQmtaZ3xhMDM2MzQ2ZGYxZTg3NDk1MTZjNmFiOTEyZDYzOTUyMjU4MWFkNDhhZTY1NDY1YTUyNDFhMjk3Y2UxYjkyYjVm"><sup>SDS</sup></a></td>
+          <td style="text-align: left">121.14 g/mol</td>
+          <td style="text-align: left">solid</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="trisbase_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">hydrogen chloride <em>HCl</em> <a href="https://www.carlroth.com/medias/SDS-X897-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wzMjYwMzd8YXBwbGljYXRpb24vcGRmfGFHWmlMMmd6TUM4NU1qQTJPVEEyT1RRMU5UWTJMMU5FUWw5WU9EazNYMFJGWDBWT0xuQmtaZ3xmODE5ZDYzYjAyZjk2OTY2ZWZlZjViMDkyZTkwODJjZDk2MTNjMmI0MDlhZjEzYTE0MDJjNmUwNjQ2MTE2NDFi"><sup>SDS</sup></a></td>
+          <td style="text-align: left">36.461 g/mol</td>
+          <td style="text-align: left">7.76 M (25%), liquid</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="hcl25_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left">18.015 g/mol</td>
-          <td style="text-align: left">solvent</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Tween20</td>
-          <td style="text-align: left">1228 g/mol</td>
           <td style="text-align: left">liquid</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="tween20_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left"></td>
       </tr>
   </tbody>
 </table>
@@ -39,7 +39,20 @@
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
 <!-- { {< calculators/calc_recipe_x >}} -->
-<div class="calc-recipe-vol-controls">
+<!-- { {< calculators/calc_recipe_vol >}} -->
+<div class="calc-recipe-mol-controls">
+  <label>
+    Concentration:
+    <select class="calc-molarity">
+      <option value="10">10 M</option>
+      <option value="1" selected>1 M</option>
+      <option value="0.75">750 mM</option>
+      <option value="0.5">500 mM</option>
+      <option value="0.375">375 mM</option>
+      <option value="0.25">250 mM</option>
+      <option value="0.1">100 mM</option>
+    </select>
+  </label>
   <label>
     Final Volume:
     <select class="calc-volume">
@@ -53,7 +66,6 @@
     </select>
   </label>
 </div>
-<!-- { {< calculators/calc_recipe_mol >}} -->
 <!-- markdownlint-disable MD033 -->
 <table>
   <thead>
@@ -67,20 +79,26 @@
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">PBS 10x</td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="100">100 mL</span></td>
+          <td style="text-align: left">tris</td>
+          <td style="text-align: left"><span class="calc_recipe_mol" data-default-mass="121.14">121.14 g</span></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="899">899 mL</span></td>
+          <td style="text-align: left"><em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left"><span class="calc_recipe_mol" data-default-vol="800">800 mL</span></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">Tween 20</td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="1">1 mL</span></td>
+          <td style="text-align: left">HCl 25 %</td>
+          <td style="text-align: left">to desired pH</td>
+          <td style="text-align: left">see <a href="#use-anchor">use cases</a></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left">to <span class="calc_recipe_mol" data-default-vol="1000">1000mL</span></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -90,6 +108,9 @@
 </div>
 <div class="tab">
   <h2 id="use-cases">Use Cases</h2>
+<!-- markdownlint-disable MD033 -->
+<div id="use-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
 <table>
   <thead>
       <tr>
@@ -99,8 +120,16 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Western Blotting</td>
-          <td style="text-align: left">membrane washing</td>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">for the <a href="">separating gel</a> tris-HCL 1 M with pH of 8.8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">for the <a href="">collecting gel</a> tris-HCL 0.375 M with pH of 6.8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
       </tr>
   </tbody>
 </table>
@@ -118,11 +147,11 @@
   <tbody>
       <tr>
           <td style="text-align: left">@ 25 °C</td>
-          <td style="text-align: left">month to years</td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left">@ 4 °C</td>
-          <td style="text-align: left">month to years</td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left">@ -20 °C</td>
@@ -136,7 +165,7 @@
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/general_buffers/pbst/">
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/general_buffers/tris-hcl/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -163,7 +192,7 @@
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Phosphate-Buffered Saline with Tween20 (PBST)</div>
+      <div class="line title">Tris-HCl</div>
       <br>
       <div class="line date" id="label-date"></div>
       <div class="line version">Version 1.0.0</div>
@@ -203,9 +232,9 @@
 
 <script>
   window.labelPrintData = {
-    title: "\"Phosphate-Buffered Saline with Tween20 (PBST)\"",
+    title: "\"Tris-HCl\"",
     version: "\"Version 1.0.0\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/pbst/\""
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/tris-hcl/\""
   };
 </script>
 

@@ -1,71 +1,20 @@
 +++
-date = '2025-12-07T20:19:41+01:00'
+date = '2025-12-07T20:28:58+01:00'
 draft = false
-construction = false
-title = 'Recipes Template'
+construction = true
+title = 'Bromphenol Blue Stock 1.49 mM (0.1%) '
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
-facility = ''
-version = 'Version 1.0.2'
-version_explanation = ''
-updated = '18.12.2025'
-finished = true
-tested = true
+facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
+version = 'Version 1.1.0'
+version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
+updated = '22.12.2025'
+finished = false
+tested = false
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!-- DONE: tested = true, delete -->
 
 <!--_____________________________delete_____________________________-->
-
-Bookmark: command + option + K
-Comment: command + shift + 7 <!-- -->
-
-anchor (jump to position on site):
-referral: [](#name-anchor)
-landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
-
-<!-- Material Table:
-
-for switching alternatives
-into the <span>
-
-add an id="alt_pagename_m_c_reagent1" for the default
-add an id="alt_pagename_m_c_reagent2" for the alternative 
-
-m = methods table
-c = m for material, mw for molecular weight, specs for specifications, l for location
-
-add the shortcode:
-{ {< alternative_switches/alt_pagename_reagent1 >}}
-
--->
-
-<!-- Recipe Table:
-
-for switching alternatives 
-into the <span>
-
-add an id="alt_pagename_r_d_reagent1" for the default
-add an id="alt_pagename_r_d_reagent2" for the alternative 
-
-r = recipe table
-d = ms for material/steps, vm for volume/mass and mol for molar/%/comment
-
--->
-
-<!-- Calc Recipe x (only use one x/vol/mol):
-
-for factoring 1x/5x/10x buffers (default 1000mL, 1x)
-into the <span> (new or from alt_switch)
-
-add class="calc_recipe_x" 
-
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
-
-e = value
-
--->
 
 <!-- Calc Recipe vol (only use one x/vol/mol):
 
@@ -80,36 +29,7 @@ for molarities add data-default-mol="e"
 
 e = value
 
--->
-
-<!-- Calc Recipe mol (only use one x/vol/mol):
-
-for factoring molarity (default 1000mL, 1 M)
-into the <span>  (new or from alt_switch)
-
-add class="calc_recipe_mol" 
-
-for masses add data-default-mass="e"
-for volumes add data-default-vol="e"
-for molarities add data-default-mol="e"
-
-e = value
-
--->
-
 <!--_____________________________delete_____________________________-->
-
-{{< infobox type="info" title="" >}}
-⚠️ Info
-{{< /infobox >}}
-
-{{< infobox type="warning" title="" >}}
-❗️ Attention
-{{< /infobox >}}
-
-{{< infobox type="danger" title="" >}}
-‼️ Danger
-{{< /infobox >}}
 
 {{< tab >}}
 
@@ -132,7 +52,7 @@ e = value
 ## Recipe
 
 <!-- { {< calculators/calc_recipe_x >}} -->
-<!-- { {< calculators/calc_recipe_vol >}} -->
+{{< calculators/calc_recipe_vol >}}
 <!-- { {< calculators/calc_recipe_mol >}} -->
 
 <!-- markdownlint-disable MD033 -->

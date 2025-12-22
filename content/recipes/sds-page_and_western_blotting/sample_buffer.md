@@ -1,17 +1,97 @@
 +++
 date = '2025-12-07T20:29:16+01:00'
 draft = false
-construction = true
+construction = false
 title = 'SDS-PAGE Laemmli Sample Buffer'
 subtitle = ''
 author = 'Spike Murphy Müller ¹'
 facility = '¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer'
 version = 'Version 1.0.0'
 version_explanation = 'first: major revisions - second: minor revisions - third: revisions without changing procedure'
-updated = ''
-finished = false
+updated = '22.12.2025'
+finished = true
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- DONE: tested = true, delete -->
 
-<!-- TODO: add 2x and 4x to calc-->
+{{< tab >}}
+
+## Materials
+
+<!-- markdownlint-disable MD033 -->
+| Material | Molecular Weight | Specifications | Location |
+| :-- | :-- | :-- | :-- |
+| tris-HCl 0.5 M pH 6.8 [<sup>SDS</sup>](https://www.carlroth.com/.../) | 121.136 g/mol | stock solution | {{< chemical_location chemical="trishcl500_liquid" >}} |
+| sodium dodecyl sulfate *SDS* 347 mM (10 %) | 288.38 g/mol | stock solution | {{< chemical_location chemical="sds10_liquid" >}} |
+| glycerol 9.23 M (85 %) | 92.094 g/mol | stock solution | {{< chemical_location chemical="glycerol85_liquid" >}} |
+| [3,3-Bis(3,5-dibromo-4-hydroxyphenyl)-2,1λ6-benzoxathiole-1,1(3H)-dione (= bromphenol blue) 1.49 mM (0.1%)]({{< relref "bromphenol_blue.md" >}}) | 669.99 g/mol | stock solution | {{< chemical_location chemical="bromphenoleblue_liquid" >}} |
+| deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | liquid | |
+<!-- markdownlint-enable MD033 -->
+
+{{< /tab >}}
+
+{{< tab >}}
+
+## Recipe
+
+{{< calculators/calc_recipe_x >}}
+<!-- { {< calculators/calc_recipe_vol >}} -->
+<!-- { {< calculators/calc_recipe_mol >}} -->
+
+<!-- markdownlint-disable MD033 -->
+| | Material/Step | Volume/Mass | molar/%/comment |
+| :-- | :-- | :-- | :-- |
+| {{< checkbox >}} | tris-HCl | <span class="calc_recipe_x" data-default-mass="125" data-mass-unit="mL">125 mL</span> | <span class="calc_recipe_x" data-default-mol="62.5">62.5 mM</span> |
+| {{< checkbox >}} | glycerol | <span class="calc_recipe_x" data-default-mass="125" data-mass-unit="mL">125 mL</span> | <span class="calc_recipe_x" data-default-mol="1154">1154 mM (10.6 %)</span> |
+| {{< checkbox >}} | SDS | <span class="calc_recipe_x" data-default-mass="200" data-mass-unit="mL">200 mL</span> | <span class="calc_recipe_x" data-default-mol="69.4">69.4 mM</span> |
+| {{< checkbox >}} | bromphenol blue | <span class="calc_recipe_x" data-default-mass="20" data-mass-unit="mL">20 mL</span> | <span class="calc_recipe_x" data-default-mol="0.0298">0.0298 mM</span> |
+| {{< checkbox >}} | dsH<sub>2</sub>O | <span class="calc_recipe_x" data-default-vol="530">530 mL (0.002% w/v)</span> <!-- TODO: calculate % as well --> | to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span> |
+<!-- markdownlint-enable MD033 -->
+
+<!-- Calc Recipe x (only use one x/vol/mol):
+
+for factoring 1x/5x/10x buffers (default 1000mL, 1x)
+into the <span> (new or from alt_switch)
+
+add class="calc_recipe_x" 
+
+for masses add data-default-mass="e"
+for volumes add data-default-vol="e"
+for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
+
+e = value
+
+-->
+
+{{< /tab >}}
+
+{{< tab >}}
+
+## Use Cases
+
+| Use Case | Specifications |
+| :-- | :-- |
+| | |
+| | |
+
+{{< /tab >}}
+
+{{< tab >}}
+
+## Storage
+
+| Conditions | Duration |
+| :-- | :-- |
+| @ 25 °C | |
+| @ 4 °C | |
+| @ -20 °C | |
+| @ –80 °C | |
+
+{{< /tab >}}
+
+{{< comment_box >}}
+{{< save_page >}}
+
+{{< save_journal_label >}}
+
+{{< alignment_test >}}

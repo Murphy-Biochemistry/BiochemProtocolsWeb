@@ -14,22 +14,28 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">phosphate buffered saline <em>PBS</em> 10x</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left">stock solution</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="tbs_10x"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left">tris base <a href="https://www.carlroth.com/medias/SDS-4855-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDg5MDd8YXBwbGljYXRpb24vcGRmfGFEaG1MMmd4T1M4NU1qQTJOekV3TVRRd09UVTRMMU5FUWw4ME9EVTFYMFJGWDBWT0xuQmtaZ3xhMDM2MzQ2ZGYxZTg3NDk1MTZjNmFiOTEyZDYzOTUyMjU4MWFkNDhhZTY1NDY1YTUyNDFhMjk3Y2UxYjkyYjVm"><sup>SDS</sup></a></td>
+          <td style="text-align: left">121.14 g/mol</td>
+          <td style="text-align: left">solid</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="trisbase_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">glycine</td>
+          <td style="text-align: left">75.07 g/mol</td>
+          <td style="text-align: left">solid</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="glycine_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sodium dodecyl sulfate <em>SDS</em></td>
+          <td style="text-align: left">288.38 g/mol</td>
+          <td style="text-align: left">solid</td>
+          <td style="text-align: left"><span class="chemical_location" data-chemical="sds_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left">18.015 g/mol</td>
-          <td style="text-align: left">solvent</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">Tween20</td>
-          <td style="text-align: left">1228 g/mol</td>
           <td style="text-align: left">liquid</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="tween20_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
+          <td style="text-align: left"></td>
       </tr>
   </tbody>
 </table>
@@ -38,8 +44,17 @@
 </div>
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
-<!-- { {< calculators/calc_recipe_x >}} -->
-<div class="calc-recipe-vol-controls">
+<div class="calc-recipe-x-controls">
+  <label>
+    Concentration:
+    <select class="calc-factor">
+      <option value="1" selected>1×</option>
+      <option value="2">2×</option>
+      <option value="4">4×</option>
+      <option value="5">5×</option>
+      <option value="10">10×</option>
+    </select>
+  </label>
   <label>
     Final Volume:
     <select class="calc-volume">
@@ -53,6 +68,7 @@
     </select>
   </label>
 </div>
+<!-- { {< calculators/calc_recipe_vol >}} -->
 <!-- { {< calculators/calc_recipe_mol >}} -->
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -67,20 +83,26 @@
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">PBS 10x</td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="100">100 mL</span></td>
-          <td style="text-align: left"></td>
+          <td style="text-align: left">tris</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="3.03">3.03 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="25">25 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="899">899 mL</span></td>
-          <td style="text-align: left"></td>
+          <td style="text-align: left">glycine</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="14.4">14.4 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="192">192 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">Tween 20</td>
-          <td style="text-align: left"><span class="calc_recipe_vol" data-default-vol="1">1 mL</span></td>
+          <td style="text-align: left">SDS</td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="1">1 g</span></td>
+          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="3.47">3.47 mM (0.1 %)</span></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left">to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -99,8 +121,12 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">Western Blotting</td>
-          <td style="text-align: left">membrane washing</td>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">as running buffer</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">with dithiothreitol <em>DTT</em> 1mM as cathode buffer (e.g. 500µL in 500 mL running buffer)</td>
       </tr>
   </tbody>
 </table>
@@ -118,11 +144,11 @@
   <tbody>
       <tr>
           <td style="text-align: left">@ 25 °C</td>
-          <td style="text-align: left">month to years</td>
+          <td style="text-align: left">1 month</td>
       </tr>
       <tr>
           <td style="text-align: left">@ 4 °C</td>
-          <td style="text-align: left">month to years</td>
+          <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left">@ -20 °C</td>
@@ -136,7 +162,7 @@
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/general_buffers/pbst/">
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -163,7 +189,7 @@
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Phosphate-Buffered Saline with Tween20 (PBST)</div>
+      <div class="line title">SDS-PAGE Tris-Glycin-SDS Running Buffer</div>
       <br>
       <div class="line date" id="label-date"></div>
       <div class="line version">Version 1.0.0</div>
@@ -203,9 +229,9 @@
 
 <script>
   window.labelPrintData = {
-    title: "\"Phosphate-Buffered Saline with Tween20 (PBST)\"",
+    title: "\"SDS-PAGE Tris-Glycin-SDS Running Buffer\"",
     version: "\"Version 1.0.0\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/pbst/\""
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/\""
   };
 </script>
 

@@ -16,12 +16,24 @@
     "path": "/BiochemProtocols/recipes/dna/primer_reconstitution/"
   },
   {
+    "title": "SDS-PAGE Tris-Glycin-SDS Running Buffer",
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_running_buffer/"
+  },
+  {
     "title": "SDS-PAGE Laemmli Sample Buffer",
     "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/sample_buffer/"
   },
   {
+    "title": "Bromphenol Blue Stock 1.49 mM (0.1%) ",
+    "path": "/BiochemProtocols/recipes/sds-page_and_western_blotting/bromphenol_blue/"
+  },
+  {
     "title": "Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer",
     "path": "/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/"
+  },
+  {
+    "title": "Tris-HCl",
+    "path": "/BiochemProtocols/recipes/general_buffers/tris-hcl/"
   },
   {
     "title": "Tris-Buffered Saline with Tween20 (TBST)",

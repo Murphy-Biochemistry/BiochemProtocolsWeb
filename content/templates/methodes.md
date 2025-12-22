@@ -20,8 +20,12 @@ Bookmark: command + option + K
 Comment: command + shift + 7 <!-- -->
 
 anchor (jump to position on site):
-referral: [](#name-anchor)
-landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+referral:
+[](#name-anchor)
+landing:
+<!-- markdownlint-disable MD033 -->
+<div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
 
 {{< timer time="0:00:30" >}}
 

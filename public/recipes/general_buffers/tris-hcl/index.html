@@ -1,12 +1,80 @@
-<article class="elj-body">
-  <div class="infobox warning">
-  <strong></strong>
-  <div>❗️ Not suitable for Strep-Tactin® resins as biotin irreversibly binds to the resin. Only used for Strep-Tactin®XT resins.</div>
-</div>
-<div class="infobox info">
-  <strong></strong>
-  <div>⚠️ Biotin of this concentration only dissolves under alkaline conditions.</div>
-</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
+    <title>Document</title>
+</head>
+
+<script src="/BiochemProtocols/js/theme_toggle.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/timer.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
+
+<script src="/BiochemProtocols/js/comment_box.js"></script>
+
+<script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocols/js/save_journal_label.js"></script>
+
+<script src="/BiochemProtocols/js/access.js"></script>
+
+
+
+<body>
+
+    <nav class="nav">
+    <a href="/BiochemProtocols/"><img class="nav" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul class="nav">
+        <li class="nav"><a href="/BiochemProtocols/">Home</a></li>
+        <li class="nav"><a href="/BiochemProtocols/materials">Materials</a></li>
+        <li class="nav"><a href="/BiochemProtocols/recipes">Recipes</a></li>
+        <li class="nav"><a href="/BiochemProtocols/methods">Methods</a></li>
+        <li class="nav"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="nav"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
+    </ul>
+</nav>
+
+    <header>
+    <h1>Tris-HCl</h1>
+
+    
+
+    
+        <h5>Spike Murphy Müller ¹</h5>
+    
+    
+    
+        <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h3>
+    
+</header>
+    
+    <main>
+
+            
+    
+        <!-- DONE: tested = true, delete -->
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <!-- markdownlint-disable MD033 -->
@@ -27,33 +95,15 @@
           <td style="text-align: left"><span class="chemical_location" data-chemical="trisbase_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
-          <td style="text-align: left">sodium chloride <em>NaCl</em> <a href="https://www.carlroth.com/medias/SDS-9265-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMjczOTJ8YXBwbGljYXRpb24vcGRmfGFEa3hMMmc0WXk4NU1qQTJPREkyTVRNNU5qYzRMMU5FUWw4NU1qWTFYMFJGWDBWT0xuQmtaZ3wwMDM0YzI2YTljODliODMzMDg5YjFjNzBjOTcwMjU5ZDQ1OGMwYjRlZGIxOTRjMzQyOTNmYmU4NjA1YzQ1ZGQ0"><sup>SDS</sup></a></td>
-          <td style="text-align: left">58.44 g/mol</td>
-          <td style="text-align: left">solid</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="nacl_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">hydrochloric acid HCl 25% <a href="https://www.carlroth.com/medias/SDB-X897-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wzMjYwMzd8YXBwbGljYXRpb24vcGRmfGFHWmlMMmd6TUM4NU1qQTJPVEEyT1RRMU5UWTJMMU5FUWw5WU9EazNYMFJGWDBWT0xuQmtaZ3xmODE5ZDYzYjAyZjk2OTY2ZWZlZjViMDkyZTkwODJjZDk2MTNjMmI0MDlhZjEzYTE0MDJjNmUwNjQ2MTE2NDFi"><sup>SDS</sup></a></td>
-          <td style="text-align: left">36.46 g/mol</td>
-          <td style="text-align: left">liquid, 25 %</td>
+          <td style="text-align: left">hydrogen chloride <em>HCl</em> <a href="https://www.carlroth.com/medias/SDS-X897-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wzMjYwMzd8YXBwbGljYXRpb24vcGRmfGFHWmlMMmd6TUM4NU1qQTJPVEEyT1RRMU5UWTJMMU5FUWw5WU9EazNYMFJGWDBWT0xuQmtaZ3xmODE5ZDYzYjAyZjk2OTY2ZWZlZjViMDkyZTkwODJjZDk2MTNjMmI0MDlhZjEzYTE0MDJjNmUwNjQ2MTE2NDFi"><sup>SDS</sup></a></td>
+          <td style="text-align: left">36.461 g/mol</td>
+          <td style="text-align: left">7.76 M (25%), liquid</td>
           <td style="text-align: left"><span class="chemical_location" data-chemical="hcl25_liquid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">biotin</td>
-          <td style="text-align: left">244.31 g/mol</td>
-          <td style="text-align: left">solid</td>
-          <td style="text-align: left"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
           <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
           <td style="text-align: left">18.015 g/mol</td>
           <td style="text-align: left">liquid</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left">vacuum filter</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left">0.22 µm</td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -63,31 +113,9 @@
 </div>
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
-<div class="calc-recipe-x-controls">
-  <label>
-    Concentration:
-    <select class="calc-factor">
-      <option value="1" selected>1×</option>
-      <option value="2">2×</option>
-      <option value="4">4×</option>
-      <option value="5">5×</option>
-      <option value="10">10×</option>
-    </select>
-  </label>
-  <label>
-    Final Volume:
-    <select class="calc-volume">
-      <option value="2">2 L</option>
-      <option value="1" selected>1 L</option>
-      <option value="0.5">500 mL</option>
-      <option value="0.1">100 mL</option>
-      <option value="0.02">20 mL</option>
-      <option value="0.01">10 mL</option>
-      <option value="0.005">5 mL</option>
-    </select>
-  </label>
-</div>
-<!-- <div class="calc-recipe-mol-controls">
+<!-- { {< calculators/calc_recipe_x >}} -->
+<!-- { {< calculators/calc_recipe_vol >}} -->
+<div class="calc-recipe-mol-controls">
   <label>
     Concentration:
     <select class="calc-molarity">
@@ -112,7 +140,7 @@
       <option value="0.005">5 mL</option>
     </select>
   </label>
-</div> -->
+</div>
 <!-- markdownlint-disable MD033 -->
 <table>
   <thead>
@@ -126,56 +154,26 @@
   <tbody>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">tris base</td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="12.11">12.11 g</span></td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="100">100 mM</span></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">NaCl</td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="8.77">8.77 g</span></td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="150">150 mM</span></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">dsH<sub>2</sub>O</td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-vol="800">800 mL</span></td>
+          <td style="text-align: left">tris</td>
+          <td style="text-align: left"><span class="calc_recipe_mol" data-default-mass="121.14">121.14 g</span></td>
           <td style="text-align: left"></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left"><span class="calc_recipe_mol" data-default-vol="800">800 mL</span></td>
           <td style="text-align: left"></td>
-          <td style="text-align: left">pH should be ~10-11 depending on buffer base</td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">biotin</td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mass="12.22">12.22 g</span></td>
-          <td style="text-align: left"><span class="calc_recipe_x" data-default-mol="50">50 mM</span></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
           <td style="text-align: left">HCl 25 %</td>
-          <td style="text-align: left">pH to 8.0</td>
-          <td style="text-align: left"></td>
+          <td style="text-align: left">to desired pH</td>
+          <td style="text-align: left">see <a href="#use-anchor">use cases</a></td>
       </tr>
       <tr>
           <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">dsH<sub>2</sub>O</td>
-          <td style="text-align: left">to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">filter through 0.22 µm vacuum filter</td>
-          <td style="text-align: left"></td>
-          <td style="text-align: left"></td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><input type="checkbox"></td>
-          <td style="text-align: left">store @ 4 °C or in 50 mL aliquots @ –20 °C</td>
-          <td style="text-align: left"></td>
+          <td style="text-align: left"><em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left">to <span class="calc_recipe_mol" data-default-vol="1000">1000mL</span></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -185,6 +183,9 @@
 </div>
 <div class="tab">
   <h2 id="use-cases">Use Cases</h2>
+<!-- markdownlint-disable MD033 -->
+<div id="use-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
 <table>
   <thead>
       <tr>
@@ -194,11 +195,15 @@
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><a href="/BiochemProtocols/methods/proteins/streptag_protein_purification/">StrepTag Gravity Flow Protein Purification</a></td>
-          <td style="text-align: left"></td>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">for the <a href="">separating gel</a> tris-HCL 1 M with pH of 8.8</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="/BiochemProtocols/methods/proteins/magstrep_beads_protein_purification/">MagStrep® Strep-Tactin®XT Beads Protein Purification</a></td>
+          <td style="text-align: left"><a href="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/">SDS-PAGE</a></td>
+          <td style="text-align: left">for the <a href="">collecting gel</a> tris-HCL 0.375 M with pH of 6.8</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
           <td style="text-align: left"></td>
       </tr>
   </tbody>
@@ -235,7 +240,7 @@
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/proteins/biotin_elution_buffer/">
+<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/general_buffers/tris-hcl/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -262,10 +267,10 @@
       <div class="line company"><b>Murphy Biochemistry</b></div>
       <div class="line website"><b>BiochemProtocols</b></div>
       <br>
-      <div class="line title">Biotin Elution Buffer</div>
+      <div class="line title">Tris-HCl</div>
       <br>
       <div class="line date" id="label-date"></div>
-      <div class="line version">Version 1.0.1</div>
+      <div class="line version">Version 1.0.0</div>
     </div>
   </div>
 
@@ -302,9 +307,9 @@
 
 <script>
   window.labelPrintData = {
-    title: "\"Biotin Elution Buffer\"",
-    version: "\"Version 1.0.1\"",
-    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/proteins/biotin_elution_buffer/\""
+    title: "\"Tris-HCl\"",
+    version: "\"Version 1.0.0\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/recipes/general_buffers/tris-hcl/\""
   };
 </script>
 
@@ -314,4 +319,34 @@
 
 <script src="/BiochemProtocols/js/alignment_test.js"></script>
 
-</article>
+        <div style="text-align: right;">
+        <br>
+        22.12.2025 Version 1.0.0
+        </div>
+    
+
+
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-rights">  </div>
+    <ul class="footer-nav">
+        <li><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
+        <li><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+</nav>
+    <ul class="footer-controls">
+        <li class="footer-controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+</body>
+
+
+</html>
