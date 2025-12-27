@@ -46,13 +46,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -64,7 +77,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -98,12 +113,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -129,12 +144,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>StrepTag Gravity Flow Protein Purification</h1>
 
@@ -172,6 +189,8 @@
             
     
         <!-- DONE: delete when finished = true + tested = true -->
+ 
+
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
@@ -314,6 +333,8 @@
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="procedure">Procedure</h2>
 <h3 id="preparations">Preparations</h3>
@@ -338,15 +359,15 @@
 </ol>
 <h3 id="first-binding-the-protein-and-washing">First Binding the Protein and Washing</h3>
 <ol>
-<li><input type="checkbox"> Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely. <!-- TODO: calculate volume according to binding capacity and expected protein yield--></li>
+<li><input type="checkbox"> Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely. <!-- CONTENT_TODO: calculate volume according to binding capacity and expected protein yield--></li>
 </ol>
 <div class="infobox info">
   <strong>Binding</strong>
   <div><p>Binding usually takes 20-30 minutes per 2 mL, but can take up to 1h in some cases.</p>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div></div>
 </div>
 <ol start="2">
@@ -360,8 +381,8 @@
   <strong>Washing</strong>
   <div><p>Washing usually takes 5-10 minutes.</p>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div></div>
 </div>
 <h3 id="first-elution">First Elution</h3>
@@ -389,8 +410,8 @@
 <li>Rotate end-over-end for 5-10 minutes.</li>
 </ol>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <ol start="4">
 <li><input type="checkbox"> Take a 4 µL aliquot + 4 µL dsH<sub>2</sub>O and a 8 µL aliquot and mix them with  10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.</li>
@@ -421,9 +442,9 @@
   <strong>Binding</strong>
   <div><p>Binding usually takes 20-30 minutes per 2 mL, but can take up to 1h in some cases.</p>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div></div>
 </div>
 <ol start="2">
@@ -437,8 +458,8 @@
   <strong>Washing</strong>
   <div><p>Washing usually takes 5-10 minutes.</p>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div></div>
 </div>
 <h3 id="second-elution">Second Elution</h3>
@@ -466,8 +487,8 @@
 <li>Rotate end-over-end for 5-10 minutes.</li>
 </ol>
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <ol start="4">
 <li><input type="checkbox"> Take a 4 µL aliquot + 4 µL dsH<sub>2</sub>O and a 8 µL aliquot and mix them with  10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.</li>
@@ -504,7 +525,9 @@
 </ul>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/proteins/streptag_protein_purification/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/methods/proteins/streptag_protein_purification/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -517,10 +540,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -587,7 +613,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

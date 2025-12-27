@@ -16,7 +16,7 @@ updated = ''
 finished = false
 tested = false
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 
 <!--_____________________________delete_____________________________-->
 

@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener('DOMContentLoaded', () => {
   // Shortcode nicht auf der Seite → nichts tun
   if (!window.labelPrintData) return;

@@ -51,13 +51,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -69,7 +82,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -103,12 +118,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -134,12 +149,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Bacterial Plasmid Preparation Culture</h1>
 
@@ -175,6 +192,8 @@
             
     
         <!-- DONE: delete when finished = true + tested = true -->
+ 
+
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
@@ -305,6 +324,8 @@
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="procedure">Procedure</h2>
 <h3 id="preparation">Preparation</h3>
@@ -338,9 +359,9 @@
 </div>
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <!-- markdownlint-enable MD033 -->
 <ol start="8">
@@ -356,7 +377,9 @@
 </ul>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/bacteria/plasmid_prep_culture/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/methods/bacteria/plasmid_prep_culture/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -369,10 +392,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -1075,7 +1101,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

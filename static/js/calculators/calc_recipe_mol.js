@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".calc-recipe-mol-controls").forEach(container => {

@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 (function requireAccess() {
   const path = new URL(window.location.href).pathname;
 
@@ -7,7 +10,7 @@
   }
 
   // === Login-Seite freigeben ===
-  if (path.startsWith("/BiochemProtocols/access")) return;
+  if (path.startsWith("/BiochemProtocols/user/access")) return;
 
   // === Statische Assets freigeben ===
   const publicPrefixes = [
@@ -39,5 +42,5 @@
   } catch (_) {}
 
   // === Redirect auf Login ===
-  window.location.href = "/BiochemProtocols/access/";
+  window.location.href = "/BiochemProtocols/user/access/";
 })();

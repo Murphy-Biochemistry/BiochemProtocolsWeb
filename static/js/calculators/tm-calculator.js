@@ -1,3 +1,7 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+// FIX
+
 // --- NEB/ThermoFisher 2025 Tm Calculator ---
 // SantaLucia 1998 nearest-neighbor + Owczarzy Mg-aware salt correction
 

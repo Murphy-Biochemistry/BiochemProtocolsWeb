@@ -77,7 +77,7 @@ tested = true
 
 ### First Binding the Protein and Washing
 
-1. {{< checkbox >}} Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely. <!-- TODO: calculate volume according to binding capacity and expected protein yield-->
+1. {{< checkbox >}} Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely. <!-- CONTENT_TODO: calculate volume according to binding capacity and expected protein yield-->
 
 {{< infobox type="info" title="Binding" >}}
 Binding usually takes 20-30 minutes per 2 mL, but can take up to 1h in some cases.

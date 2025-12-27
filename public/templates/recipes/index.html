@@ -46,13 +46,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -64,7 +77,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -98,12 +113,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -129,12 +144,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Recipes Template</h1>
 
@@ -161,7 +178,7 @@
 
             
     
-        <!-- NEW: finished = true, change to DONE; tested = true, delete -->
+        <!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 <!--_____________________________delete_____________________________-->
 <p>Bookmark: command + option + K
 Comment: command + shift + 7 <!-- --></p>
@@ -170,7 +187,7 @@ referral: <a href="#name-anchor"></a>
 landing: <div id="name-anchor" style="position: relative; top: -80px; visibility: hidden;"></div></p>
 <!-- Material Table:
 
-for switching alternatives <!-- TODO: combine switches to one universal switch (see alt methods) -- >
+for switching alternatives <!-- CONTENT_TODO: combine switches to one universal switch (see alt methods) -- >
 into the <span>
 
 add an id="alt_pagename_m_c_reagent1" for the default
@@ -204,7 +221,7 @@ add class="calc_recipe_x"
 
 for masses add data-default-mass="e"
 for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
+for molarities add data-default-mol="e" //CONTENT_TODO: should be calculated automatically from molecular mass...
 
 e = value
 
@@ -250,18 +267,26 @@ e = value
 
 -->
 <!--_____________________________delete_____________________________-->
+
+
 <div class="infobox info">
   <strong></strong>
   <div>⚠️ Info</div>
 </div>
+
+
 <div class="infobox warning">
   <strong></strong>
   <div>❗️ Attention</div>
 </div>
+
+
 <div class="infobox danger">
   <strong></strong>
   <div>‼️ Danger</div>
 </div>
+ 
+
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <!-- markdownlint-disable MD033 -->
@@ -303,13 +328,15 @@ e = value
           <td style="text-align: left"><span id="alt_pagename_m_m_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_m_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_m_mw_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_mw_reagent2" style="display:none">XXXXXXXXXX</span></td>
           <td style="text-align: left"><span id="alt_pagename_m_specs_reagent1">XXXXXXXXXX</span>     <span id="alt_pagename_m_specs_reagent2" style="display:none">XXXXXXXXXX</span></td>
-          <td style="text-align: left"><span id="alt_pagename_m_l_reagent1"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pagename_m_l_reagent2" style="display:none"><span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span></td>
+          <td style="text-align: left"><span id="alt_pagename_m_l_reagent1"> <span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pagename_m_l_reagent2" style="display:none"> <span class="chemical_location" data-chemical="chemicalname_spec"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span></td>
       </tr>
   </tbody>
 </table>
 <!-- markdownlint-enable MD033 -->
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
 <!-- { {< calculators/calc_recipe_x >}} -->
@@ -362,6 +389,8 @@ e = value
 <!-- markdownlint-enable MD033 -->
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="use-cases">Use Cases</h2>
 <table>
@@ -384,6 +413,8 @@ e = value
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="storage">Storage</h2>
 <table>
@@ -414,7 +445,9 @@ e = value
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/templates/recipes/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/templates/recipes/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -427,10 +460,13 @@ e = value
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -497,7 +533,9 @@ e = value
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

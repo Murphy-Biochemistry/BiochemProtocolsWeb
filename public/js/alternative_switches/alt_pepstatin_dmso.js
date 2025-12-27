@@ -1,3 +1,5 @@
+// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with alt_methods
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("pepstatin_dmso_alternative_switch"); // enter reagent 1

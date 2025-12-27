@@ -16,7 +16,7 @@ updated = '16.12.2025'
 finished = true
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< tab >}}
 
@@ -68,7 +68,7 @@ tested = false
 
 {{< /tab >}}
 
-<!-- TODO: use cases -->
+<!-- CONTENT_TODO: use cases -->
 
 {{< tab >}}
 

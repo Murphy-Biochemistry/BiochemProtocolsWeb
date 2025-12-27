@@ -1,213 +1,243 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ .Title }}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{{ .Title }}</title>
 
-  <style>
-    :root {
-      --primary-blue: #4a90e2;
-      --blue1: rgba(175, 205, 240, 0.70);
-      --blue2: rgba(145, 185, 235, 0.75);
-      --blue3: rgba(110, 165, 230, 0.80);
-      --blue4: rgba(74, 144, 226, 0.85);
+<style>
+:root {
+  --bg1: #1f2937;
+  --bg2: #111827;
+  --blue: #3b82f6;
+  --blue-soft: #81c2ff;
+  --text: #d2e9ff;
+  --text-dim: #9fb4d9;
+  --error: #f87171;
+  --success: #4ade80;
+  --radius: 12px;
+}
 
-      --card1: rgba(160, 190, 235, 0.65);
-      --card2: rgba(180, 205, 240, 0.70);
-      --card3: rgba(200, 220, 245, 0.75);
+/* ===== Page background ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: var(--text);
+}
 
-      --radius: 14px;
-      --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-      --text: #1e293b;
-      --text-light: #475569;
-      --error: #b00020;
-      --success: #0f8a1f;
-    }
+/* ===== Card (popup look) ===== */
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.4rem;
+  background: linear-gradient(90deg, #1f2937aa, #111827aa);
+  backdrop-filter: blur(6px);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.12);
+  animation: pop 0.35s ease-out;
+}
 
-    /* ======================
-       Hintergrund
-       ====================== */
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
 
-      background: linear-gradient(
-        315deg,
-        var(--blue4) 0%,   
-        var(--blue3) 40%,
-        var(--blue2) 70%,
-        var(--blue1) 100%    
-      );
+h1 {
+  margin: 0 0 1.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
 
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--text);
-      position: relative;
-    }
+/* ===== Input ===== */
+.input_box {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
 
-    /* ======================
-       Logo oben links
-       ====================== */
-    .login-logo {
-      position: absolute;
-      top: 28px;
-      left: 32px;
-      width: 140px;
-      height: auto;
-      opacity: 0.92;
-      filter: drop-shadow(0 3px 6px rgba(0,0,0,0.28));
-      user-select: none;
-      pointer-events: none;
-    }
+.input_box input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  border-radius: var(--radius);
+  background: transparent;
+  border: 1px solid var(--text);
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+}
 
-    /* ======================
-       Karte
-       ====================== */
-    .card {
-      width: 100%;
-      max-width: 420px;
-      padding: 2.4rem 2.6rem;
+.input_box input:focus {
+  border-color: var(--blue);
+}
 
-      background: linear-gradient(
-        135deg,
-        var(--card1) 0%,
-        var(--card2) 50%,
-        var(--card3) 100%
-      );
+.input_box label {
+  position: absolute;
+  left: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  pointer-events: none;
+  transition: 0.2s ease;
+}
 
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(255, 255, 255, 0.35);
+.input_box input:focus + label,
+.input_box input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 14px;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  color: var(--blue);
+}
 
-      animation: fadeIn 0.4s ease-out;
-      backdrop-filter: blur(4px);
-    }
+.input_box .icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+/* ===== Button ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
 
-    h1 {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 1.2rem;
-      font-size: 1.7rem;
-      font-weight: 600;
-      color: var(--primary-blue);
-    }
+button:hover {
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.5);
+}
 
-    /* ======================
-       Input & Button
-       ====================== */
-    input {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      font-size: 1rem;
-      border: 1px solid #c7d3e0;
-      border-radius: var(--radius);
-      margin-top: 0.5rem;
-      box-sizing: border-box;
-      background: #ffffffd9;
-      backdrop-filter: blur(3px);
-      transition: border 0.2s, box-shadow 0.2s;
-    }
+button:active {
+  transform: scale(0.98);
+}
 
-    input:focus {
-      border-color: var(--primary-blue);
-      box-shadow: 0 0 0 3px rgba(45, 114, 183, 0.25);
-      outline: none;
-    }
+/* ===== Messages ===== */
+.msg {
+  margin-top: 1rem;
+  text-align: center;
+  min-height: 1.2rem;
+  font-size: 0.9rem;
+}
 
-    button {
-      margin-top: 1rem;
-      width: 100%;
-      padding: 0.85rem;
-      font-size: 1.05rem;
-      border: none;
-      border-radius: var(--radius);
-      background: var(--primary-blue);
-      color: white;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.1s;
-    }
-    button:hover { background: #1e5c92; }
-    button:active { transform: scale(0.98); }
+.hint {
+  margin-top: 1.4rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+/* ===== Branding ===== */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  user-select: none;
+}
 
-    .msg {
-      margin-top: 0.8rem;
-      text-align: center;
-      min-height: 1.3rem;
-      font-size: 0.95rem;
-    }
+.brand img {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.35));
+}
 
-    .hint {
-      margin-top: 1.3rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: var(--text-light);
-    }
-  </style>
+.brand-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.brand::after {
+  content: "";
+  width: 60%;
+  height: 1px;
+  margin-top: 1rem;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Logo oben links -->
-  <img class="login-logo" src="{{ "images/3biochem_white.png" | relURL }}" alt="Logo">
+<div class="card">
+  <div class="brand">
+    <h1 class="brand-title">BiochemProtocols Web</h1>
+  </div>
+  <h1>Restricted Access</h1>
 
-  <!-- LOGIN CARD -->
-  <div class="card">
-    <h1>Enter Your Access Code to Precede to Content</h1>
-
-    <input id="codeInput" type="text" placeholder="Access Code" autocomplete="off" />
-    <button id="checkBtn">Unlock</button>
-
-    <p id="message" class="msg" role="status" aria-live="polite"></p>
-    <p class="hint">Access permission is saved for 30 days in your browsers cookies.</p>
+  <div class="input_box">
+    <span class="icon">🔑</span>
+    <input id="codeInput" type="text" placeholder=" " autocomplete="off">
+    <label>Access Code</label>
   </div>
 
-  <script>
-    const validCodes = {{ .Site.Data.access.passwords | jsonify }};
+  <button id="checkBtn">Unlock</button>
 
-    function setCookie(name, value, days) {
-      const expires = new Date();
-      expires.setDate(expires.getDate() + days);
-      document.cookie =
-        `${name}=${encodeURIComponent(value)}; path=/; expires=${expires.toUTCString()}; SameSite=Lax`;
-    }
+  <p id="message" class="msg"></p>
+  <p class="hint">Access is stored for 30 days in your browser.</p>
+</div>
 
-    function tryCode() {
-      const code = document.getElementById("codeInput").value.trim();
-      const msgEl = document.getElementById("message");
-      msgEl.textContent = "";
-      msgEl.style.color = "var(--error)";
+<script>
+const validCodes = {{ .Site.Data.access.passwords | jsonify }};
 
-      if (!code) {
-        msgEl.textContent = "Please enter a code.";
-        return;
-      }
+function setCookie(name, value, days) {
+  const expires = new Date();
+  expires.setDate(expires.getDate() + days);
+  document.cookie =
+    `${name}=${encodeURIComponent(value)}; path=/; expires=${expires.toUTCString()}; SameSite=Lax`;
+}
 
-      if (validCodes.includes(code)) {
-        setCookie("access_ok", "true", 30);
-        msgEl.style.color = "var(--success)";
-        msgEl.textContent = "Access granted... You will be redirected shortly...";
+function tryCode() {
+  const code = document.getElementById("codeInput").value.trim();
+  const msg = document.getElementById("message");
+  msg.textContent = "";
+  msg.style.color = "var(--error)";
 
-        const target = localStorage.getItem("requested_path") || "/";
-        localStorage.removeItem("requested_path");
-        setTimeout(() => { window.location.href = target; }, 2000);
-      } else {
-        msgEl.textContent = "Invalid code.";
-      }
-    }
+  if (!code) {
+    msg.textContent = "Please enter an access code.";
+    return;
+  }
 
-    document.getElementById("checkBtn").addEventListener("click", tryCode);
-    document.getElementById("codeInput").addEventListener("keydown", e => {
-      if (e.key === "Enter") tryCode();
-    });
-  </script>
+  if (validCodes.includes(code)) {
+    setCookie("access_ok", "true", 30);
+    msg.style.color = "var(--success)";
+    msg.textContent = "Access granted. Redirecting…";
+
+    const target = localStorage.getItem("requested_path") || "/";
+    localStorage.removeItem("requested_path");
+    setTimeout(() => window.location.href = target, 1200);
+  } else {
+    msg.textContent = "Invalid access code.";
+  }
+}
+
+document.getElementById("checkBtn").addEventListener("click", tryCode);
+document.getElementById("codeInput").addEventListener("keydown", e => {
+  if (e.key === "Enter") tryCode();
+});
+</script>
+
 </body>
 </html>

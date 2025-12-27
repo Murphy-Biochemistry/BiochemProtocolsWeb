@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ================================

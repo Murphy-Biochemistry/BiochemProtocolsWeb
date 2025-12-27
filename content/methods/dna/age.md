@@ -16,7 +16,7 @@ updated = '09.12.2025'
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="info" title="" >}}
 ⚠️ Each Sample must have a concentration of at least 20 ng/µL, as 20 ng is the least amount that can be detected using EtBr.

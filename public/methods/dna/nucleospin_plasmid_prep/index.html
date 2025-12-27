@@ -46,13 +46,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -64,7 +77,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -98,12 +113,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -129,12 +144,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Nucleospin® Plasmid Preperation</h1>
 
@@ -169,7 +186,9 @@
 
             
     
-        <div class="tab">
+         
+
+<div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
   <thead>
@@ -201,7 +220,7 @@
       </tr>
   </tbody>
 </table>
-<!-- TODO: alternative switch: centrifuge -->
+<!-- CONTENT_TODO: alternative switch: centrifuge -->
 <table>
   <thead>
       <tr>
@@ -276,6 +295,8 @@
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="procedure">Procedure</h2>
 <h3 id="preparations">Preparations</h3>
@@ -288,7 +309,7 @@
 <ol>
 <li><input type="checkbox"> Pellet bacteria @ 5,000 g for 10 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <div class="infobox info">
   <strong>Microfuge</strong>
   <div><p>⚠️ If no device for centrifuging 15 mL tubes at high enaugh force is available, a microfuge with multiple cycles can be used:</p>
@@ -296,31 +317,31 @@
 <li><input type="checkbox"> Transfer 1000 µL of the culture into a sterile 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="3">
 <li><input type="checkbox"> Discard supernatant.</li>
 <li><input type="checkbox"> Transfer 1000 µL of the culture into a the same 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="6">
 <li><input type="checkbox"> Discard supernatant.</li>
 <li><input type="checkbox"> Transfer 1000 µL of the culture into a the same 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="9">
 <li><input type="checkbox"> Discard supernatant.</li>
 <li><input type="checkbox"> Transfer 1000 µL of the culture into a the same 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="12">
 <li><input type="checkbox"> Discard supernatant.</li>
 <li><input type="checkbox"> Transfer 1000 µL of the culture into a the same 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Pellet bacteria @ 11,000 g for 30 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div></div>
+ <div class="countdown-wrapper" data-time="0:00:30" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:00:30</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div></div>
 </div>
 <ol start="15">
 <li><input type="checkbox"> Discard supernatant.</li>
@@ -334,13 +355,13 @@
 <li><input type="checkbox"> Mix by inverting the tube 10 times.</li>
 <li><input type="checkbox"> Incubate @RT for 5 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="6">
 <li><input type="checkbox"> Add 300 µL Buffer A3 (neutralization buffer).</li>
 <li><input type="checkbox"> Mix by inverting the tube 10 times.</li>
 <li><input type="checkbox"> Centrifuge the suspension @ 11,000 g for 10 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <h3 id="loading-the-column">Loading the Column</h3>
 <ol>
 <li><input type="checkbox"> Place a NucleoSpin Column onto a 2 mL collection tube per sample.</li>
@@ -348,29 +369,29 @@
 <li><input type="checkbox"> Add the supernatant (up to 700 µL) onto the column membrane.</li>
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="5">
 <li><input type="checkbox"> Discard the flowthrough.</li>
 <li><input type="checkbox"> Add 500 µL of Buffer AW to the column membrane.</li>
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="8">
 <li><input type="checkbox"> Discard the flowthrough.</li>
 <li><input type="checkbox"> Add 600 µL of Buffer A4 (wash buffer) to the column membrane.</li>
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="11">
 <li><input type="checkbox"> Discard the flowthrough.</li>
 <li><input type="checkbox"> Dry the membrane and remove access ethanol by centrifuging @ 11,000 g for 2 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:02:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:02:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:02:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:02:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="13">
 <li><input type="checkbox"> Discard the collection tube and place the collum onto a fresh 1.5 mL reaction tube.</li>
 <li><input type="checkbox"> Optionally, incubate the column @ 70 °C for 2 minutes to remove all residual ethanole.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:02:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:02:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:02:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:02:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <h3 id="eluting-the-dna">Eluting the DNA</h3>
 <ol>
 <li><input type="checkbox"> Add 25µL of pre-heated buffer AE (elution buffer) to the column membrane.</li>
@@ -380,15 +401,15 @@
   <strong></strong>
   <div>⚠️ Optionally, incubate at 70 °C for 5 minutes instead. Note that this may reduce the final volume but can increase the concentration and overall DNA yield.</div>
 </div>
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="3">
 <li><input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="4">
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="5">
 <li><input type="checkbox"> Add 25µL of pre-heated buffer AE (elution buffer) to the column membrane.</li>
 <li><input type="checkbox"> Close the lid and incubate @ RT for 5 minutes.</li>
@@ -397,15 +418,15 @@
   <strong></strong>
   <div>⚠️ Optionally, incubate at 70 °C for 5 minutes instead. Note that this may reduce the final volume but can increase the concentration and overall DNA yield.</div>
 </div>
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="7">
 <li><input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="8">
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <div class="infobox info">
   <strong></strong>
   <div><p>⚠️ You can do an additional third elution to obtain more overall DNA mass. If concentration is crutial, use another reaction tube for the additional elution.</p>
@@ -415,22 +436,24 @@
 <li><input type="checkbox"> Close the lid and incubate @ 70 °C for 5 minutes.</li>
 <li><input type="checkbox"> Optionally, Centrifuge @ 50 g (or the lowest force possible) for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="5">
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div></div>
+ <div class="countdown-wrapper" data-time="0:01:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:01:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div></div>
 </div>
 <ol start="9">
 <li><input type="checkbox"> Discard the collumn and store the eluate @ -20 °C for long lime storage.</li>
 </ol>
 <h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol</h3>
 <ul>
-<li><a href="">Nano Drop DNA concentration determination</a>. <!--TODO: add link--></li>
+<li><a href="">Nano Drop DNA concentration determination</a>. <!--CONTENT_TODO: add link--></li>
 </ul>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -443,10 +466,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -513,7 +539,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

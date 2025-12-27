@@ -16,7 +16,7 @@ updated = ''
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 
 imaging in general, but add that lanes with samples for gel extraction need to be cut off prior to imaging.

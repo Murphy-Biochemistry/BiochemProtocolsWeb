@@ -16,7 +16,7 @@ updated = ''
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="info" title="" >}}
 ⚠️ Typically, primers are supplied lyophlized with an indicated volume for initial resuspension to a concentration of 100 pmol/µL.

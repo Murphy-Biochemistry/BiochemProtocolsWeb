@@ -46,13 +46,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -64,7 +77,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -98,12 +113,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -129,12 +144,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Pepstatin A Stock 1 mM</h1>
 
@@ -169,10 +186,14 @@
 
             
     
-        <div class="infobox info">
+        
+
+<div class="infobox info">
   <strong></strong>
   <div>⚠️ Pepstatin A dissolves more readily in DMSO. When using MeOH, adding 10–50 % (v/v) (1.7-8.7 M) acetic acid may be required to achieve complete dissolution.</div>
 </div>
+ 
+
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <!-- markdownlint-disable MD033 -->
@@ -193,16 +214,18 @@
           <td style="text-align: left"><span class="chemical_location" data-chemical="pepstatin_solid"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></td>
       </tr>
       <tr>
-          <td style="text-align: left"><span id="alt_pepstatin_m_m_dmso">(methanesulfinyl)methane (= dimethylsulfoxid) <em>DMSO</em> <a href="https://www.carlroth.com/medias/SDS-7029-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNjE5ODN8YXBwbGljYXRpb24vcGRmfGFHSmxMMmc1Wmk4NU1qQTJOelkyTURRek1UWTJMMU5FUWw4M01ESTVYMFJGWDBWT0xuQmtaZ3xmZTllZjBmZjI2OGQ4YjNhZDdlZjhjNjI2MTgwNWY2NGUwMGJlZTNhYWE3ODY2NTllNWMzY2VlYTJiN2JhYTEz"><sup>SDS</sup></a></span>     <span id="alt_pepstatin_m_m_meoh" style="display:none">Methanol <em>MeOH</em></span> <button button class="alternative" id="pepstatin_dmso_alternative_switch">Use MeOH</button><script src="/BiochemProtocols/js/alternative_switches/alt_pepstatin_dmso.js"></script> <!-- TODO: add SDS link--></td>
+          <td style="text-align: left"><span id="alt_pepstatin_m_m_dmso">(methanesulfinyl)methane (= dimethylsulfoxid) <em>DMSO</em> <a href="https://www.carlroth.com/medias/SDS-7029-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNjE5ODN8YXBwbGljYXRpb24vcGRmfGFHSmxMMmc1Wmk4NU1qQTJOelkyTURRek1UWTJMMU5FUWw4M01ESTVYMFJGWDBWT0xuQmtaZ3xmZTllZjBmZjI2OGQ4YjNhZDdlZjhjNjI2MTgwNWY2NGUwMGJlZTNhYWE3ODY2NTllNWMzY2VlYTJiN2JhYTEz"><sup>SDS</sup></a></span>     <span id="alt_pepstatin_m_m_meoh" style="display:none">Methanol <em>MeOH</em></span> <button button class="alternative" id="pepstatin_dmso_alternative_switch">Use MeOH</button><script src="/BiochemProtocols/js/alternative_switches/alt_pepstatin_dmso.js"></script> <!-- CONTENT_TODO: add SDS link--></td>
           <td style="text-align: left"><span id="alt_pepstatin_m_mw_dmso">78.13 g/mol</span>     <span id="alt_pepstatin_m_mw_meoh" style="display:none">32.04 g/mol</span></td>
           <td style="text-align: left"><span id="alt_pepstatin_m_specs_dmso">organic solvent</span>     <span id="alt_pepstatin_m_specs_meoh" style="display:none">alternative organic solvent</span></td>
-          <td style="text-align: left"><span id="alt_pepstatin_m_l_dmso"><span class="chemical_location" data-chemical="dmso"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pepstatin_m_l_meoh" style="display:none"><span class="chemical_location" data-chemical="meoh_100%"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span></td>
+          <td style="text-align: left"><span id="alt_pepstatin_m_l_dmso"> <span class="chemical_location" data-chemical="dmso"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span>     <span id="alt_pepstatin_m_l_meoh" style="display:none"> <span class="chemical_location" data-chemical="meoh_100%"><input type="text" class="location-input" placeholder="Enter location..."/><button class="save-btn" aria-label="Save location" disabled>💾</button></span><script src="/BiochemProtocols/js/chemical_location.js"></script></span></td>
       </tr>
   </tbody>
 </table>
 <!-- markdownlint-enable MD033 -->
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="recipe">Recipe</h2>
 <!-- { {< calculators/calc_recipe_x >}} -->
@@ -241,6 +264,8 @@
 <!-- markdownlint-enable MD033 -->
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="use-cases">Use Cases</h2>
 <table>
@@ -259,6 +284,8 @@
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="storage">Storage</h2>
 <table>
@@ -289,7 +316,9 @@
 </table>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/recipes/bacteria/pepstatin/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/recipes/bacteria/pepstatin/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -302,10 +331,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -372,7 +404,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

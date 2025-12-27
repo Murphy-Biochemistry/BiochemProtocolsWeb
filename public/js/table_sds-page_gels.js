@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
   const table = document.getElementById("gelTable");
   if (!table) return; // shortcode not on this page

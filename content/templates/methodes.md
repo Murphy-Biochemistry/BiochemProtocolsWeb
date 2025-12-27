@@ -12,7 +12,7 @@ updated = '18.12.2025'
 finished = true
 tested = true
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 
 <!--–____________________________info_____________________________-->
 

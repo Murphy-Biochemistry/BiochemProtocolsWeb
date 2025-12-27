@@ -50,13 +50,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -68,7 +81,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -102,12 +117,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -133,12 +148,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis (SDS-PAGE)</h1>
 
@@ -175,13 +192,19 @@
 
             
     
-        
+         
+
+
+
+
 
 
 <div class="infobox danger">
   <strong>Acrylamide</strong>
   <div>‼️ Acrylamide is toxic and must be handled exclusively in a chemical fume hood. Although gas-stabilized material reduces user exposure, it may still release hazardous gases. Therefore, all handling, preparation, and use must be performed under a chemical fume hood with appropriate personal protective equipment.</div>
 </div>
+ 
+
 <div class="tab">
   <h2 id="materials">Materials</h2>
 <table>
@@ -344,9 +367,11 @@
       </tr>
   </tbody>
 </table>
-<!-- TODO: alt button protein sample (with BSA) <-> cell lysate (no BSA) -->
+<!-- CONTENT_TODO: alt button protein sample (with BSA) <-> cell lysate (no BSA) -->
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="procedure">Procedure</h2>
 <h3 id="build-the-chamber">Build the Chamber</h3>
@@ -386,8 +411,8 @@
 </ol>
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:45:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:45:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:45:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:45:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <!-- markdownlint-enable MD033 -->
 <h3 id="collecting-gel">Collecting Gel</h3>
@@ -406,8 +431,8 @@
 </ol>
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="0:45:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:45:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:45:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:45:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <!-- markdownlint-enable MD033 -->
 <div class="infobox info">
@@ -463,7 +488,7 @@
       </tr>
   </tbody>
 </table>
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 <ol start="2">
 <li><input type="checkbox"> Prepare the BSA samples.</li>
 </ol>
@@ -535,7 +560,7 @@
       </tr>
   </tbody>
 </table>
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 <ol start="2">
 <li><input type="checkbox"> Prepare the samples.</li>
 </ol>
@@ -575,7 +600,7 @@
       </tr>
   </tbody>
 </table>
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 <table>
   <thead>
       <tr>
@@ -612,15 +637,15 @@
       </tr>
   </tbody>
 </table>
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 <ol start="2">
 <li><input type="checkbox"> Heat the samples @ 95°C for 5 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="2">
 <li><input type="checkbox"> Centrifuge @ 11,000 g for 60 seconds.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:60:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:60:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:60:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:60:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <h3 id="running-the-gel">Running the Gel</h3>
 <ol>
 <li><input type="checkbox"> Carefully remove the well comb.</li>
@@ -635,20 +660,20 @@
 <li><input type="checkbox"> Add approximately 2500 mL of the running buffer into the electrophoresis tank.</li>
 <li><input type="checkbox"> Position the electrophoresis chamber in the electrophoresis tank.</li>
 </ol>
-<!-- TODO: Polarity / Electrode Orientation Infobox-->
+<!-- CONTENT_TODO: Polarity / Electrode Orientation Infobox-->
 <ol start="11">
 <li><input type="checkbox"> Fill the electrophoresis chamber with approximately 500 mL of cathode buffer until the electrodes are submerged but pay attention to the maximum filling marks.</li>
 <li><input type="checkbox"> Run the gel @ 120V for approximately 40 minutes or until the samples are in the collecting gel.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:40:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:40:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:40:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:40:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="13">
 <li><input type="checkbox"> Increase the power to 175V for approximately 1h or until the bromphenole blue reaches the end of the gel.</li>
 </ol>
 <!-- markdownlint-disable MD033 -->
 <div style="display:flex; gap:20px; align-items:center;">
-<div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="1:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
-<div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 </div>
 <!-- markdownlint-enable MD033 -->
 <h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
@@ -661,7 +686,9 @@
 <!-- markdownlint-disable MD033 -->
 <div id="table_sds-page_gels-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
 <!-- markdownlint-enable MD033 -->
-<p><div class="gel-table-wrapper">
+<p>
+
+<div class="gel-table-wrapper">
   <table id="gelTable">
     <thead>
       <tr>
@@ -1383,8 +1410,10 @@
     <button id="pdfBtn">Download PDF</button>
   </div>
 </div>
- <!-- TODO: enhance table styling, enhance pdf styling, and move to separate css--></p>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/hoeffer/">
+ <!-- CONTENT_TODO: enhance table styling, enhance pdf styling, and move to separate css--></p>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/hoeffer/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -1397,10 +1426,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -1467,7 +1499,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

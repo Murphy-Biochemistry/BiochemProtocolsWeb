@@ -61,8 +61,8 @@ tested = false
 
 | Use Case | Specifications |
 | :-- | :-- |
-| [SDS-PAGE]({{<relref "sds-page.md" >}}) | for the [separating gel]() tris-HCL 1 M with pH of 8.8 | <!-- TODO: add link-->
-| [SDS-PAGE]({{<relref "sds-page.md" >}}) | for the [collecting gel]() tris-HCL 0.375 M with pH of 6.8 | <!-- TODO: add link-->
+| [SDS-PAGE]({{<relref "sds-page.md" >}}) | for the [separating gel]() tris-HCL 1 M with pH of 8.8 | <!-- CONTENT_TODO: add link-->
+| [SDS-PAGE]({{<relref "sds-page.md" >}}) | for the [collecting gel]() tris-HCL 0.375 M with pH of 6.8 | <!-- CONTENT_TODO: add link-->
 | | |
 
 {{< /tab >}}

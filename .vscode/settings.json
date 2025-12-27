@@ -1,10 +1,29 @@
 {
   "todo-tree.general.tags": [
-    "NEW",
-    "TODO",
-    "FIX",
-    "BUG",
-    "DONE"
+    "CONTENT_NEW", // content created new and not finished
+    "CONTENT_TODO", // Todo in content
+    "CONTENT_DONE", // content finished but not tested
+
+    "SHORTCODE_TODO", // todo in shortcodes
+    "SHORTCODE_STREAMLINE", // understand and streamline the script
+    "SHORTCODE_CLASSES", // update all classes and id to unique values, where necessary
+    "SHORTCODE_INPROGRESS", // streamlining started
+    "SHORTCODE_DONE", // skript is rewritten and finished
+
+    "JS_TODO", // todo in javascript
+    "JS_COMMENTS", // add comments to all lines of the script
+    "JS_STREAMLINE", // understand and streamline the script
+    "JS_INPROGRESS", // streamlining started
+    "JS_DONE", // skript is understood, rewritten and finished
+
+    "CSS_TODO", // todo in css
+    "CSS_SEPARATE", // split styles into groups organized in individual css-files
+    "CSS_STREAMLINE", // understand and streamline the script
+    "CSS_INPROGRESS", // streamlining started
+    "CSS_DONE", // skript is understood, rewritten and finished
+    
+    "FIX", // feature to be fixed
+    "BUG", // bug to be fixed
   ],
   "cSpell.words": [
     "acrylamid",

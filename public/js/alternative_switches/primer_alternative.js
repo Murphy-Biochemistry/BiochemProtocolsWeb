@@ -1,3 +1,5 @@
+// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with ald_methods
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const btn = document.getElementById("primer_alternative_switch");

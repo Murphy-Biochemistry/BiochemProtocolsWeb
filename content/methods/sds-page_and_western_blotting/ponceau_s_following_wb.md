@@ -112,7 +112,7 @@ tested = false
 
 ### Proceed with Suitable Protocol
 
-- [Primary- and Secondary Antibody incubation Following Western Blotting](Link) <!-- TODO: insert link -->
+- [Primary- and Secondary Antibody incubation Following Western Blotting](Link) <!-- CONTENT_TODO: insert link -->
 - [Single Antibody incubation Following Western Blotting]({{< relref "single_antibody_following_wb.md" >}})
 
 {{< /tab >}}

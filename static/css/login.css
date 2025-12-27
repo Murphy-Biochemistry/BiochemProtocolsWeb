@@ -1,3 +1,13 @@
+/* =================================== */
+/* =================================== */
+/* CSS_DONE */
+/* =================================== */
+/* =================================== */
+
+
+/* =================================== */
+/* ========== login overlay ========== */
+/* =================================== */
 .login_overlay {
     position: fixed;
     inset: 0;
@@ -13,7 +23,9 @@
     pointer-events: all;
 }
 
-
+/* =================================== */
+/* ========== login wrapper ========== */
+/* =================================== */
 .wrapper_login {
     position: fixed;
     inset: 0;
@@ -44,8 +56,9 @@ body.darkmode .wrapper_login {
     transform: scale(1);
 }
 
-
-
+/* ================================= */
+/* ========== login close ========== */
+/* ================================= */
 .wrapper_login .icon_close {
     position: absolute;
     top: 0;
@@ -68,8 +81,9 @@ body.darkmode .wrapper_login {
     color: #d2e9ff;
 }
 
-
-
+/* ================================= */
+/* ========== login forms ========== */
+/* ================================= */
 .wrapper_login .login_form {
     position: absolute;
     box-sizing: border-box;
@@ -95,8 +109,11 @@ body.darkmode .wrapper_login {
     transition: transform 0.5s ease;
 }
 
+/* ======================================== */
+/* ========== login form content ========== */
+/* ======================================== */
 
-
+/* ========== header ========== */
 .login_form h2 {
     font-size: 2em;
     color: #d2e9ff;
@@ -107,18 +124,19 @@ body.darkmode .wrapper_login {
     color: #d2e9ff;
     text-align: center;
 }
+/* ========== names ========== */
 .registration_form_names {
     gap: 14px;
     display: flex; 
     flex-direction: row; 
     justify-content: space-between; 
 }
+/* ========== inputs ========== */
 .input_box {
     position: relative;
     width: 100%;
     margin-bottom: 22px;
 }
-
 .input_box input {
     width: 100%;
     padding: 12px 14px 12px 40px;
@@ -137,16 +155,11 @@ body.darkmode .wrapper_login {
     top: 50%;
     left: 40px;
     transform: translateY(-50%);
-
     color: #9fb4d9;
     font-size: 0.85rem;
     pointer-events: none;
-
     transition: 0.2s ease;
 }
-
-
-
 .input_box input:focus + label,
 .input_box input:valid + label {
     top: -8px;
@@ -163,9 +176,7 @@ body.darkmode .wrapper_login {
     color: #d2e9ff;
     font-size: 1.1rem;
 }
-
-
-
+/* ========== remember/forget ========== */
 .remember_forgot {
     display: flex;
     justify-content: space-between;
@@ -186,9 +197,7 @@ body.darkmode .wrapper_login {
 .remember_forgot a:hover {
     color: #3b82f6;
 }
-
-
-
+/* ========== login btn ========== */
 .btn_login_form {
     background: transparent;
     border: 1px solid #d2e9ff;
@@ -210,9 +219,7 @@ body.darkmode .wrapper_login {
     transform: translateY(0);
     box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
 }
-
-
-
+/* ========== login/register ========== */
 .login_register {
     margin-top: 25px;
     text-align: center;

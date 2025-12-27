@@ -1,3 +1,8 @@
 # data/access.toml
 
-passwords = [ "curriculum", "AGJ", "düolr", "stlsfo"]
+passwords = [ 
+    "curriculum", 
+    "AGJ", 
+    "düolr", 
+    "stlsfo"
+]

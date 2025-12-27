@@ -27,7 +27,7 @@ tested = true
 | centrifuge | | for 15 mL tubes @ 5,000 g | |
 | centrifuge | | microfuge for 1.5 mL tubes @ 11,000 g | |
 
-<!-- TODO: alternative switch: centrifuge -->
+<!-- CONTENT_TODO: alternative switch: centrifuge -->
 
 | Commercial Kits⠀⠀⠀⠀⠀⠀ | Amount | Specifications | Location |
 | :-- | :-- | :-- | :-- |
@@ -179,7 +179,7 @@ tested = true
 
 ### Procede with Suitable Protocol
 
-- [Nano Drop DNA concentration determination](). <!--TODO: add link-->
+- [Nano Drop DNA concentration determination](). <!--CONTENT_TODO: add link-->
 {{< /tab >}}
 
 {{< comment_box >}}

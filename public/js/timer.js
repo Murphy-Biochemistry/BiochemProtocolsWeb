@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 const audioCache = {};
 
 document.addEventListener("DOMContentLoaded", () => {

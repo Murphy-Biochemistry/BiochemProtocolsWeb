@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 // --- Sequence time calculator ---
 // 30 seconds per 1000 characters
 

@@ -55,7 +55,18 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> <!-- generate QR -->
 <script src="{{ "js/save_journal_label.js" | relURL }}"></script>
 
-<script src="{{ "js/access.js" | relURL }}"></script>
+<script src="{{ "js/user/access.js" | relURL }}"></script>
+
+<!-- Supabase initialization -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+<!-- Supabase initialization -->
+
 
 {{ if .Params.math }}
   {{ partial "math.html" . }}

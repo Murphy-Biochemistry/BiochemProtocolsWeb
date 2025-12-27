@@ -53,7 +53,7 @@ tested = true
 <!-- markdownlint-disable MD033 -->
 | | Material/Step | Volume/Mass | molar/%/comment |
 | :-- | :-- | :-- | :-- |
-| {{< checkbox >}} | Leupeptin | 4.76 mg <!-- TODO: after adding mol calc, standards are 0.5-5 mg/mL --> | 10mM <!-- TODO: after adding mol calc, standards are 1-10 mM --> |
+| {{< checkbox >}} | Leupeptin | 4.76 mg <!-- CONTENT_TODO: after adding mol calc, standards are 0.5-5 mg/mL --> | 10mM <!-- CONTENT_TODO: after adding mol calc, standards are 1-10 mM --> |
 | {{< checkbox >}} | <span id="alt_leupeptin_r_ms_h2o">dsH<sub>2</sub>O</span>     <span id="alt_leupeptin_r_ms_etoh" style="display:none">EtOH</span> | 1 mL | |
 | {{< checkbox >}} | filter through 0.22 µm syringe filter | | |
 | {{< checkbox >}} | store in 50 µL aliquots @ -20 °C | | |

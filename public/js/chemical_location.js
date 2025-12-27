@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 (function () {
   const container = document.currentScript.previousElementSibling;
   const chemical = container.dataset.chemical;

@@ -46,13 +46,26 @@
 <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
 <script src="/BiochemProtocols/js/save_journal_label.js"></script>
 
-<script src="/BiochemProtocols/js/access.js"></script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'sb_publishable_jOItw6osT5EVsEVtQ3K16w_MWQR3YBf'
+  );
+</script>
+
+
 
 
 
 <body>
 
-    <nav class="navigation">
+    
+
+<nav class="navigation">
     <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
     <ul class="navigation">
         <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
@@ -64,7 +77,9 @@
     </ul>
 </nav>
 
-    <div class="login_overlay"></div>
+    
+
+<div class="login_overlay"></div>
 
 <div class="wrapper_login">
     <span class="icon_close"><ion-icon name="close"></ion-icon></span>
@@ -98,12 +113,12 @@
                 <div class="registration_form_names">
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
-                        <label>Surname</label>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
                     </div>
                     <div class="input_box">
                         <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="name" required>
+                        <input type="text" name="last_name" required>
                         <label>Last Name</label>
                     </div>
                 </div>
@@ -129,12 +144,14 @@
     </div>
 </div>
 
-<script src="/BiochemProtocols/js/login.js"></script>
+<script src="/BiochemProtocols/js/user/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-    <header class="protocol-header">
+    
+
+<header class="protocol-header">
   <div class="protocol-titles">
     <h1>Chemiluminescence Imaging Following Western Blotting</h1>
 
@@ -172,8 +189,12 @@
             
     
         <!-- DONE: tested = true, delete -->
+ 
 
 
+
+
+ 
 
 <div class="tab">
   <h2 id="materials">Materials</h2>
@@ -279,6 +300,8 @@
 </table>
 
 </div>
+ 
+
 <div class="tab">
   <h2 id="procedure">Procedure</h2>
 <h3 id="heading-1">Heading 1</h3>
@@ -288,7 +311,7 @@
 <li><input type="checkbox"> Pipette 400µl developing solution onto the membrane and close the plastic to ensure equal distribution.</li>
 <li><input type="checkbox"> Incubate the developing solution on the membrane for 5 minutes.</li>
 </ol>
-<div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
 <ol start="5">
 <li>
 <p><input type="checkbox"> Roll out the membrane with a roller.</p>
@@ -332,7 +355,7 @@
   <div><ol>
 <li><input type="checkbox"> Place the membrane in a transparent plastic wrap.</li>
 <li>
-<!-- markdownlint-disable MD033 --> <input type="checkbox"> Add a small volume of <span data-alt-group="buffer" data-alt="primary">PBST</span><span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> <button class="alternative" data-alt-switch="buffer" data-alt-label-primary="Use PBS" data-alt-label-secondary="Use TBS">Use TBS</button> to keep the membrane moist. <!-- markdownlint-enable MD033 -->
+<!-- markdownlint-disable MD033 -->  <input type="checkbox"> Add a small volume of <span data-alt-group="buffer" data-alt="primary">PBST</span><span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> <button class="alternative" data-alt-switch="buffer" data-alt-label-primary="Use PBS" data-alt-label-secondary="Use TBS">Use TBS</button> to keep the membrane moist. <!-- markdownlint-enable MD033 -->
 </li>
 <li><input type="checkbox"> Store @ 4 °C for up to a week.</li>
 </ol>
@@ -344,7 +367,9 @@
 </ul>
 
 </div>
-<p><div class="local-comment" data-comment-id="/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/">
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/">
 
   <label><strong>Personal Comments</strong></label><br>
 
@@ -357,10 +382,13 @@
     <button class="delete" style="display:none;">Delete</button>
   </div>
 </div>
+ 
 
 <button id="save-pdf" type="button">
   Save page as PDF
 </button></p>
+
+
 <div class="label-preview-wrapper">
     <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
   <div id="label-preview" class="label">
@@ -427,7 +455,9 @@
 
     </main>
 
-    <footer class="footer">
+    
+
+<footer class="footer">
     <div class="footer_rights">  </div>
     <ul class="footer_navigation">
         <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>

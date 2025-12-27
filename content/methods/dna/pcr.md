@@ -16,7 +16,7 @@ updated = '08.12.2025'
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="warning" title="" >}}
 ❗️ Attention: Reagents and Parameters for T<sub>m</sub>/T<sub>a</sub> as well as t<sub>e</sub> only applie for the Fusion Hot Start II DNA Polymeras.

@@ -49,7 +49,7 @@ tested = false
 | {{< checkbox >}} | glycerol | <span class="calc_recipe_x" data-default-mass="125" data-mass-unit="mL">125 mL</span> | <span class="calc_recipe_x" data-default-mol="1154">1154 mM (10.6 %)</span> |
 | {{< checkbox >}} | SDS | <span class="calc_recipe_x" data-default-mass="200" data-mass-unit="mL">200 mL</span> | <span class="calc_recipe_x" data-default-mol="69.4">69.4 mM</span> |
 | {{< checkbox >}} | bromphenol blue | <span class="calc_recipe_x" data-default-mass="20" data-mass-unit="mL">20 mL</span> | <span class="calc_recipe_x" data-default-mol="0.0298">0.0298 mM</span> |
-| {{< checkbox >}} | dsH<sub>2</sub>O | <span class="calc_recipe_x" data-default-vol="530">530 mL (0.002% w/v)</span> <!-- TODO: calculate % as well --> | to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span> |
+| {{< checkbox >}} | dsH<sub>2</sub>O | <span class="calc_recipe_x" data-default-vol="530">530 mL (0.002% w/v)</span> <!-- CONTENT_TODO: calculate % as well --> | to <span class="calc_recipe_x" data-default-vol="1000">1000 mL</span> |
 <!-- markdownlint-enable MD033 -->
 
 {{< /tab >}}

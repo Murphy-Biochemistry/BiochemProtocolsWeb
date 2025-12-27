@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", function () {
     const reactionVol = document.getElementById("pcr-reaction-volume");
     const bufferFactor = document.getElementById("buffer-factor");

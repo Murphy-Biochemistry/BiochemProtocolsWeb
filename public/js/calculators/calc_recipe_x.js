@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".calc-recipe-x-controls").forEach(container => {

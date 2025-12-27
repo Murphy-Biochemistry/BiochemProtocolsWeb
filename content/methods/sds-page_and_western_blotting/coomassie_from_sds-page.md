@@ -89,7 +89,7 @@ tested = true
 
 4. {{< checkbox >}} Rinse the gel with dsH<sub>2</sub>O.
 
-5. {{< checkbox >}} Take pictures at an appropriate imager, such as the ImageQuant™. <!-- TODO: add alternative button to change between the two most used imagers. -->
+5. {{< checkbox >}} Take pictures at an appropriate imager, such as the ImageQuant™. <!-- CONTENT_TODO: add alternative button to change between the two most used imagers. -->
 
     - {{< checkbox >}} Place the white insert onto the black tray of the imager.
     - {{< checkbox >}} Place the gel in the middle of the white board.

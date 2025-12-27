@@ -1,8 +1,10 @@
+// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with ald_methods
+
 document.addEventListener("DOMContentLoaded", () => {
 
-  const btn = document.getElementById("aht_dmso_alternative_switch"); // enter reagent 1
+  const btn = document.getElementById("aht_dmso_alternative_switch");
 
-  const dmso = { // enter reagent 1
+  const dmso = {
     m_material:   document.getElementById("alt_aht_m_m_dmso"),
     m_mw:         document.getElementById("alt_aht_m_mw_dmso"),
     m_specs:      document.getElementById("alt_aht_m_specs_dmso"),
@@ -12,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     r_mol:      document.getElementById("alt_aht_r_mol_dmso"),
   };
 
-  const etoh = { // enter reagent 2
+  const etoh = {
     m_material:   document.getElementById("alt_aht_m_m_etoh"),
     m_mw:         document.getElementById("alt_aht_m_mw_etoh"),
     m_specs:      document.getElementById("alt_aht_m_specs_etoh"),
@@ -22,24 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
     r_mol:      document.getElementById("alt_aht_r_mol_etoh"),
   };
 
-  let usingetoh = false; // enter reagent 2
+  let usingetoh = false;
 
   function toggle() {
-    for (const key in dmso) { // enter reagent 1
-      if (!dmso[key] || !etoh[key]) continue; // enter reagent 1
-        dmso[key].style.display = usingetoh ? "none" : "";  // enter reagent 1
-        etoh[key].style.display = usingetoh ? "" : "none";  // enter reagent 2
+    for (const key in dmso) {
+      if (!dmso[key] || !etoh[key]) continue;
+        dmso[key].style.display = usingetoh ? "none" : "";
+        etoh[key].style.display = usingetoh ? "" : "none";
     }
   }
 
   if (btn) {
     btn.addEventListener("click", () => {
-      usingetoh = !usingetoh;  // enter reagent 2
+      usingetoh = !usingetoh;
       toggle();
 
-      btn.innerHTML = usingetoh  // enter reagent 2
-        ? "Use DMSO" // enter reagent 1 display 
-        : "Use EtOH";  // enter reagent 2 display (same as in button html shortcode)
+      btn.innerHTML = usingetoh
+        ? "Use DMSO"
+        : "Use EtOH";
     });
   }
 });

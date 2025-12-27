@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
   const btn = document.getElementById("save-pdf");
   if (!btn) return;

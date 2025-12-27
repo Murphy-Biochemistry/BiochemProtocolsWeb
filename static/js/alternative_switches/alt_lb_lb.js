@@ -1,11 +1,4 @@
-// steps:
-// 1.: searchfunktion lb replace with reagent 1
-// 2.: searchfunktion individual replace with reagent 2
-// 3.: searchfunktion lb replace with pagename (one continuous word, no underscores no spaces)
-// 4.: name .js "alt_pagename_reagent1"
-// 5.: update AAAAA and BBBBB to the button displays
-// 6.: update html (use template recipe) in content
-// 7.: updare html shortcode (use alt_template.html) in content
+// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with ald_methods
 
 document.addEventListener("DOMContentLoaded", () => {
 

@@ -62,7 +62,7 @@ tested = true
 | protein ladder | | | |
 | BSA samples | 6 x 3 µL | **for protein concentration determination:** <br> 750 ng/µL <br> 375 ng/µL <br> 187.5 ng/µL <br> 93.75 ng/µL <br> 46.875 ng/µL <br> 23.4375 ng/µL | |
 
-<!-- TODO: alt button protein sample (with BSA) <-> cell lysate (no BSA) -->
+<!-- CONTENT_TODO: alt button protein sample (with BSA) <-> cell lysate (no BSA) -->
 
 {{< /tab >}}
 
@@ -152,7 +152,7 @@ tested = true
 | dsH<sub>2</sub>O | 5 µL | | |
 | | = 17 µL | | |
 
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 
 2. {{< checkbox >}} Prepare the BSA samples.
 
@@ -176,7 +176,7 @@ tested = true
 | DTT | 2 µL | 1 M | 100 mM |
 | | = 12 µL | | |
 
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 
 2. {{< checkbox >}} Prepare the samples.
 
@@ -187,7 +187,7 @@ tested = true
 | Sample | 8 µl | | |
 | | = 20 µL | | |
 
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 
 | Reagent | Volume | Concentration c<sub>1</sub> | Concentration c<sub>2</sub>/mass m<sub>2</sub> |
 | :-- | :-- | :-- | :-- |
@@ -196,7 +196,7 @@ tested = true
 | Sample | 8 µl | **purified protein:** 12.5-250 ng/µL <br> **cell lysate:** ≤ 2500 ng/µL | **purified protein:** 100-2000 ng <br> **cell lysate:** ≤ 20 µg |
 | | = 20 µL | | |
 
- <!-- TODO: calc and enhance-->
+ <!-- CONTENT_TODO: calc and enhance-->
 
 2. {{< checkbox >}} Heat the samples @ 95°C for 5 minutes.
 
@@ -220,7 +220,7 @@ tested = true
 9. {{< checkbox >}} Add approximately 2500 mL of the running buffer into the electrophoresis tank.
 10. {{< checkbox >}} Position the electrophoresis chamber in the electrophoresis tank.
 
-<!-- TODO: Polarity / Electrode Orientation Infobox-->
+<!-- CONTENT_TODO: Polarity / Electrode Orientation Infobox-->
 
 11. {{< checkbox >}} Fill the electrophoresis chamber with approximately 500 mL of cathode buffer until the electrodes are submerged but pay attention to the maximum filling marks.
 12. {{< checkbox >}} Run the gel @ 120V for approximately 40 minutes or until the samples are in the collecting gel.
@@ -248,7 +248,7 @@ tested = true
 <div id="table_sds-page_gels-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
 <!-- markdownlint-enable MD033 -->
 
-{{< table_sds-page_gels >}} <!-- TODO: enhance table styling, enhance pdf styling, and move to separate css-->
+{{< table_sds-page_gels >}} <!-- CONTENT_TODO: enhance table styling, enhance pdf styling, and move to separate css-->
 
 {{< comment_box >}}
 {{< save_page >}}

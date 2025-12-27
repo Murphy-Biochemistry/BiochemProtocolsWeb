@@ -16,7 +16,7 @@ updated = '09.12.2025'
 finished = false
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="danger" title="" >}}
 ‼️ EtBr is a carcinogen and can migrate through normal nitril gloves. If possible use an alternative ike Roti GelStain. If no alternative is available use specially for EtBr approved gloves.

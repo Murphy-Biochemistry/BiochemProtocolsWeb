@@ -16,7 +16,7 @@ updated = '05.09.2025'
 finished = true
 tested = false
 +++
-<!-- NEW: delete when finished = true + tested = true -->
+<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< tab >}}
 
@@ -29,7 +29,7 @@ tested = false
 | syringe filter | | 0.22 µm | {{< chemical_location chemical="syringe filter" >}} |
 | store in 1 mL aliquots @ -20 °C | | | |
 
-<!-- TODO: alternative button: syringe filter <-> vacuum filter -->
+<!-- CONTENT_TODO: alternative button: syringe filter <-> vacuum filter -->
 
 {{< /tab >}}
 

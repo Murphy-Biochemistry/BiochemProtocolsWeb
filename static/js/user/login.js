@@ -1,0 +1,110 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
+const wrapper_login = document.querySelector('.wrapper_login');
+const login_link = document.querySelector('.login_link');
+const register_link = document.querySelector('.register_link');
+const btn_login = document.querySelector('.btn_login');
+const icon_close = document.querySelector('.icon_close');
+const login_overlay = document.querySelector('.login_overlay');
+
+register_link.addEventListener('click', ()=> {
+    wrapper_login.classList.add('active');
+});
+
+login_link.addEventListener('click', ()=> {
+    wrapper_login.classList.remove('active');
+});
+
+btn_login.addEventListener('click', (e) => {
+    e.preventDefault();
+    wrapper_login.classList.add('active_popup');
+    login_overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+});
+
+icon_close.addEventListener('click', ()=> {
+    wrapper_login.classList.remove('active_popup');
+    login_overlay.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+login_overlay.addEventListener('click', () => {
+    wrapper_login.classList.remove('active_popup');
+    login_overlay.classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && wrapper_login.classList.contains('active_popup')) {
+        wrapper_login.classList.remove('active_popup');
+        login_overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+////////// JS_DONE: up to here //////////
+
+// LOGIN an Supabase anbinden //
+const loginForm = document.querySelector('.login_form form');
+
+if (loginForm) {
+  loginForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const email = loginForm.querySelector('input[type="email"]').value;
+    const password = loginForm.querySelector('input[type="password"]').value;
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      console.error('LOGIN ERROR:', error);
+      alert(error.message);
+      return;
+    }
+
+    console.log('LOGIN OK:', data);
+    location.reload();
+  });
+}
+
+// Registrierung anbinden //
+const registerForm = document.querySelector('.registration_form form');
+
+if (registerForm) {
+  registerForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const firstName = registerForm.querySelector('input[name="first_name"]').value;
+    const lastName  = registerForm.querySelector('input[name="last_name"]').value;
+    const email     = registerForm.querySelector('input[type="email"]').value;
+    const password  = registerForm.querySelector('input[type="password"]').value;
+
+    const { data, error } = await supabaseClient.auth.signUp({
+    email,
+    password,
+    options: {
+        data: {
+        first_name: firstName,
+        last_name: lastName
+        }
+    }
+    });
+
+    if (error) {
+      alert(error.message);
+      return;
+    }
+
+    alert('Confirm your mail address, please.');
+  });
+}
+
+//auth status debug //
+supabaseClient.auth.onAuthStateChange((event, session) => {
+  console.log('AUTH EVENT:', event);
+  console.log('SESSION:', session);
+});

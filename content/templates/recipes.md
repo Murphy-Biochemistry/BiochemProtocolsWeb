@@ -12,7 +12,7 @@ updated = '18.12.2025'
 finished = true
 tested = true
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 
 <!--_____________________________delete_____________________________-->
 
@@ -25,7 +25,7 @@ landing: <div id="name-anchor" style="position: relative; top: -80px; visibility
 
 <!-- Material Table:
 
-for switching alternatives <!-- TODO: combine switches to one universal switch (see alt methods) -- >
+for switching alternatives <!-- CONTENT_TODO: combine switches to one universal switch (see alt methods) -- >
 into the <span>
 
 add an id="alt_pagename_m_c_reagent1" for the default
@@ -61,7 +61,7 @@ add class="calc_recipe_x"
 
 for masses add data-default-mass="e"
 for volumes add data-default-vol="e"
-for molarities add data-default-mol="e" //TODO: should be calculated automatically from molecular mass...
+for molarities add data-default-mol="e" //CONTENT_TODO: should be calculated automatically from molecular mass...
 
 e = value
 

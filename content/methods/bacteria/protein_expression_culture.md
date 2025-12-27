@@ -17,7 +17,7 @@ finished = true
 tested = false
 math = true
 +++
-<!-- NEW: finished = true, change to DONE; tested = true, delete -->
+<!-- CONTENT_NEW: finished = true, change to CONTENT_DONE; tested = true, delete -->
 
 {{< tab >}}
 
@@ -49,17 +49,17 @@ math = true
 
 | Reagents & Solutions⠀⠀⠀⠀ | Amount | Specifications| Location |
 | :-- | :-- | :-- | :-- |
-| [Luria-Bertani liquid medium]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> | 6 mL/culture <br> 500 mL/culture | for the pre culture <br> for the main culture | |
-| [Luria-Bertani agar plate]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> | 1/culture | for clone backup | |
+| [Luria-Bertani liquid medium]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link--> | 6 mL/culture <br> 500 mL/culture | for the pre culture <br> for the main culture | |
+| [Luria-Bertani agar plate]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link--> | 1/culture | for clone backup | |
 | suitable antibiotic | | stock solution, typically 1000x | |
 | [phosphate-buffered saline *PBS*]({{< relref "pbs.md" >}}) | 50 µL/culture <br> 50 µL/culture <br> 50 µL/culture | for pre-induction aliquot <br> for post-induction aliquot <br> 50mL for precipitate |  |
 | [SDS-PAGE sample buffer 2x]({{< relref "sds-page_sample_buffer.md" >}}) | 50 µL/culture <br> 50 µL/culture <br> 50 µL/culture | for pre-induction aliquot <br> for post-induction aliquot <br> 50mL for precipitate | |
-| suitable induction chemical <br> e.g. [anhydrotetracycline *AHT*]({{< relref "aht.md" >}}) <!-- TODO: add recipe, then add link--> 2 mg/mL <br> e.g. [isopropyl-β-D-thiogalactopyranosid *IPTG*]({{< relref "iptg.md" >}}) <!-- TODO: add recipe, then add link--> 1 M | <br> e.g. 50 µL <br> e.g. 500 µL | <br> for a final concentration of 0.2 µg/mL  <br> for a final concentration of 0.5 mM | |
+| suitable induction chemical <br> e.g. [anhydrotetracycline *AHT*]({{< relref "aht.md" >}}) <!-- CONTENT_TODO: add recipe, then add link--> 2 mg/mL <br> e.g. [isopropyl-β-D-thiogalactopyranosid *IPTG*]({{< relref "iptg.md" >}}) <!-- CONTENT_TODO: add recipe, then add link--> 1 M | <br> e.g. 50 µL <br> e.g. 500 µL | <br> for a final concentration of 0.2 µg/mL  <br> for a final concentration of 0.5 mM | |
 | [tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer]({{< relref "bacterial_lysis_buffer.md" >}}) | | for 20 mL supplemented lysis buffer | |
-| [phenylmethylsulfonyl fluoride *PMSF*]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> 100 mM | 200 µL | for 20 mL supplemented lysis buffer (1 mM) | |
+| [phenylmethylsulfonyl fluoride *PMSF*]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link--> 100 mM | 200 µL | for 20 mL supplemented lysis buffer (1 mM) | |
 | [aprotinin]({{< relref "/recipes/bacteria/aprotinin.md" >}}) 1.54 mM | 20 µL | for 20 mL supplemented lysis buffer (1.54 µM) | |
 | [leupeptin]({{< relref "/recipes/bacteria/leupeptin.md" >}}) 10mM | 20 µL | for 20 mL supplemented lysis buffer (10 µM) | |
-| [pepstatin A]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> 1mM | 200µL | for 20 mL supplemented lysis buffer (10µM) | |
+| [pepstatin A]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link--> 1mM | 200µL | for 20 mL supplemented lysis buffer (10µM) | |
 | sucrose | 3.423 g/clone | for 20 mL supplemented lysis buffer (500mM, 17.1 %) | |
 | Triton-X-100 | 100 µL/clone | for 20 mL supplemented lysis buffer (0.5 %) | |
 
@@ -76,8 +76,8 @@ math = true
 ### Preparation
 
 1. {{< checkbox >}} [Transform a suitable strain of bacteria and plate transformed bacteria on a LB-agar Plate containing appropriate selection markers (Antibiotic, X-Gal).]({{< relref "methods/bacteria/transformation.md" >}})
-2. {{< checkbox >}} [Prepare 6 mL of sterile LB medium per clone.]({{< relref "" >}}) <!-- TODO: add recipe, then add link-->
-3. {{< checkbox >}} [Prepare additional 500 mL of sterile LB medium]({{< relref "" >}}) <!-- TODO: add recipe, then add link--> in a 1 L Erlenmeyer flask per clone.
+2. {{< checkbox >}} [Prepare 6 mL of sterile LB medium per clone.]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link-->
+3. {{< checkbox >}} [Prepare additional 500 mL of sterile LB medium]({{< relref "" >}}) <!-- CONTENT_TODO: add recipe, then add link--> in a 1 L Erlenmeyer flask per clone.
 {{< infobox type="info" title="" >}}
 ⚠️ Adjust volume as needed. The Erlenmeyer flask should be able to hold at least double the volume of LB medium used to allow for sufficient aeration.
 {{< /infobox >}}
@@ -267,8 +267,8 @@ When doing multiple samples, just cycle through the samples, which gives them en
 ### Precede with Suitable Protocol
 
 - [StrepTag Gravity Flow Protein Purification]({{< relref "/methods/proteins/streptag_protein_purification" >}})
-- [MagStrep® Strep-Tactin®XT Beads Protein Purification](Link) <!-- TODO: insert link-->
-- [Gluthatione-Sepharose Protein Purification](Link) <!-- TODO: insert link-->
+- [MagStrep® Strep-Tactin®XT Beads Protein Purification](Link) <!-- CONTENT_TODO: insert link-->
+- [Gluthatione-Sepharose Protein Purification](Link) <!-- CONTENT_TODO: insert link-->
 {{< /tab >}}
 
 <!-- markdownlint-disable MD033 -->

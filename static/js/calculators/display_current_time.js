@@ -1,3 +1,6 @@
+// JS_STREAMLINE
+// JS_COMMENTS
+
 document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".current-time-widget").forEach((wrapper, index) => {

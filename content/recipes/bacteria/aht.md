@@ -73,7 +73,7 @@ tested = false
 
 {{< tab >}}
 
-## Storage <!-- TODO: add storage information-->
+## Storage <!-- CONTENT_TODO: add storage information-->
 
 | Conditions | Duration |
 | :-- | :-- |
