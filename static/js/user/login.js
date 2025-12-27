@@ -87,12 +87,15 @@ if (registerForm) {
     email,
     password,
     options: {
+        emailRedirectTo:
+        'https://spikemurphy.github.io/BiochemProtocols/user/registration/callback',
         data: {
         first_name: firstName,
         last_name: lastName
         }
     }
     });
+
 
     if (error) {
       alert(error.message);
