@@ -1,3 +1,9 @@
+async function waitForAuth() {
+  while (!window.auth?.initialized) {
+    await new Promise(r => setTimeout(r, 10));
+  }
+}
+
 function updatePricingVisibility() {
   const loggedIn = !!window.auth.user;
 
@@ -5,13 +11,15 @@ function updatePricingVisibility() {
     .forEach(el => el.style.display = loggedIn ? 'block' : 'none');
 
   document.querySelectorAll('.pricing-logged-out')
-    .forEach(el => el.style.display = loggedIn ? 'block' : 'none');
+    .forEach(el => el.style.display = loggedIn ? 'none' : 'block');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await waitForAuth();
   updatePricingVisibility();
 });
 
-supabaseClient.auth.onAuthStateChange(() => {
+supabaseClient.auth.onAuthStateChange(async () => {
+  await waitForAuth();
   updatePricingVisibility();
 });

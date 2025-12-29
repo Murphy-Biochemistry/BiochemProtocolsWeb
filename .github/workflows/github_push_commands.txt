@@ -39,3 +39,6 @@ hugo
 git add .
 git commit -m "remove: xxxxx"
 git push
+
+rm -rf public
+hugo server

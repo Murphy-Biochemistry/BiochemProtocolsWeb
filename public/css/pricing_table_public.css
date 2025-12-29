@@ -1,0 +1,104 @@
+.login-hint {
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff6df, #fffdf7);
+  border: 2px solid #f4b400;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  overflow: visible;
+}
+
+/* Heading */
+.login-hint-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Lock badge */
+.login-hint-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: #f4b400;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* Text */
+.login-hint-text {
+  font-size: 1.05rem;
+  max-width: 85%;
+  line-height: 1.45;
+}
+
+.login-hint-text strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* Arrow */
+.login-hint-arrow {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  font-size: 3.9rem;
+  color: #f4b400;
+  animation: arrowPulseFloat 1.8s infinite ease-in-out;
+  transform-origin: center;
+  pointer-events: none;
+}
+
+/* Arrow animation */
+@keyframes arrowPulseFloat {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.25) translate(6px, -6px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.7;
+  }
+}
+
+.btn_login {
+  position: relative;
+  z-index: 1;
+}
+
+body:has(.pricing-logged-out) .btn_login[data-state="logged-out"]::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 14px;
+  border: 2px solid rgba(244, 180, 0, 0.8);
+  opacity: 0;
+  animation: loginOutlinePulse 2.6s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes loginOutlinePulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
