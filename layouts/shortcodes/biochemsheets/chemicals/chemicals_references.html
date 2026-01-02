@@ -1,0 +1,14 @@
+{{ with .Page.Params.references }}
+<details class="chemicals-references">
+  <summary class="chemicals-references-title">
+    References
+    <span class="chemicals-references-toggle" aria-hidden="true">▸</span>
+  </summary>
+
+  <ol class="chemicals-references-list">
+    {{ range . }}
+      <li>{{ . | safeHTML }}</li>
+    {{ end }}
+  </ol>
+</details>
+{{ end }}

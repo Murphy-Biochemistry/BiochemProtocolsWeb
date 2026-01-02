@@ -16,14 +16,16 @@ common_name = ['']
 short_name = ['']
 IUPAC = ['']
 other_names = ['']
+cas_number = ['']
+
 formula = ['H<sub>2</sub>O']
 molecular_weight = ['']
-cas_number = ['']
 
 signal_word = ['warning','danger']
 physical_hazard_classes = ['']
 health_hazard_classes = ['']
 environmental_hazard_classes = ['']
+
 gloves = ['nitrile gloves, EN ISO 374-1 type A/B/C, EN ISO 374-5 bacteria & fungi + VIRUSES']
 mask = ['not required']
 fume_hood = ['not required']
@@ -44,6 +46,12 @@ shelf_life = ['indefinite under proper storage conditions']
 common_use_cases = ['']
 incompatibilities = ['']
 typical_stock_concentrations = ['']
+
+example_SDS = ['']
+
+references = [
+  'PubChem Second Referencing Style', 
+  'Institut für Arbeitsschutz der Deutschen Gesetzlichen Unfallversicherung (IFA), NAME. LINK. Accessed Jan. 2, 2026.']
 +++
 <!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
@@ -58,6 +66,10 @@ typical_stock_concentrations = ['']
 {{< infobox type="warning" title="HANDLING" >}}
 {{< biochemsheets/chemicals/chemicals_handling >}}
 {{< /infobox >}}
+
+{{< biochemsheets/chemicals/chemicals_references >}}
+
+{{< biochemsheets/chemicals/chemicals_disclaimer >}}
 
 <!-- markdownlint-disable MD025 MD024 -->
 

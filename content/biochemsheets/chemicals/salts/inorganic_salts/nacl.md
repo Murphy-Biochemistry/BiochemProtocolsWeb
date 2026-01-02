@@ -16,21 +16,23 @@ common_name = ['sodium chloride']
 short_name = ['NaCl']
 IUPAC = ['sodium chloride']
 other_names = ['table salt', 'sea salt', 'halite']
-formula = ['NaCl']
-molecular_weight = ['58.443']
 cas_number = ['7647-14-5']
+
+formula = ['NaCl']
+molecular_weight = ['58.443 g/mol']
 
 signal_word = []
 physical_hazard_classes = []
 health_hazard_classes = []
 environmental_hazard_classes = []
+
 gloves = ['not required']
 mask = ['not required']
 fume_hood = ['not required']
 
 appearance = ['white crystalline solid']
-melting_point = ['~801']
-boiling_point = ['~1,413']
+melting_point = ['801 °C']
+boiling_point = ['1,413 °C']
 solubility = ['360 g/L in water', 'mostly insoluble in most organic solvents']
 pKa = []
 ph_range_effective = []
@@ -45,8 +47,14 @@ shelf_life = ['indefinite under proper storage conditions']
 common_use_cases = ['buffers', 'osmotic strength and osmolarity balancing']
 incompatibilities = []
 typical_stock_concentrations = ['5 M in aqueous solution']
+
+example_SDS = ['https://www.carlroth.com/medias/SDB-3957-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMjczMTF8YXBwbGljYXRpb24vcGRmfGFEYzFMMmd4T1M4NU1qQTJOamd6TkRBeU1qY3dMMU5FUWw4ek9UVTNYMFJGWDBWT0xuQmtaZ3wzNTAyOTI3ZDZjZWM0YzNlN2E3N2YxN2VlMGM5YzhjNTNhYTJlMDZiNWY2MjdkNmExZDUwZjVmMzlkODNkMTdh']
+
+references = [
+    'National Center for Biotechnology Information. PubChem Compound Summary for CID 5234, Sodium Chloride. https://pubchem.ncbi.nlm.nih.gov/compound/Sodium-Chloride. Accessed Jan. 2, 2026.', 
+    'Institut für Arbeitsschutz der Deutschen Gesetzlichen Unfallversicherung (IFA), Sodium chloride. https://gestis.dguv.de/data?name=001330. Accessed Jan. 2, 2026.'
+    ]
 +++
-<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< infobox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}
@@ -59,3 +67,7 @@ typical_stock_concentrations = ['5 M in aqueous solution']
 {{< infobox type="warning" title="HANDLING" >}}
 {{< biochemsheets/chemicals/chemicals_handling >}}
 {{< /infobox >}}
+
+{{< biochemsheets/chemicals/chemicals_references >}}
+
+{{< biochemsheets/chemicals/chemicals_disclaimer >}}

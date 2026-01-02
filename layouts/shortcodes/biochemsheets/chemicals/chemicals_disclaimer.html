@@ -1,0 +1,28 @@
+<dl class="chemicals-disclaimer">
+  <dt class="section">Disclaimer</dt>
+
+  <dd>
+    The information provided on this website is intended exclusively for trained professionals.  
+    It is supplied for general informational purposes only and does not replace official safety
+    data sheets (SDS), institutional regulations, or legally required risk assessments.
+  </dd>
+
+  <dd>
+    The authors and operators assume no liability for any injury, damage, or loss resulting from the use or interpretation of the information provided.  
+    While every effort is made to ensure accuracy and currency, no guarantee is given that the information is complete, correct, or applicable to all situations.  
+    Users are responsible for verifying accuracy and compliance with all applicable regulations.
+  </dd>
+
+  <dd>
+    Links to example
+    {{ with .Page.Params.example_SDS }}
+      <a href="{{ index . 0 }}" target="_blank" rel="noopener">
+        safety data sheets (SDS)
+      </a>
+    {{ else }}
+      safety data sheets (SDS)
+    {{ end }}
+    for Germany in English are provided for reference only and may not reflect
+    the exact product, formulation, batch, concentration, or regulatory status applicable to the user.
+  </dd>
+</dl>
