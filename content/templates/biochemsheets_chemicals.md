@@ -51,7 +51,8 @@ example_SDS = ['']
 
 references = [
   'PubChem Second Referencing Style', 
-  'Institut für Arbeitsschutz der Deutschen Gesetzlichen Unfallversicherung (IFA), NAME. LINK. Accessed Jan. 2, 2026.']
+  'Carl Roth GmbH + Co. KG. PAGENAME. LINK. Accessed Jan. 2, 2026.',
+  'Institut für Arbeitsschutz der Deutschen Gesetzlichen Unfallversicherung (IFA), PAGENAME. LINK. Accessed Jan. 2, 2026.']
 +++
 <!-- CONTENT_NEW: delete when finished = true + tested = true -->
 

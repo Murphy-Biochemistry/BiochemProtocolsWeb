@@ -75,26 +75,31 @@ t<sub>e</sub> = bp/1000 × 30 sec
 {{< /infobox >}}
 
 ### Preparing the Thermocycler:
-1. Enter the Programm into the Termocycler:  
-{{< infobox type="info" title="" >}}
-*CNTRL	BLOCK*  
-*LID=105°*  
-*NOWAIT	AUTO*  
-*1 T=98.0°C	0:00:30	(initial denaturation)*  
-*2 T=98.0°C	0:00:10	(cycle1: denaturation)*  
-*3 T=xx°C	0:00:30	(cycle1: primer annealing)*  
-*4 T=72.0°C	0:xx:xx	(cycle1: elongation)*
-*5 GOTO 2 	REP 19	(sum: 20 cycles)*  
-*6 T=72.0°C	0:08:00	(final incubation)*  
-*7 HOLD 4°C*  
-*End*  
+
+1. {{< checkbox >}} Enter the Programm into the Termocycler:  
+
+{{% infobox type="info" title="" %}}
+| | | | |
+| :-- | :-- | :-- | :-- |
+| | *CNTRL* | *BLOCK* | |
+| | LID = 105° | | |
+| | *NOWAIT* | *AUTO* | |
+| 1 | T=98.0°C | 0:00:30 | (initial denaturation) |
+| 2 | T=98.0°C | 0:00:10 | (cycle1: denaturation) |
+| 3 | T=xx°C | 0:00:30 | (cycle1: primer annealing) |  
+| 4 | T=72.0°C | 0:xx:xx | (cycle1: elongation) |
+| 5 | GOTO 2 | REP 19 | (sum: 20 cycles) |  
+| 6 | T=72.0°C | 0:08:00 | (final incubation) |  
+| 7 | HOLD 4°C | | |
+| | *End* | | |
+
 <p>
   T<sub>a</sub>: <input type="text" id="ta-input" value="" style="width:80px;"> °C
 </p>
 <p>
   t<sub>e</sub>: <input type="text" id="te-input" value="" style="width:80px;"> seconds
 </p>
-{{< /infobox >}}
+{{% /infobox %}}
 
 ### Preparing the Samples and Running the Program:
 {{< infobox type="info" title="" >}}

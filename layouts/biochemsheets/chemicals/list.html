@@ -58,7 +58,7 @@
               <span class="sheets-leader"></span>
 
               <span class="sheets-right">
-                {{ with .Params.cas_number }}{{ . }}{{ end }}
+                {{ with .Params.cas_number }}{{ delimit . ", " | safeHTML }}{{ end }}
               </span>
             </a>
           </li>
@@ -86,7 +86,7 @@
             <span class="sheets-leader"></span>
 
             <span class="sheets-right">
-              {{ with .Params.cas }}{{ . }}{{ end }}
+              {{ with .Params.cas_number }}{{ delimit . ", " | safeHTML }}{{ end }}
             </span>
           </a>
         </li>

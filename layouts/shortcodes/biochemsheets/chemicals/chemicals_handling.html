@@ -94,6 +94,18 @@
 <dd>{{ delimit . ", " }}</dd>
 {{ end }}
 
+{{ with .Page.Params.recipe }}
+  <dt>Preparation</dt>
+  <dd>
+    {{ range $i, $p := . }}
+      {{ if $i }}, {{ end }}
+      <a href="{{ relref $.Page $p }}">
+        {{ path.Base $p | strings.TrimSuffix ".md" | humanize }}
+      </a>
+    {{ end }}
+  </dd>
+{{ end }}
+
 {{- with .Page.Params.incompatibilities }}
 <dt>Avoid contact with</dt>
 <dd>{{ delimit . ", " }}</dd>

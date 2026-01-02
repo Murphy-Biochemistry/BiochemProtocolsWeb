@@ -25,7 +25,7 @@ tested = false
 | :-- | :-- | :-- | :-- |
 | disodium hydrogen phosphate *Na<sub>2</sub>HPO<sub>4</sub>* [<sup>SDS</sup>](https://www.carlroth.com/.../) | 141.96 g/mol | solid | {{< chemical_location chemical="na2hpo4_solid" >}} |
 | potassium dihydrogen phosphate *KH<sub>2</sub>PO<sub>4</sub>* [<sup>SDS</sup>](https://www.carlroth.com/.../) | 136.09 g/mol | solid | {{< chemical_location chemical="kh2po4_solid" >}} |
-| sodium chloride *NaCl* [<sup>SDS</sup>](https://www.carlroth.com/.../) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
+| [sodium chloride *NaCl*]({{< relref "biochemsheets/chemicals/salts/inorganic_salts/nacl.md" >}}) [<sup>SDS</sup>](https://www.carlroth.com/.../) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
 | Potassium chloride *KCl* [<sup>SDS</sup>](https://www.carlroth.com/.../) | 74.55 g/mol | solid | {{< chemical_location chemical="kcl_solid" >}} |
 | hydrogen chloride *HCl* 3.47 mM (25 %) | 36.46 g/mol | stock solution | {{< chemical_location chemical="hcl25_liquid" >}} |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | solvent | |

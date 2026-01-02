@@ -48,9 +48,5 @@ hugo server
 
 
 ---------- not yet pushed changes ----------
-rm -rf public
-hugo
-git add .
-git commit -m "new feature: sponsor banner"
-git push
+
 --------------------------------------------

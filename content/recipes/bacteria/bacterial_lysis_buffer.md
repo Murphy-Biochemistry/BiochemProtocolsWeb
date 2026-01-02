@@ -2,7 +2,7 @@
 date = '2025-12-07T20:25:53+01:00'
 draft = false
 construction = false
-title = 'Tris-HCl-NaCl-MgCl2 Bacterial Lysis Buffer'
+title = 'Tris-HCl-NaCl-MgCl₂ Bacterial Lysis Buffer'
 subtitle = ''
 author = ['Spike Murphy Müller ¹']
 affiliation = ['¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer']
@@ -24,7 +24,7 @@ tested = false
 | Material | Molecular Weight | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | tris base [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-4855-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDg5MDd8YXBwbGljYXRpb24vcGRmfGFEaG1MMmd4T1M4NU1qQTJOekV3TVRRd09UVTRMMU5FUWw4ME9EVTFYMFJGWDBWT0xuQmtaZ3xhMDM2MzQ2ZGYxZTg3NDk1MTZjNmFiOTEyZDYzOTUyMjU4MWFkNDhhZTY1NDY1YTUyNDFhMjk3Y2UxYjkyYjVm) | 121.14 g/mol | solid | {{< chemical_location chemical="trisbase_solid" >}} |
-| sodium chloride *NaCl* [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-9265-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMjczOTJ8YXBwbGljYXRpb24vcGRmfGFEa3hMMmc0WXk4NU1qQTJPREkyTVRNNU5qYzRMMU5FUWw4NU1qWTFYMFJGWDBWT0xuQmtaZ3wwMDM0YzI2YTljODliODMzMDg5YjFjNzBjOTcwMjU5ZDQ1OGMwYjRlZGIxOTRjMzQyOTNmYmU4NjA1YzQ1ZGQ0) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
+| [sodium chloride *NaCl*]({{< relref "biochemsheets/chemicals/salts/inorganic_salts/nacl.md" >}}) [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-9265-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyMjczOTJ8YXBwbGljYXRpb24vcGRmfGFEa3hMMmc0WXk4NU1qQTJPREkyTVRNNU5qYzRMMU5FUWw4NU1qWTFYMFJGWDBWT0xuQmtaZ3wwMDM0YzI2YTljODliODMzMDg5YjFjNzBjOTcwMjU5ZDQ1OGMwYjRlZGIxOTRjMzQyOTNmYmU4NjA1YzQ1ZGQ0) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
 | magnesium chloride *MgCl<sub>2</sub> · 6 H<sub>2</sub>O* [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-2189-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNDI3MDJ8YXBwbGljYXRpb24vcGRmfGFETXpMMmcxTlM4NU1qQTJNemswTlRnMU1URTRMMU5FUWw4eU1UZzVYMFJGWDBWT0xuQmtaZ3wwNDBmNmVlOGQ1M2UzMDYwZjFlNTY2MzIxNjVhNTkwNDk5ZTdkNTQzMTdjMTdkZWQ1NzZjZjEwNTIzYjRkNTgz) | 203.3 g/mol | solid | {{< chemical_location chemical="chemicalname_spec" >}} |
 | hydrogen chloride *HCl* [<sup>SDS</sup>](https://www.carlroth.com/medias/SDS-X897-DE-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wzMjYwMzd8YXBwbGljYXRpb24vcGRmfGFHWmlMMmd6TUM4NU1qQTJPVEEyT1RRMU5UWTJMMU5FUWw5WU9EazNYMFJGWDBWT0xuQmtaZ3xmODE5ZDYzYjAyZjk2OTY2ZWZlZjViMDkyZTkwODJjZDk2MTNjMmI0MDlhZjEzYTE0MDJjNmUwNjQ2MTE2NDFi) | 36.461 g/mol | 7.76 M (25%), liquid | {{< chemical_location chemical="hcl25_liquid" >}} |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | liquid | |

@@ -24,7 +24,7 @@ tested = false
 | Material | Molecular Weight | Specifications | Location |
 | :-- | :-- | :-- | :-- |
 | tris base [<sup>SDS</sup>](https://www.carlroth.com/.../) | 121.14 g/mol | solid | {{< chemical_location chemical="tris_solid" >}} |
-| sodium chloride *NaCl* [<sup>SDS</sup>](https://www.carlroth.com/.../) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
+| [sodium chloride *NaCl*]({{< relref "biochemsheets/chemicals/salts/inorganic_salts/nacl.md" >}}) [<sup>SDS</sup>](https://www.carlroth.com/.../) | 58.44 g/mol | solid | {{< chemical_location chemical="nacl_solid" >}} |
 | hydrogen chloride *HCl* 3.47 mM (25 %) | 36.46 g/mol | stock solution | {{< chemical_location chemical="hcl25_liquid" >}} |
 | deionized sterilized Water *dsH<sub>2</sub>O* | 18.015 g/mol | solvent | |
 <!-- markdownlint-enable MD033 -->
