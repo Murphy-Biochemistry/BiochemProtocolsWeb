@@ -1,0 +1,1169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/home_content_block.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/navigation.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/login.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/header.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/footer.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/sponsor_banner.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/pricing_table_public.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/table_sds-page_gels.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/backbone.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/chemicals.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/how_to_use.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/table_of_contents.css">
+
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body  data-required-plan='Execute,Document,Optimize,Admin' >
+
+    
+
+<nav class="navigation">
+    <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
+    <ul class="navigation">
+        <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/biochemsheets">BiochemSheets</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/recipes">Recipes</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/protocols">Protocols</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/user/registration/pricing/">Pricing</a></li>
+        <li class="navigation"><button class="btn_login" data-state="logged-out">Login</button></li>
+    </ul>
+</nav>
+
+    
+
+<div class="login_overlay"></div>
+
+<div class="wrapper_login">
+    <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+    <div class="login_register_forms">    
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn_login_form">Login</button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="registration_form_names">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the
+                        <a href="/BiochemProtocols/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+                        and
+                        <a href="/BiochemProtocols/legal/terms_of_use/" target="_blank">Terms of Use</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn_login_form">Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/BiochemProtocols/js/user/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+      
+
+<header class="protocol-header">
+  <div class="protocol-titles">
+    <h1>Bacterial Plasmid Preparation Culture</h1>
+
+    
+  </div>
+
+  <div class="protocol-meta">
+
+    
+      <h5 class="protocol-authors">
+        
+          Spike Murphy Müller ¹
+        
+      </h5>
+    
+
+    
+      <div class="protocol-affiliations">
+        
+          
+            <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h5>
+          
+        
+      </div>
+    
+
+  </div>
+</header>
+
+    
+    
+    
+
+    <main>
+
+            
+    
+        <!-- DONE: delete when finished = true + tested = true -->
+ 
+
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">laminar airflow workbench</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">shaker incubator</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">photometer</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">for measuring OD<sub>600</sub></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">micropipettes and sterile pipette tips</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pipetting aid and serological pipette</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">photometer cuvette</td>
+          <td style="text-align: left">1/culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">liquid culture tubes or sterile falcon tubes 15 mL</td>
+          <td style="text-align: left">1/culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sterile reaction tube</td>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">for antibiotic aliquot</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Luria-Bertani liquid medium</td>
+          <td style="text-align: left">6 mL/culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">suitable antibiotic</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">stock solution, tpically 1000x</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">LB agar plate with transformed bacteria</td>
+          <td style="text-align: left">1/plasmid</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+ 
+
+<div class="tab">
+  <h2 id="procedure">Procedure</h2>
+<h3 id="preparation">Preparation</h3>
+<ol>
+<li><input type="checkbox"> <a href="/BiochemProtocols/protocols/bacteria/transformation/">Transform a suitable strain of bacteria and plate transformed bacteria on a LB-agar Plate containing appropriate selection markers (Antibiotic, X-Gal).</a></li>
+<li><input type="checkbox"> Prepare 6 mL of sterile LB medium per clone.</li>
+</ol>
+<h3 id="culture">Culture</h3>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ To reduce risk of contamination, all subsequent steps can be carried out under laminar airflow.</div>
+</div>
+<ol>
+<li><input type="checkbox"> Transfer 1 mL of the 6 mL LB medium into a photometer cuvette for the zero value.</li>
+<li><input type="checkbox"> Transfer 5 mL of LB medium into the sterile 15 mL falcon tube or liquid culturing tube.</li>
+<li><input type="checkbox"> Supplement the 5 mL of LB medium with a suitable antibiotic.</li>
+</ol>
+<div class="infobox warning">
+  <strong></strong>
+  <div>❗️ To minimize exposure to microorganisms, all subsequent steps should be carried out under laminar airflow.</div>
+</div>
+<ol start="4">
+<li><input type="checkbox"> Pick a suitable clone with a pipette tip.</li>
+<li><input type="checkbox"> Optionally streak pipette tip over fresh plate as a backup.</li>
+<li><input type="checkbox"> Drop the pipette tip into the prepared medium.</li>
+<li><input type="checkbox"> Incubate the culture @ 37 °C and shaking @ 250 rpm for approximately 2–4 h until an OD<sub>600</sub> ~ 0.4–0.8 (best 0.6) is reached.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>Incubation @ 30 °C and shaking @ 250 rpm overnight is also possible.</div>
+</div>
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<!-- markdownlint-enable MD033 -->
+<ol start="8">
+<li><input type="checkbox"> Document the start time and refer to <a href="#growth-calc-anchor">BiochemProtocols bacterial growth calculator</a>.</li>
+</ol>
+<div class="current-time-widget">
+  <button class="time-btn showTimeBtn">Current Time</button>
+  <span class="time-display currentTime"></span>
+</div>
+<h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol</h3>
+<ul>
+<li><a href="/BiochemProtocols/protocols/dna/nucleospin_plasmid_prep/">NucleoSpin® Plasmid Preparation</a></li>
+</ul>
+
+</div>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/protocols/bacteria/plasmid_prep_culture/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+ 
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+
+
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Bacterial Plasmid Preparation Culture</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.1</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Bacterial Plasmid Preparation Culture\"",
+    version: "\"Version 1.0.1\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/plasmid_prep_culture/\""
+  };
+</script>
+
+<!-- markdownlint-disable MD033 -->
+<div id="growth-calc-anchor" style="position: relative; top: -80px; visibility: hidden;"></div>
+<!-- markdownlint-enable MD033 -->
+<div class="growthcalc-wrapper" data-gc="5">
+<div class="growthcalc">
+
+<h2>BiochemProtocols Bacterial Growth Time Calculator</h2>
+
+<button class="time-btn gc-filltime">Use Current Time</button>
+<button class="time-btn gc-calc">Calculate</button>
+
+<table class="growth-table">
+<thead>
+<tr>
+  <th>Time [hh:mm]</th>
+  
+    <th>OD<sub>600</sub> A</th>
+    <th>DT A [min]</th>
+  
+    <th>OD<sub>600</sub> B</th>
+    <th>DT B [min]</th>
+  
+    <th>OD<sub>600</sub> C</th>
+    <th>DT C [min]</th>
+  
+    <th>OD<sub>600</sub> D</th>
+    <th>DT D [min]</th>
+  
+    <th>OD<sub>600</sub> E</th>
+    <th>DT E [min]</th>
+  
+</tr>
+</thead>
+
+<tbody>
+
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h0" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m0" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td><input id="gc-od0-A" type="number" step="0.001" value="0.000" readonly></td>
+    <td><input id="gc-dt0-A" type="number" step="1" value="00"></td>
+  
+    <td><input id="gc-od0-B" type="number" step="0.001" value="0.000" readonly></td>
+    <td><input id="gc-dt0-B" type="number" step="1" value="00"></td>
+  
+    <td><input id="gc-od0-C" type="number" step="0.001" value="0.000" readonly></td>
+    <td><input id="gc-dt0-C" type="number" step="1" value="00"></td>
+  
+    <td><input id="gc-od0-D" type="number" step="0.001" value="0.000" readonly></td>
+    <td><input id="gc-dt0-D" type="number" step="1" value="00"></td>
+  
+    <td><input id="gc-od0-E" type="number" step="0.001" value="0.000" readonly></td>
+    <td><input id="gc-dt0-E" type="number" step="1" value="00"></td>
+  
+</tr>
+
+
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h1" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m1" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od1-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt1-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od1-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt1-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od1-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt1-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od1-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt1-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od1-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt1-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h2" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m2" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od2-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt2-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od2-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt2-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od2-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt2-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od2-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt2-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od2-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt2-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h3" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m3" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od3-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt3-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od3-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt3-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od3-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt3-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od3-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt3-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od3-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt3-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h4" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m4" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od4-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt4-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od4-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt4-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od4-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt4-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od4-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt4-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od4-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt4-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h5" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m5" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od5-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt5-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od5-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt5-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od5-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt5-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od5-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt5-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od5-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt5-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h6" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m6" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od6-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt6-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od6-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt6-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od6-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt6-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od6-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt6-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od6-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt6-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h7" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m7" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od7-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt7-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od7-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt7-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od7-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt7-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od7-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt7-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od7-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt7-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h8" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m8" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od8-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt8-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od8-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt8-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od8-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt8-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od8-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt8-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od8-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt8-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h9" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m9" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od9-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt9-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od9-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt9-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od9-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt9-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od9-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt9-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od9-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt9-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h10" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m10" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od10-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt10-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od10-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt10-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od10-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt10-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od10-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt10-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od10-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt10-E"></span>
+    </td>
+  
+</tr>
+
+<tr>
+  <td>
+    <div class="gc-time-wrap">
+      <input id="gc-h11" type="number" min="0" max="23" placeholder="hh">
+      :
+      <input id="gc-m11" type="number" min="0" max="59" placeholder="mm">
+    </div>
+  </td>
+
+  
+    <td>
+      <input id="gc-od11-A" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt11-A"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od11-B" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt11-B"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od11-C" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt11-C"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od11-D" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt11-D"></span>
+    </td>
+  
+    <td>
+      <input id="gc-od11-E" type="number" step="0.001">
+    </td>
+    <td>
+      <span id="gc-dt11-E"></span>
+    </td>
+  
+</tr>
+
+
+
+</tbody>
+</table>
+
+<h3>Projected Times</h3>
+
+<table class="growth-table">
+<thead>
+<tr>
+  <th>Target OD</th>
+  <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>0.400</td>
+  <td id="proj04-A">–</td><td id="proj04-B">–</td><td id="proj04-C">–</td><td id="proj04-D">–</td><td id="proj04-E">–</td>
+</tr>
+<tr>
+  <td>0.600</td>
+  <td id="proj06-A">–</td><td id="proj06-B">–</td><td id="proj06-C">–</td><td id="proj06-D">–</td><td id="proj06-E">–</td>
+</tr>
+<tr>
+  <td>0.800</td>
+  <td id="proj08-A">–</td><td id="proj08-B">–</td><td id="proj08-C">–</td><td id="proj08-D">–</td><td id="proj08-E">–</td>
+</tr>
+<tr>
+  <td>
+    <input id="projCustomOD" type="number" step="0.001" placeholder="Custom">
+  </td>
+  <td id="projCustom-A">–</td><td id="projCustom-B">–</td><td id="projCustom-C">–</td><td id="projCustom-D">–</td><td id="projCustom-E">–</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gc-formula">
+  <strong>Doubling time calculation:</strong><br>
+  DT =
+  <span style="display:inline-block; vertical-align:middle;">
+    (t<sub>2</sub> − t<sub>1</sub>) ln(2)
+    <hr style="margin:2px 0;">
+    ln(OD<sub>2</sub> / OD<sub>1</sub>)
+  </span>
+</div>
+
+<br>
+
+<button class="time-btn gc-export">Download Excel</button>
+
+</div>
+</div>
+
+
+        <div style="text-align: right;">
+        <br>
+        12.12.2025 Version 1.0.1
+        </div>
+    
+
+
+    </main>
+
+    
+
+<footer class="footer">
+    <div class="footer_rights">  </div>
+    <ul class="footer_navigation">
+        <li class="footer_navigation"><a href="/BiochemProtocols/contact/contact">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+    <ul class="footer_controls">
+        <li class="footer_controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrY3l0eHFsc3d3Y2Z3ZWdwam5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4Mjg2NjIsImV4cCI6MjA4MjQwNDY2Mn0.EPVpZ-1HaM3jhN87FXpJyCP7mmOEzS7zy-HQNZlytF0'
+  );
+</script>
+
+
+<script src="/BiochemProtocols/js/user/auth.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/subscription.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/guard.js"></script>
+
+
+
+<script>
+  window.ACCESS_CODES = ["curriculum","AGJ","düolr","stlsfo"];
+</script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+
+<script src="/BiochemProtocols/js/theme_toggle.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/timer.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/alternative_switches/"></script> 
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_amount.js"></script> 
+
+<script src="/BiochemProtocols/js/comment_box.js"></script>
+
+<script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>  
+  <script src="/BiochemProtocols/js/calculators/calc_bacterial_growth.js"></script>
+
+
+
+<script src="/BiochemProtocols/js/calculators/display_current_time.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocols/js/save_journal_label.js"></script>
+
+
+</body>
+
+</html>

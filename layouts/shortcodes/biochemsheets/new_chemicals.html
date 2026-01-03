@@ -1,0 +1,27 @@
+{{- $now := now -}}
+{{- $cutoff := $now.AddDate 0 0 -30 -}}
+
+{{- $recent := where .Site.RegularPages "Date" "gt" $cutoff -}}
+{{- $biochemsheets := where $recent "Section" "biochemsheets" -}}
+
+{{- $chemicals := where $biochemsheets "File.Path" "like" "^biochemsheets/chemicals/" -}}
+{{- $chemicals = where $chemicals "Kind" "page" -}}
+{{- $chemicals = sort $chemicals "Date" "desc" -}}
+
+{{- if gt (len $chemicals) 0 }}
+<ul class="biochemsheets-stream chemicals-stream">
+  {{- range $chemicals }}
+    <li>
+      {{- if .Params.construction -}}
+        🚧 
+      {{- else if .Params.tested -}}
+        ⭐️ 
+      {{- else -}}
+        ✅ 
+      {{- end -}}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small>({{ .Date.Format "2006-01-02 15:04" }})</small>
+    </li>
+  {{- end }}
+</ul>
+{{- end }}

@@ -29,7 +29,7 @@ tested = false
 
 # <!-------------------- alternative switch -------------------->
 
-<!-- CONTENT_TODO: combine switches to one universal switch (see alt methods) -->
+<!-- CONTENT_TODO: combine switches to one universal switch (see alt protocols) -->
 
 Table 1:
 Column 1:

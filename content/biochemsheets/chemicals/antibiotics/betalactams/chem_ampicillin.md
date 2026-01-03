@@ -13,9 +13,13 @@ finished = true
 tested = false
 
 common_name = ['Ampicillin Sodium']
-short_name = ['Amp']
+short_name = ['Amp', 'Amp-Na']
 IUPAC = ['sodium (2S,5R,6R)-6-[(2R)-2-amino-2-phenylacetamido]-3,3-dimethyl-7-oxo-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid']
-other_names = ['Ampicillin', 'α-Aminobenzylpenicillin sodium', 'Ampicillin sodium salt']
+other_names = [
+    'Ampicillin', 
+    'α-Aminobenzylpenicillin sodium', 
+    'Ampicillin sodium salt'
+]
 cas_number = ['69-52-3']
 
 formula = ['C<sub>16</sub>H<sub>18</sub>N<sub>3</sub>O<sub>4</sub>S']
@@ -23,7 +27,10 @@ molecular_weight = ['371.39 g/mol']
 
 signal_word = ['Danger']
 physical_hazard_classes = []
-health_hazard_classes = ['respiratory sensitization', 'skin sensitization']
+health_hazard_classes = [
+    'respiratory sensitization', 
+    'skin sensitization'
+]
 environmental_hazard_classes = []
 
 gloves = ['nitrile gloves, EN ISO 374-1 type B']
@@ -32,17 +39,31 @@ mask = ['not normally required; use dust mask if powder handling generates aeros
 fume_hood = ['not required']
 
 appearance = ['white to off-white powder']
-melting_point = ['215 °C', 'decomposes at ≥ 215 °C']
+melting_point = [
+    '215 °C', 
+    'decomposes at ≥ 215 °C'
+]
 boiling_point = []
-solubility = ['~40 g/L in water', 'mostly insoluble in most organic solvents']
-pKa = ['pKa₁ ≈ 2.5 (carboxyl)', 'pKa₂ ≈ 7.2 (amine)']
+solubility = [
+    '~40 g/L in water', 
+    'mostly insoluble in most organic solvents']
+pKa = [
+    'pKa₁ ≈ 2.5 (carboxyl)', 
+    'pKa₂ ≈ 7.2 (amine)'
+]
 ph_value = ['6,8 – 7,2 in aqueous solution at 40 g/l, and 25 °C']
 ph_range_effective = ['5.5–7.5']
 acid_base_properties = ['weak acid and weak base with buffering near pH 7']
-net_charge = ['neutral at pH 7', 'negatively charged above pH x.x', 'positively charged below pH x.x']
+net_charge = [
+    'zwitterionic near pH 7', 
+    'negatively charged above ~7.2', 
+    'positively charged below ~7.2'
+]
 isoelectric_point = ['pI ≈ 5.3']
 
-storage_conditions = ['powder at 4 °C', 'protected from light']
+storage_conditions = [
+    '4 °C', 
+    'protected from light']
 stability = [
     'photosensitive',
     'stable in air',
@@ -50,8 +71,16 @@ stability = [
     'looses 65 % of its initial activity when stored in Water at 4 °C for seven days']
 shelf_life = ['2–3 years under proper storage conditions']
 common_use_cases = ['bacterial selection marker']
-incompatibilities = ['strong acids', 'strong bases', 'oxidizing agents', 'β-lactamase enzymes']
-typical_stock_concentrations = ['50 mg/mL', '100 mg/mL', 'in Water']
+incompatibilities = [
+    'strong acids', 
+    'strong bases', 
+    'oxidizing agents', 
+    'β-lactamase enzymes'
+]
+typical_stock_concentrations = [
+    '50 mg/mL in Water', 
+    '100 mg/mL in Water', 
+]
 recipe = ['recipes/bacteria/ampicillin.md']
 
 example_SDS = ['https://www.carlroth.com/medias/SDB-K029-CH-EN.pdf?context=bWFzdGVyfHNlY3VyaXR5RGF0YXNoZWV0c3wyNjAzNzd8YXBwbGljYXRpb24vcGRmfGFEYzJMMmcxTVM4NU1qRXdNRGsxTlRrNU5qUTJMMU5FUWw5TE1ESTVYME5JWDBWT0xuQmtaZ3xlM2VjMWE1NjlkNTVjOTQ2MDgyN2NmZDM5MTFmNDY4MWZlZmE2MGRmZmY5YWY4YzIzYjZmZmY5NWNlNWZmNzU0']

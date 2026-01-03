@@ -55,7 +55,7 @@ tested = false
 ## Use Cases
 | Use Case | Specifications |
 | :-- | :-- |
-| [Chemically Competent Bacteria Generation]({{< relref "/methods/bacteria/chemically_competent_bacteria.md">}})| 50 mL of 1x Inoue transformation buffer for bacterial transformation with 8 mL being used for Inoue storage buffer  |
+| [Chemically Competent Bacteria Generation]({{< relref "/protocols/bacteria/chemically_competent_bacteria.md">}})| 50 mL of 1x Inoue transformation buffer for bacterial transformation with 8 mL being used for Inoue storage buffer  |
 {{< /tab >}}
 
 {{< tab >}}

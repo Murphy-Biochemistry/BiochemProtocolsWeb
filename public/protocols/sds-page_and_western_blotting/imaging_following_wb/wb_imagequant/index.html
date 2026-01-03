@@ -1,0 +1,523 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/home_content_block.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/navigation.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/login.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/header.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/footer.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/sponsor_banner.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/pricing_table_public.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/table_sds-page_gels.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/backbone.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/chemicals.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/how_to_use.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/table_of_contents.css">
+
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body  data-required-plan='Execute,Document,Optimize,Admin' >
+
+    
+
+<nav class="navigation">
+    <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
+    <ul class="navigation">
+        <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/biochemsheets">BiochemSheets</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/recipes">Recipes</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/protocols">Protocols</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/user/registration/pricing/">Pricing</a></li>
+        <li class="navigation"><button class="btn_login" data-state="logged-out">Login</button></li>
+    </ul>
+</nav>
+
+    
+
+<div class="login_overlay"></div>
+
+<div class="wrapper_login">
+    <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+    <div class="login_register_forms">    
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn_login_form">Login</button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="registration_form_names">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the
+                        <a href="/BiochemProtocols/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+                        and
+                        <a href="/BiochemProtocols/legal/terms_of_use/" target="_blank">Terms of Use</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn_login_form">Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/BiochemProtocols/js/user/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+      
+
+<header class="protocol-header">
+  <div class="protocol-titles">
+    <h1>Chemiluminescence Imaging Following Western Blotting</h1>
+
+    
+      <h2>Using the ImageQuant™</h2>
+    
+  </div>
+
+  <div class="protocol-meta">
+
+    
+      <h5 class="protocol-authors">
+        
+          Spike Murphy Müller ¹
+        
+      </h5>
+    
+
+    
+      <div class="protocol-affiliations">
+        
+          
+            <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h5>
+          
+        
+      </div>
+    
+
+  </div>
+</header>
+
+    
+    
+    
+
+    <main>
+
+            
+    
+        <!-- DONE: tested = true, delete -->
+ 
+
+
+
+
+ 
+
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<!-- markdownlint-disable MD033 -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">ImageQuant™</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-disable MD033 -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><span data-alt-group="chemiluminescence" data-alt="primary">SuperSignal™ West Pico PLUS <a href="link"><sup>manual</sup></a></span><span data-alt-group="chemiluminescence" data-alt="secondary" style="display:none">SuperSignal™ West Dura <a href="link"><sup>manual</sup></a></span> <button class="alternative" data-alt-switch="chemiluminescence" data-alt-label-primary="Use West Pico PLUS" data-alt-label-secondary="Use West Dura">Use West Dura</button></td>
+          <td style="text-align: left"><span data-alt-group="chemiluminescence" data-alt="primary">200 µL/membrane <br> 200 µL/membrane</span><span data-alt-group="chemiluminescence" data-alt="secondary" style="display:none">200 µL/membrane <br> 200 µL/membrane</span></td>
+          <td style="text-align: left"><span data-alt-group="chemiluminescence" data-alt="primary">stable peroxide <br> luminol/enhancer</span><span data-alt-group="chemiluminescence" data-alt="secondary" style="display:none">stable peroxide <br> luminol/enhancer</span></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<!-- markdownlint-enable MD033 -->
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">micropipettes and sterile pipette tips</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">pipetting aid and serological pipettes</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">transparent plastic wrap</td>
+          <td style="text-align: left">1/ membrane</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sterile reaction tube 1.5 mL</td>
+          <td style="text-align: left">1/2 membranes</td>
+          <td style="text-align: left">for preparing the developing solution</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+</div>
+ 
+
+<div class="tab">
+  <h2 id="procedure">Procedure</h2>
+<h3 id="heading-1">Heading 1</h3>
+<ol>
+<li><input type="checkbox"> Prepare the developing solution consisting of stable peroxide and luminol/enhancer 200 µL each.</li>
+<li><input type="checkbox"> Add the membrane to a transparent plastic wrap and remove all liquid with absorbing paper or by closing and opening the plastic and removing the liquid on the plastic.</li>
+<li><input type="checkbox"> Pipette 400µl developing solution onto the membrane and close the plastic to ensure equal distribution.</li>
+<li><input type="checkbox"> Incubate the developing solution on the membrane for 5 minutes.</li>
+</ol>
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="5">
+<li>
+<p><input type="checkbox"> Roll out the membrane with a roller.</p>
+</li>
+<li>
+<p><input type="checkbox"> Place the membrane in the imager.</p>
+</li>
+<li>
+<p><input type="checkbox"> Take pictures at the imager:</p>
+<ul>
+<li><input type="checkbox"> Take epiillumination-picture:
+<ul>
+<li><input type="checkbox"> Set Method to Digitization:epi-illumination.</li>
+<li><input type="checkbox"> Set exposure type to precision.</li>
+<li><input type="checkbox"> Set sensitivity to standard.</li>
+<li><input type="checkbox"> Set exposure time manually to 1/100s.</li>
+<li><input type="checkbox"> Take a picture.</li>
+<li><input type="checkbox"> Set exposure time manually to 1/60s.</li>
+<li><input type="checkbox"> Take a picture.</li>
+<li><input type="checkbox"> Set exposure time manually to 1/30s.</li>
+<li><input type="checkbox"> Take a picture.</li>
+</ul>
+</li>
+<li><input type="checkbox"> Take incremental pictures:
+<ul>
+<li><input type="checkbox"> Set Method to Chemiluminescence.</li>
+<li><input type="checkbox"> Set exposure type to increment.</li>
+<li><input type="checkbox"> Set interval time as necessary, e.g. to 10s.</li>
+<li><input type="checkbox"> Set sensitivity to standard.</li>
+<li><input type="checkbox"> Take pictures until overexposed and save them.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><input type="checkbox"> Clean the tray with 70% EtOH.</p>
+</li>
+</ol>
+<div class="infobox info">
+  <strong>Membrane Storage</strong>
+  <div><ol>
+<li><input type="checkbox"> Place the membrane in a transparent plastic wrap.</li>
+<li>
+<!-- markdownlint-disable MD033 -->  <input type="checkbox"> Add a small volume of <span data-alt-group="buffer" data-alt="primary">PBST</span><span data-alt-group="buffer" data-alt="secondary" style="display:none">TBST</span> <button class="alternative" data-alt-switch="buffer" data-alt-label-primary="Use PBS" data-alt-label-secondary="Use TBS">Use TBS</button> to keep the membrane moist. <!-- markdownlint-enable MD033 -->
+</li>
+<li><input type="checkbox"> Store @ 4 °C for up to a week.</li>
+</ol>
+<p>For longer storage, dry the membrane completely and store at RT between sheets of filter paper.</p></div>
+</div>
+<h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
+<ul>
+<li><a href="/BiochemProtocols/protocols/">Protocol Name</a> <!----></li>
+</ul>
+
+</div>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/protocols/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+ 
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+
+
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Chemiluminescence Imaging Following Western Blotting</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.0</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Chemiluminescence Imaging Following Western Blotting\"",
+    version: "\"Version 1.0.0\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/\""
+  };
+</script>
+
+
+        <div style="text-align: right;">
+        <br>
+        23.12.2025 Version 1.0.0
+        </div>
+    
+
+
+    </main>
+
+    
+
+<footer class="footer">
+    <div class="footer_rights">  </div>
+    <ul class="footer_navigation">
+        <li class="footer_navigation"><a href="/BiochemProtocols/contact/contact">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+    <ul class="footer_controls">
+        <li class="footer_controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrY3l0eHFsc3d3Y2Z3ZWdwam5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4Mjg2NjIsImV4cCI6MjA4MjQwNDY2Mn0.EPVpZ-1HaM3jhN87FXpJyCP7mmOEzS7zy-HQNZlytF0'
+  );
+</script>
+
+
+<script src="/BiochemProtocols/js/user/auth.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/subscription.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/guard.js"></script>
+
+
+
+<script>
+  window.ACCESS_CODES = ["curriculum","AGJ","düolr","stlsfo"];
+</script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+
+<script src="/BiochemProtocols/js/theme_toggle.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/timer.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/alternative_switches/"></script> 
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_amount.js"></script> 
+
+<script src="/BiochemProtocols/js/comment_box.js"></script>
+
+<script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocols/js/save_journal_label.js"></script>
+
+
+</body>
+
+</html>

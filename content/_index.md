@@ -12,7 +12,7 @@ updated = ''
 +++
 
 {{< infobox type="info" title="" >}}
-This website provides an organized collection of Standard Operating Procedures (SOP), general guidelines, and reference information commonly used in biochemical laboratories. The goal of this resource is to support learning, documentation, and safe planning by offering clear overviews of laboratory methods, materials, and concepts.
+This website provides an organized collection of Standard Operating Procedures (SOP), general guidelines, and reference information commonly used in biochemical laboratories. The goal of this resource is to support learning, documentation, and safe planning by offering clear overviews of laboratory protocols, materials, and concepts.
 {{< /infobox >}}
 
 {{< home_content_block >}}
@@ -23,9 +23,9 @@ This website provides an organized collection of Standard Operating Procedures (
 
 <br>
 
-### 🔬 New methods
+### 🔬 New protocols
 
-{{< new_methods >}}
+{{< new_protocols >}}
 
 ### 🧪 New recipes
 
@@ -34,7 +34,7 @@ This website provides an organized collection of Standard Operating Procedures (
 <br>
 
 Those pages were created within the last thirty days.
-{{% /infobox %}}
+{{< /infobox >}}
 
 {{< infobox type="danger" title="Important Disclaimer" >}}
 Please note that all information on this site is intended for trained personnel who already understand the principles of laboratory safety, risk assessment, and proper handling of chemicals and equipment.  

@@ -14,3 +14,20 @@ required_plan = ['Learn', 'Admin']
 +++
 
 {{< biochemsheets/biochemsheets >}}
+
+{{< infobox type="info" title="📄 NEW PAGES" >}}
+
+<br>
+
+### 🔬 New chemicals
+
+{{< biochemsheets/new_chemicals >}}
+
+### 🧪 New methods
+
+{{< biochemsheets/new_methods >}}
+
+<br>
+
+Those pages were created within the last thirty days.
+{{< /infobox >}}

@@ -1,4 +1,4 @@
-// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with ald_methods
+// JS_STREAMLINE // JS_TODO: converge all alt buttons into one as with ald_protocols
 
 document.addEventListener("DOMContentLoaded", () => {
 

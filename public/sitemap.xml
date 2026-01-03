@@ -98,28 +98,7 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/antibiotics/sulfonamides/</loc>
     <lastmod>2025-12-30T14:20:59+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/test/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/test/testsubchapter1/test1/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/test/testsubchapter1/test2/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/test/testsubchapter1/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/test/testsubchapter2/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/antibiotics/tetracyclines/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/acids/buffers/xxxxx/</loc>
-    <lastmod>2025-12-30T14:20:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/acids/buffers/yyyyy/</loc>
     <lastmod>2025-12-30T14:20:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/biochemsheets/chemicals/antibiotics/betalactams/</loc>
@@ -137,28 +116,28 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/user/registration/pricing/</loc>
     <lastmod>2025-12-27T18:37:48+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/sds-page/</loc>
     <lastmod>2025-12-25T19:33:04+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/western_blotting/</loc>
     <lastmod>2025-12-25T19:10:04+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/imaging_following_wb/</loc>
     <lastmod>2025-12-23T20:46:35+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/single_antibody_following_wb/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/single_antibody_following_wb/</loc>
     <lastmod>2025-12-23T16:17:59+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/ponceau_s_following_wb/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/ponceau_s_following_wb/</loc>
     <lastmod>2025-12-23T16:03:28+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/primary_and_secondary_antibody_following_wb/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/primary_and_secondary_antibody_following_wb/</loc>
     <lastmod>2025-12-23T15:38:48+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/imaging_following_wb/wb_imagequant/</loc>
     <lastmod>2025-12-23T14:54:35+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/coomassie_from_sds-page/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/coomassie_from_sds-page/</loc>
     <lastmod>2025-12-21T14:34:29+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/iptg/</loc>
@@ -179,7 +158,7 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/dna/primer_reconstitution/</loc>
     <lastmod>2025-12-15T09:06:36+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/nucleospin_plasmid_prep/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/nucleospin_plasmid_prep/</loc>
     <lastmod>2025-12-12T10:33:04+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/datenschutz/</loc>
@@ -212,19 +191,19 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/contact/contact/</loc>
     <lastmod>2025-12-11T19:31:10+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/primer_designing/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/primer_designing/</loc>
     <lastmod>2025-12-10T13:06:02+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/imaging_age/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/imaging_age/</loc>
     <lastmod>2025-12-09T13:34:20+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/purification_age/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/purification_age/</loc>
     <lastmod>2025-12-09T13:33:48+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/</loc>
     <lastmod>2025-12-08T15:55:43+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/pcr/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/pcr/</loc>
     <lastmod>2025-12-08T15:42:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/templates/chemicals/</loc>
@@ -242,22 +221,22 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/legal/legal_notice/</loc>
     <lastmod>2025-12-07T21:20:52+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/western_blotting/bio-rad-trans-blot/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/western_blotting/bio-rad-trans-blot/</loc>
     <lastmod>2025-12-07T21:00:18+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/sds-page/hoeffer/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/sds-page/hoeffer/</loc>
     <lastmod>2025-12-07T21:00:04+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/bradford_assay/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/bradford_assay/</loc>
     <lastmod>2025-12-07T20:59:22+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/lowry_assay/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/lowry_assay/</loc>
     <lastmod>2025-12-07T20:59:09+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/age/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/age/</loc>
     <lastmod>2025-12-07T20:56:58+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/dna/age_following_pcr/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/dna/age_following_pcr/</loc>
     <lastmod>2025-12-07T20:56:58+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/western_blot_transfer_buffer/</loc>
@@ -305,7 +284,7 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/templates/biochemsheets_methods/</loc>
     <lastmod>2025-12-07T20:19:41+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/methods/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/templates/protocols/</loc>
     <lastmod>2025-12-07T20:19:41+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/templates/recipes/</loc>
@@ -329,7 +308,7 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/aprotinin/</loc>
     <lastmod>2025-12-07T18:58:20+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/</loc>
@@ -344,19 +323,19 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/dna/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/</loc>
-    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
-  </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/proteins/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/</loc>
+    <lastmod>2025-12-07T13:35:59+01:00</lastmod>
+  </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/sds-page_and_western_blotting/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/sds-page_and_western_blotting/</loc>
     <lastmod>2025-12-07T13:35:59+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/sds-page_and_western_blotting/</loc>
@@ -365,31 +344,31 @@
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/ampicillin/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/plasmid_prep_culture/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/plasmid_prep_culture/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/protein_expression_culture/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/protein_expression_culture/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/transformation/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/transformation/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/transformation_from_pcr/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/transformation_from_pcr/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/bacteria/chemically_competent_bacteria/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/bacteria/chemically_competent_bacteria/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/gluthatione-sepharose_protein_purification/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/gluthatione-sepharose_protein_purification/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/recipes/bacteria/lb-agar/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/magstrep_beads_protein_purification/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/magstrep_beads_protein_purification/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
-    <loc>https://spikemurphy.github.io/BiochemProtocols/methods/proteins/streptag_protein_purification/</loc>
+    <loc>https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/streptag_protein_purification/</loc>
     <lastmod>2025-12-07T13:11:31+01:00</lastmod>
   </url><url>
     <loc>https://spikemurphy.github.io/BiochemProtocols/</loc>

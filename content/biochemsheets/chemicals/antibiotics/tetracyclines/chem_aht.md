@@ -12,10 +12,10 @@ updated = '03.01.2026'
 finished = true
 tested = false
 
-common_name = ['Anhydrotetracycline']
+common_name = ['Anhydrotetracycline Hydrochloride']
 short_name = ['AHT']
 IUPAC = ['hydrogen (2Z)-2-[amino(hydroxy)methylidene]-4-(dimethylamino)-11,12a-dihydroxy-6-methyl-1,2,3,4,4a,5,12,12a-octahydrotetracene-1,3,12-trione chloride']
-other_names = ['Anhydrotetracycline Hydrochloride']
+other_names = ['Anhydrotetracycline']
 cas_number = ['13803-65-1']
 
 formula = ['C<sub>22</sub>H<sub>23</sub>ClN<sub>2</sub>O<sub>7</sub>']
@@ -93,7 +93,6 @@ references = [
   'Fisher Scientific GmbH (Thermo Fisher Scientific Inc.). Anhydrotetracycline hydrochloride, Thermo Scientific™. https://www.fishersci.de/shop/products/anhydrotetracycline-hydrochloride-thermo-scientific/p-7057533?srsltid=AfmBOopy1LARyA61z5Uf4-NbmfyeQKcAjaio-wQ_5a2UXpyS3B1gngJ8. Accessed Jan. 3, 2026.',
   'IBA Lifesciences GmbH. Anhydrotetracycline. https://www.iba-lifesciences.com/de/anhydrotetracycline/2-0401-002. Accessed Jan. 3, 2026.']
 +++
-<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< biochemsheets/chemicals/biochemsheetbox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}

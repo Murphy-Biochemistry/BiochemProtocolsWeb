@@ -57,7 +57,6 @@ references = [
   'Carl Roth GmbH + Co. KG. PAGENAME. LINK. Accessed Jan. 2, 2026.',
   'Institut für Arbeitsschutz der Deutschen Gesetzlichen Unfallversicherung (IFA), PAGENAME. LINK. Accessed Jan. 2, 2026.']
 +++
-<!-- CONTENT_NEW: delete when finished = true + tested = true -->
 
 {{< biochemsheets/chemicals/biochemsheetbox type="info" title="METADATA" >}}
 {{< biochemsheets/chemicals/chemicals_metadata >}}

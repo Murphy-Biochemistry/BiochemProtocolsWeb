@@ -59,8 +59,8 @@ math = true
 
 | Use Case | Specifications |
 | :---- | :----- |
-| [Bacterial Plasmid Preparation Culture]({{< relref "methods/bacteria/plasmid_prep_culture.md" >}}) | typically 100 mg/L |
-| [Bacterial Expression Culture]({{< relref "methods/bacteria/protein_expression_culture.md" >}}) | typically 100 mg/L |
+| [Bacterial Plasmid Preparation Culture]({{< relref "protocols/bacteria/plasmid_prep_culture.md" >}}) | typically 100 mg/L |
+| [Bacterial Expression Culture]({{< relref "protocols/bacteria/protein_expression_culture.md" >}}) | typically 100 mg/L |
 | [Luria-Bertani Agar Medium]({{< relref "recipes/bacteria/lb-agar.md" >}}) | typically 100 mg/L |
 
 {{< /tab >}}

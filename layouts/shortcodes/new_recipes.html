@@ -5,10 +5,10 @@
 
 {{- $recent := where .Site.RegularPages "Date" "gt" $cutoff -}}
 
-{{- $methods := where $recent "Section" "methods" -}}
+{{- $protocols := where $recent "Section" "protocols" -}}
 {{- $recipes := where $recent "Section" "recipes" -}}
 
-{{- $methods = sort $methods "Date" "desc" -}}
+{{- $protocols = sort $protocols "Date" "desc" -}}
 {{- $recipes = sort $recipes "Date" "desc" -}}
 
 {{/* -------- RECIPES -------- */}}

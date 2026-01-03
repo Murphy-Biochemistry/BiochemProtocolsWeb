@@ -8,18 +8,18 @@ const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY")!, {
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "authorization, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Access-Control-Allow-Protocols": "POST, OPTIONS", // changes Methods to Protocols 03.01.2025
 };
 
 serve(async (req) => {
   // ✅ Handle CORS preflight
-  if (req.method === "OPTIONS") {
+  if (req.protocol === "OPTIONS") { // changes methods to protocols 03.01.2025
     return new Response("ok", { headers: corsHeaders });
   }
 
   try {
-    if (req.method !== "POST") {
-      return new Response("Method not allowed", {
+    if (req.protocol !== "POST") { // changes methods to protocols 03.01.2025
+      return new Response("Protocol not allowed", { // changes Method to Protocol 03.01.2025
         status: 405,
         headers: corsHeaders,
       });

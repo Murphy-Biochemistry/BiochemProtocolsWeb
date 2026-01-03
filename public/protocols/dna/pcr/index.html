@@ -1,0 +1,833 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/home_content_block.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/navigation.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/login.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/header.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/footer.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/sponsor_banner.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/pricing_table_public.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/table_sds-page_gels.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/backbone.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/chemicals.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/how_to_use.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/table_of_contents.css">
+
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body  data-required-plan='Execute,Document,Optimize,Admin' >
+
+    
+
+<nav class="navigation">
+    <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
+    <ul class="navigation">
+        <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/biochemsheets">BiochemSheets</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/recipes">Recipes</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/protocols">Protocols</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/user/registration/pricing/">Pricing</a></li>
+        <li class="navigation"><button class="btn_login" data-state="logged-out">Login</button></li>
+    </ul>
+</nav>
+
+    
+
+<div class="login_overlay"></div>
+
+<div class="wrapper_login">
+    <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+    <div class="login_register_forms">    
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn_login_form">Login</button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="registration_form_names">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the
+                        <a href="/BiochemProtocols/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+                        and
+                        <a href="/BiochemProtocols/legal/terms_of_use/" target="_blank">Terms of Use</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn_login_form">Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/BiochemProtocols/js/user/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+      
+
+<header class="protocol-header">
+  <div class="protocol-titles">
+    <h1>Polymerase Chain Reaction (PCR) with Fusion Hot Start II DNA Polymerase</h1>
+
+    
+  </div>
+
+  <div class="protocol-meta">
+
+    
+      <h5 class="protocol-authors">
+        
+          Spike Murphy Müller ¹
+        
+      </h5>
+    
+
+    
+      <div class="protocol-affiliations">
+        
+          
+            <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h5>
+          
+        
+      </div>
+    
+
+  </div>
+</header>
+
+    
+    
+    
+
+    <main>
+
+            
+    
+        <!-- CONTENT_NEW: delete when finished = true + tested = true -->
+
+
+<div class="infobox warning">
+  <strong></strong>
+  <div>❗️ Attention: Reagents and Parameters for T<sub>m</sub>/T<sub>a</sub> as well as t<sub>e</sub> only applie for the Fusion Hot Start II DNA Polymeras.</div>
+</div>
+ 
+
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Thermocycler</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://tmcalculator.neb.com/#!/main">NEB T<sub>m</sub> calculator</a></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://www.thermofisher.com/de/de/home/brands/thermo-scientific/molecular-biology/molecular-biology-learning-center/molecular-biology-resource-library/thermo-scientific-web-tools/tm-calculator.html">ThermoFisher Scientific T<sub>m</sub> calculator</a></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">micropipettes and sterile pipette tips</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">PCR reaction tubes 0.5 mL</td>
+          <td style="text-align: left">1/sample</td>
+          <td style="text-align: left">for sample preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">reaction tubes 1.5 mL</td>
+          <td style="text-align: left">1/30 samples</td>
+          <td style="text-align: left">for mastermix preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left">61 µL/sample</td>
+          <td style="text-align: left">for mastermix preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">GC buffer</td>
+          <td style="text-align: left">20 µL/sample</td>
+          <td style="text-align: left">for mastermix preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">DMSO</td>
+          <td style="text-align: left">3 µL/sample</td>
+          <td style="text-align: left">for mastermix preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>dNTPs</strong> <br> dATP, dTTP, dGTP, dCTP 10 mM each <br> dNTP mix 10 mM</td>
+          <td style="text-align: left"><br> 0.5 µL/sample each <br> 2 µL/sample</td>
+          <td style="text-align: left"><br> for mastermix preparation <br> for mastermix preparation</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left"> Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">forward primer 10 µM</td>
+          <td style="text-align: left">2.5 µL/sample</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">reverse primer 10 µM</td>
+          <td style="text-align: left">2.5 µL/sample</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">DNA template with GOI 10 ng/µL</td>
+          <td style="text-align: left">1 µL/sample</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Phusion Hot Start II DNA polymerase 2 U/µL</td>
+          <td style="text-align: left">1 µL/sample</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+ 
+
+<div class="tab">
+  <h2 id="procedure">Procedure:</h2>
+<h3 id="calculating-the-annealing-temperature-and-elongation-duration-for-the-goi">Calculating the annealing temperature and elongation duration for the GOI:</h3>
+<div class="infobox info">
+  <strong>Annealing Temperature Calculation</strong>
+  <div><p>The annealing temperature T<sub>a</sub> can be calculated from the melting temperature T<sub>m</sub> or looked up within SnapGene.</p>
+<p>T<sub>m</sub> = 4×(GC-Pairing) + 2×(AT-Pairing)<br>
+T<sub>a</sub> = T<sub>m</sub>– 4</p>
+<p>❗️ Non-functional at the moment.</p>
+<div>
+  <br>
+  <input id="seq-fwd" type="text" placeholder="Forward primer" style="padding:4px; width:250px; font-size:14px;"><br><br>
+  <input id="seq-rev" type="text" placeholder="Reverse primer" style="padding:4px; width:250px; font-size:14px;"><br><br>
+<p><button id="calc">Calculate</button><br><br></p>
+  <div id="tm-out" style="font-family:monospace;"></div>
+</div>
+<script src="/BiochemProtocols/js/calculators/tm-calculator.js" defer></script>
+<p>⚠️ Those values are specific for the Phusion HS II DNA polymerase with GC buffer.<br>
+❗️ Plese check all values with e.g. NEB Tm calculator or Thermofisher Scientific Tm calculator.</p>
+</div>
+</div>
+<div class="infobox info">
+  <strong></strong>
+  <div><p>Elongation time for Phusion HS II is 30–60 sec/1kb.</p>
+<p>t<sub>e</sub> = bp/1000 × 30 sec</p>
+<div>
+  <br>
+  <input id="seq-input" type="text" placeholder="One-Letter-Code Sequence"
+         style="padding:4px; width:250px; font-size:14px;"><br><br>
+<p><button id="seqtime-calc">Calculate</button><br><br></p>
+  <div id="seqtime-out" style="font-family:monospace;"></div>
+</div>
+<script src="/BiochemProtocols/js/calculators/seqtime.js" defer></script>
+</div>
+</div>
+<h3 id="preparing-the-thermocycler">Preparing the Thermocycler:</h3>
+<ol>
+<li><input type="checkbox"> Enter the Programm into the Termocycler:</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"><em>CNTRL</em></td>
+          <td style="text-align: left"><em>BLOCK</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">LID = 105°</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"><em>NOWAIT</em></td>
+          <td style="text-align: left"><em>AUTO</em></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">T=98.0°C</td>
+          <td style="text-align: left">0:00:30</td>
+          <td style="text-align: left">(initial denaturation)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">T=98.0°C</td>
+          <td style="text-align: left">0:00:10</td>
+          <td style="text-align: left">(cycle1: denaturation)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">T=xx°C</td>
+          <td style="text-align: left">0:00:30</td>
+          <td style="text-align: left">(cycle1: primer annealing)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">T=72.0°C</td>
+          <td style="text-align: left">0:xx:xx</td>
+          <td style="text-align: left">(cycle1: elongation)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left">GOTO 2</td>
+          <td style="text-align: left">REP 19</td>
+          <td style="text-align: left">(sum: 20 cycles)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6</td>
+          <td style="text-align: left">T=72.0°C</td>
+          <td style="text-align: left">0:08:00</td>
+          <td style="text-align: left">(final incubation)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">7</td>
+          <td style="text-align: left">HOLD 4°C</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"><em>End</em></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<p>
+  T<sub>a</sub>: <input type="text" id="ta-input" value="" style="width:80px;"> °C
+</p>
+<p>
+  t<sub>e</sub>: <input type="text" id="te-input" value="" style="width:80px;"> seconds
+</p>
+</div>
+</div>
+<h3 id="preparing-the-samples-and-running-the-program">Preparing the Samples and Running the Program:</h3>
+<div class="infobox info">
+  <strong></strong>
+  <div>ℹ️ Prepare a mastermix when doing multiple samples containing dsH<sub>2</sub>O, GC buffer, DMSO and dNTP. Use number of samples plus at least one for the mastermix volume multiplyer.</div>
+</div>
+<ol>
+<li><input type="checkbox"> Prepare a Mastermix:</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Volume V [µL]</th>
+          <th style="text-align: left">Reagent</th>
+          <th style="text-align: left">c<sub>1</sub>/m<sub>1</sub></th>
+          <th style="text-align: left">c<sub>2</sub>/m<sub>2</sub></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><span class="pcr" data-base="30.5">30.5</span> µL </td>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><span class="pcr" data-base="10">10</span> µL</td>
+          <td style="text-align: left">GC buffer</td>
+          <td style="text-align: left">5x</td>
+          <td style="text-align: left">1x</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><span class="pcr" data-base="1.5">1.5</span> µL</td>
+          <td style="text-align: left">DMSO</td>
+          <td style="text-align: left">100 % </td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left"><span class="pcr" data-base="1">1</span> µL</td>
+          <td style="text-align: left">dNTP mix</td>
+          <td style="text-align: left">10 mM</td>
+          <td style="text-align: left">200 µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">= <span class="pcr" data-base="43">43</span> µL</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<p>
+  Number of samples:
+  <input type="number" id="sample-count" value="1" min="0" style="width:60px;">
+</p>
+<ol start="2">
+<li><input type="checkbox"> Prepare samples with mastermix by pipetting the following volumes into a 0.5 mL PCR tube:</li>
+</ol>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Volume V [µL]</th>
+          <th style="text-align: left">Reagent</th>
+          <th style="text-align: left">c<sub>1</sub>/m<sub>1</sub></th>
+          <th style="text-align: left">c<sub>2</sub>/m<sub>2</sub></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">43 µL  </td>
+          <td style="text-align: left">Mastermix</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"> </td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">2.5 µL</td>
+          <td style="text-align: left">Forward Primer</td>
+          <td style="text-align: left">10 µM</td>
+          <td style="text-align: left">0.5µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">2.5 µL</td>
+          <td style="text-align: left">Reverse Primer</td>
+          <td style="text-align: left">10 µM</td>
+          <td style="text-align: left">0.5µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1 µL</td>
+          <td style="text-align: left">DNA Template</td>
+          <td style="text-align: left">10 ng/µL </td>
+          <td style="text-align: left">200 pg/µL</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1 µL</td>
+          <td style="text-align: left">Phusion Hot Start II DNA Polymerase</td>
+          <td style="text-align: left">2 U/µL</td>
+          <td style="text-align: left">2 U</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">= 50 µL</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<p>Alternatively prepare samples individually by pipetting the following volumes into a 0.5 mL PCR tube:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Volume V [µL]</th>
+          <th style="text-align: left">Reagent</th>
+          <th style="text-align: left">c<sub>1</sub>/m<sub>1</sub></th>
+          <th style="text-align: left">c<sub>2</sub>/m<sub>2</sub></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">30.5 µL </td>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">10 µL</td>
+          <td style="text-align: left">GC buffer</td>
+          <td style="text-align: left">5x</td>
+          <td style="text-align: left">1x</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1.5 µL</td>
+          <td style="text-align: left">DMSO</td>
+          <td style="text-align: left">100 % </td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1 µL</td>
+          <td style="text-align: left">dNTP mix</td>
+          <td style="text-align: left">10 mM</td>
+          <td style="text-align: left">200 µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">2.5 µL</td>
+          <td style="text-align: left">Forward Primer</td>
+          <td style="text-align: left">10 µM</td>
+          <td style="text-align: left">0.5µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">2.5 µL</td>
+          <td style="text-align: left">Reverse Primer</td>
+          <td style="text-align: left">10 µM</td>
+          <td style="text-align: left">0.5µM</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1 µL</td>
+          <td style="text-align: left">DNA Template</td>
+          <td style="text-align: left">10 ng/µL </td>
+          <td style="text-align: left">200 pg/µL</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox"></td>
+          <td style="text-align: left">1 µL</td>
+          <td style="text-align: left">Phusion Hot Start II DNA Polymerase</td>
+          <td style="text-align: left">2 U/µL</td>
+          <td style="text-align: left">2 U</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">= 50 µL</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<ol start="2">
+<li><input type="checkbox"> Place the PCR tubes into the Thermocycler with maximum disance between samples.</li>
+<li><input type="checkbox"> Start the PCR program.</li>
+</ol>
+<h3 id="procede-with-suitable-protocol">Procede with Suitable Protocol:</h3>
+<ul>
+<li><a href="/BiochemProtocols/protocols/dna/age/">Agarose Gel Electrophoresis (AGE)</a></li>
+</ul>
+
+</div>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/protocols/dna/pcr/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+ 
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+
+
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">Polymerase Chain Reaction (PCR) with Fusion Hot Start II DNA Polymerase</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.0.1</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"Polymerase Chain Reaction (PCR) with Fusion Hot Start II DNA Polymerase\"",
+    version: "\"Version 1.0.1\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/protocols/dna/pcr/\""
+  };
+</script>
+
+
+        <div style="text-align: right;">
+        <br>
+        08.12.2025 Version 1.0.1
+        </div>
+    
+
+
+    </main>
+
+    
+
+<footer class="footer">
+    <div class="footer_rights">  </div>
+    <ul class="footer_navigation">
+        <li class="footer_navigation"><a href="/BiochemProtocols/contact/contact">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+    <ul class="footer_controls">
+        <li class="footer_controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrY3l0eHFsc3d3Y2Z3ZWdwam5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4Mjg2NjIsImV4cCI6MjA4MjQwNDY2Mn0.EPVpZ-1HaM3jhN87FXpJyCP7mmOEzS7zy-HQNZlytF0'
+  );
+</script>
+
+
+<script src="/BiochemProtocols/js/user/auth.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/subscription.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/guard.js"></script>
+
+
+
+<script>
+  window.ACCESS_CODES = ["curriculum","AGJ","düolr","stlsfo"];
+</script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+
+<script src="/BiochemProtocols/js/theme_toggle.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/timer.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/alternative_switches/"></script> 
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_amount.js"></script> 
+
+<script src="/BiochemProtocols/js/comment_box.js"></script>
+
+<script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocols/js/save_journal_label.js"></script>
+
+
+</body>
+
+</html>

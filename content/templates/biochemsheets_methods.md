@@ -12,5 +12,3 @@ updated = ''
 finished = false
 tested = false
 +++
-
-<!-- CONTENT_NEW: delete when finished = true + tested = true -->

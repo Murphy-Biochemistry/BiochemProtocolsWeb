@@ -1,0 +1,681 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/home_content_block.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/navigation.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/login.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/header.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/footer.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/backbone/sponsor_banner.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/pricing_table_public.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/calc_bacterial_growth.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/table_sds-page_gels.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/backbone.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/chemicals.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/how_to_use.css">
+    <link rel="stylesheet" href="/BiochemProtocols/css/biochemsheets/table_of_contents.css">
+
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body  data-required-plan='Execute,Document,Optimize,Admin' >
+
+    
+
+<nav class="navigation">
+    <a href="/BiochemProtocols/"><img class="logo" src="/BiochemProtocols/images/3biochem_white.png" alt="Logo"></a>
+    <ul class="navigation">
+        <li class="navigation"><a href="/BiochemProtocols/">Home</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/biochemsheets">BiochemSheets</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/recipes">Recipes</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/protocols">Protocols</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/workflows">Workflows</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/labjournal">Labjournal</a></li>
+        <li class="navigation"><a href="/BiochemProtocols/user/registration/pricing/">Pricing</a></li>
+        <li class="navigation"><button class="btn_login" data-state="logged-out">Login</button></li>
+    </ul>
+</nav>
+
+    
+
+<div class="login_overlay"></div>
+
+<div class="wrapper_login">
+    <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+    <div class="login_register_forms">    
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn_login_form">Login</button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="registration_form_names">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the
+                        <a href="/BiochemProtocols/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+                        and
+                        <a href="/BiochemProtocols/legal/terms_of_use/" target="_blank">Terms of Use</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn_login_form">Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/BiochemProtocols/js/user/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+      
+
+<header class="protocol-header">
+  <div class="protocol-titles">
+    <h1>StrepTag Gravity Flow Protein Purification</h1>
+
+    
+      <h2>StrepTactin®XT 4Flow® 0.2 mL column bed volume</h2>
+    
+  </div>
+
+  <div class="protocol-meta">
+
+    
+      <h5 class="protocol-authors">
+        
+          Spike Murphy Müller ¹
+        
+      </h5>
+    
+
+    
+      <div class="protocol-affiliations">
+        
+          
+            <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h5>
+          
+        
+      </div>
+    
+
+  </div>
+</header>
+
+    
+    
+    
+
+    <main>
+
+            
+    
+        <!-- DONE: delete when finished = true + tested = true -->
+ 
+
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">cold room</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">bucket of ice</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">StrepTactin®XT 4Flow® column <a href=""><sup>manual</sup></a></td>
+          <td style="text-align: left">1/5 mL culture</td>
+          <td style="text-align: left">200 µL collumn bed volume (CV)</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">micropipettes and sterile pipette tips</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">gravity flow column stand</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sterile reaction tube 1.5 mL</td>
+          <td style="text-align: left"><strong>4/5 mL culture:</strong> <br> 1/5 mL culture <br> 1/5 mL culture <br> 2/5 mL culture</td>
+          <td style="text-align: left"><br> for the eluted protein <br> for glycerol <br> for 1 SDS-PAGE aliquot per 2.5 mL culture</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/">tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer</a> (or buffer W)</td>
+          <td style="text-align: left"><strong>10 ml/5 mL lysate</strong>: <br> 1x  2 CV (400 µL) <br> 2x 5 CV (1000 µL) <br> 2x 15 CV (3000 µL)</td>
+          <td style="text-align: left"><br> for equilibration <br> for washing <br> for column regeneration</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/proteins/biotin_elution_buffer/">biotin elution buffer</a> (or buffer BXT)</td>
+          <td style="text-align: left">1 mL/5 mL culture</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">glycerol 85 %</td>
+          <td style="text-align: left">1000 µL/5 mL culture</td>
+          <td style="text-align: left">for storage buffer</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">deionized sterilized Water <em>dsH<sub>2</sub>O</em></td>
+          <td style="text-align: left">4 µL/5 mL culture</td>
+          <td style="text-align: left">for SDS-PAGE aliquots</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocols/recipes/sds-page_and_western_blotting/sds-page_sample_buffer/">Laemmli SDS-PAGE sample buffer</a> 2x</td>
+          <td style="text-align: left">20 µL/5 mL culture</td>
+          <td style="text-align: left">for SDS-PAGE aliquots</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">sodium hydroxide <em>NaOH</em> 10 mM</td>
+          <td style="text-align: left"><strong>6 ml/5 mL lysate</strong>: <br> 2x 30 CV (3000 µL)</td>
+          <td style="text-align: left"><br> for column regeneration</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">bacterial cell lysate</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">from <a href="/BiochemProtocols/protocols/bacteria/protein_expression_culture/">Bacterial Protein Expression Culture</a></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+ 
+
+<div class="tab">
+  <h2 id="procedure">Procedure</h2>
+<h3 id="preparations">Preparations</h3>
+<ol>
+<li><input type="checkbox"> Prepare and pre-cool 10 mL <a href="/BiochemProtocols/recipes/bacteria/bacterial_lysis_buffer/">Tris-HCl-NaCl-MgCl<sub>2</sub> bacterial lysis buffer</a> as a equibrilation and wash buffer per 5 mL bacterial lysate from 500 mL bacterial culture volume (or 10 mL buffer W).</li>
+<li><input type="checkbox"> Prepare and pre-cool 1 mL <a href="/BiochemProtocols/recipes/proteins/biotin_elution_buffer/">biotin elution buffer</a> per 5 mL bacterial lysate from 500 mL bacterial culture volume (or 1 mL buffer BXT).</li>
+</ol>
+<h3 id="equilibrating-the-column">Equilibrating the Column</h3>
+<ol>
+<li><input type="checkbox"> Place the column onto a stand in the cold room @ 2-8 °C.</li>
+<li><input type="checkbox"> Remove the top cap.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ Keep the top cap for resealing and reuse.</div>
+</div>
+<ol start="3">
+<li><input type="checkbox"> Twist of bottom cap.</li>
+<li><input type="checkbox"> Let the storage buffer flow through.</li>
+<li><input type="checkbox"> Equilibrate the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Equilibrate the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+</ol>
+<h3 id="first-binding-the-protein-and-washing">First Binding the Protein and Washing</h3>
+<ol>
+<li><input type="checkbox"> Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely. <!-- CONTENT_TODO: calculate volume according to binding capacity and expected protein yield--></li>
+</ol>
+<div class="infobox info">
+  <strong>Binding</strong>
+  <div><p>Binding usually takes 20-30 minutes per 2 mL, but can take up to 1h in some cases.</p>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div></div>
+</div>
+<ol start="2">
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+</ol>
+<div class="infobox info">
+  <strong>Washing</strong>
+  <div><p>Washing usually takes 5-10 minutes.</p>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div></div>
+</div>
+<h3 id="first-elution">First Elution</h3>
+<ol>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+</ol>
+<div class="infobox info">
+  <strong>EDTA</strong>
+  <div>⚠️ Use buffer without EDTA when metalloproteins are purified or when metal ion activated enzymes are purified and function is to be kept.</div>
+</div>
+<h3 id="first-storage">First Storage</h3>
+<ol>
+<li><input type="checkbox"> Add 500 µL glycerol 85 % (approximately 615 mg) to a sterile 1.5 mL reaction tube.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Micropipettes with cut of pipette tips can make pipetting easier. Weighing is often a more reliable alternative.</div>
+</div>
+<ol start="2">
+<li><input type="checkbox"> After the final elution add the eluate to the prepared glycerol for a final concentration of 38.6 % (4.93 M).</li>
+<li>Rotate end-over-end for 5-10 minutes.</li>
+</ol>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<ol start="4">
+<li><input type="checkbox"> Take a 4 µL aliquot + 4 µL dsH<sub>2</sub>O and a 8 µL aliquot and mix them with  10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.</li>
+</ol>
+<div class="infobox info">
+  <strong>SDS-PAGE</strong>
+  <div>⚠️ The samples will be mixed fresh with 2µL DTT for a final concentration of the sample buffer of 1x. Two dilutions give more opportunity to have an adequate amount of purified protein in the SDS-PAGE analysis, when doing concentration calculations with a BSA standard.</div>
+</div>
+<ol start="5">
+<li><input type="checkbox"> Optionally aliquot the rest in 50–100 µL fractions.</li>
+<li><input type="checkbox"> Store @ –20 °C for middle term storage or –80 °C for long term storage.</li>
+</ol>
+<h3 id="first-column-regeneration">First Column regeneration</h3>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ The column can be reused &gt;10 times according to the manufacturer. It is not recommended to purify different proteins on one column. Reuse only when purifying the same protein again.</div>
+</div>
+<ol>
+<li><input type="checkbox"> Add 15 column bed volumes (3000 µL) of fresh NaOH 100 mM to the column.</li>
+<li><input type="checkbox"> Let the NaOH pass through completely.</li>
+<li><input type="checkbox"> Wash column immediately with at least 15 column bed volumes (3000 µL) of wash buffer (or buffer W).</li>
+</ol>
+<h3 id="second-binding-the-protein-and-washing">Second Binding the Protein and Washing</h3>
+<ol>
+<li><input type="checkbox"> Add 0.5-12.5 column bed volume (100 to 2500 µL) of sample onto the column and let the sample flow through completely.</li>
+</ol>
+<div class="infobox info">
+  <strong>Binding</strong>
+  <div><p>Binding usually takes 20-30 minutes per 2 mL, but can take up to 1h in some cases.</p>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:20:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:20:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div></div>
+</div>
+<ol start="2">
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+<li><input type="checkbox"> Wash the column with 1 column bed volume (200 µL) of wash buffer (or buffer W).</li>
+</ol>
+<div class="infobox info">
+  <strong>Washing</strong>
+  <div><p>Washing usually takes 5-10 minutes.</p>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div></div>
+</div>
+<h3 id="second-elution">Second Elution</h3>
+<ol>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+<li><input type="checkbox"> Elute the protein by applying 0.5 CV (100 µL) of EDTA free elution buffer (or Buffer BXT).</li>
+</ol>
+<div class="infobox info">
+  <strong>EDTA</strong>
+  <div>⚠️ Use buffer without EDTA when metalloproteins are purified or when metal ion activated enzymes are purified and function is to be kept.</div>
+</div>
+<h3 id="second-storage">Second Storage</h3>
+<ol>
+<li><input type="checkbox"> Add 500 µL glycerol 85 % (approximately 615 mg) to a sterile 1.5 mL reaction tube.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ Pipetting highly viscous glycerol can be challenging and may lead to inaccurate measurements. Micropipettes with cut of pipette tips can make pipetting easier. Weighing is often a more reliable alternative.</div>
+</div>
+<ol start="2">
+<li><input type="checkbox"> After the final elution add the eluate to the prepared glycerol for a final concentration of 38.6 % (4.93 M).</li>
+<li>Rotate end-over-end for 5-10 minutes.</li>
+</ol>
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="0:05:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:05:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="0:10:00" data-sound="/BiochemProtocols/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:10:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<ol start="4">
+<li><input type="checkbox"> Take a 4 µL aliquot + 4 µL dsH<sub>2</sub>O and a 8 µL aliquot and mix them with  10 µL of 2x Laemmli sample buffer and freeze @ -20 °C for later SDS-PAGE analysis.</li>
+</ol>
+<div class="infobox info">
+  <strong>SDS-PAGE</strong>
+  <div>⚠️ The samples will be mixed fresh with 2µL DTT for a final concentration of the sample buffer of 1x. Two dilutions give more opportunity to have an adequate amount of purified protein in the SDS-PAGE analysis, when doing concentration calculations with a BSA standard.</div>
+</div>
+<ol start="5">
+<li><input type="checkbox"> Optionally, aliquot the rest in 50–100 µL fractions.</li>
+<li><input type="checkbox"> Store @ –20 °C for middle term storage or –80 °C for long term storage.</li>
+</ol>
+<h3 id="second-column-regeneration">Second Column regeneration</h3>
+<div class="infobox info">
+  <strong></strong>
+  <div>⚠️ The column can be reused &gt;10 times according to the manufacturer. It is not recommended to purify different proteins on one column. Reuse only when purifying the same protein again.</div>
+</div>
+<ol>
+<li><input type="checkbox"> Add 15 column bed volumes (3000 µL) of fresh NaOH 100 mM to the column.</li>
+<li><input type="checkbox"> Let the NaOH pass through completely.</li>
+<li><input type="checkbox"> Wash column immediately with at least 15 column bed volumes (3000 µL) of wash buffer (or buffer W).</li>
+</ol>
+<h3 id="column-storage">Column storage</h3>
+<ol>
+<li><input type="checkbox"> Overlay the resin with 2000 µL buffer W.</li>
+<li><input type="checkbox"> Close column with top cap.</li>
+<li><input type="checkbox"> Close column with bottom cap.</li>
+</ol>
+<h3 id="precede-with-suitable-protocol">Precede with Suitable Protocol</h3>
+<ul>
+<li><a href="/BiochemProtocols/protocols/proteins/bradford_assay/">Bradford Assay</a></li>
+<li><a href="/BiochemProtocols/protocols/proteins/lowry_assay/">Lowry Assay</a></li>
+<li><a href="/BiochemProtocols/protocols/sds-page_and_western_blotting/sds-page/">Sodium dodecyl sulfate Polyacrylamide Gel Electrophoresis</a></li>
+</ul>
+
+</div>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocols/protocols/proteins/streptag_protein_purification/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+ 
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+
+
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocols</b></div>
+      <br>
+      <div class="line title">StrepTag Gravity Flow Protein Purification</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.1.1</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"StrepTag Gravity Flow Protein Purification\"",
+    version: "\"Version 1.1.1\"",
+    url: "\"https://spikemurphy.github.io/BiochemProtocols/protocols/proteins/streptag_protein_purification/\""
+  };
+</script>
+
+
+        <div style="text-align: right;">
+        <br>
+        17.12.2025 Version 1.1.1
+        </div>
+    
+
+
+    </main>
+
+    
+
+<footer class="footer">
+    <div class="footer_rights">  </div>
+    <ul class="footer_navigation">
+        <li class="footer_navigation"><a href="/BiochemProtocols/contact/contact">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/privacy_policy">Privacy Policy</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocols/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+    <ul class="footer_controls">
+        <li class="footer_controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrY3l0eHFsc3d3Y2Z3ZWdwam5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4Mjg2NjIsImV4cCI6MjA4MjQwNDY2Mn0.EPVpZ-1HaM3jhN87FXpJyCP7mmOEzS7zy-HQNZlytF0'
+  );
+</script>
+
+
+<script src="/BiochemProtocols/js/user/auth.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/subscription.js"></script>
+
+
+<script src="/BiochemProtocols/js/user/guard.js"></script>
+
+
+
+<script>
+  window.ACCESS_CODES = ["curriculum","AGJ","düolr","stlsfo"];
+</script>
+<script src="/BiochemProtocols/js/user/access.js"></script>
+
+
+
+<script src="/BiochemProtocols/js/theme_toggle.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocols/js/timer.js"></script>
+<script src="/BiochemProtocols/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocols/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocols/js/alternative_switches/"></script> 
+
+<script src="/BiochemProtocols/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_mol.js"></script> 
+<script src="/BiochemProtocols/js/calculators/calc_recipe_amount.js"></script> 
+
+<script src="/BiochemProtocols/js/comment_box.js"></script>
+
+<script src="/BiochemProtocols/js/save_page.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocols/js/save_journal_label.js"></script>
+
+
+</body>
+
+</html>

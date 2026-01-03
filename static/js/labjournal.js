@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const entriesDiv = document.getElementById("elj-entries");
 
   const recipeSelect = document.getElementById("recipe-select");
-  const methodSelect = document.getElementById("method-select");
+  const protocolselect = document.getElementById("method-select");
 
-  if (!editor || !recipeSelect || !methodSelect) {
+  if (!editor || !recipeSelect || !protocolselect) {
     console.error("Labjournal elements not found in DOM");
     return;
   }
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   populateSelect("recipes", recipeSelect);
-  populateSelect("methods", methodSelect);
+  populateSelect("protocols", protocolselect);
 
   /* ================================
      INSERT SELECTED BODY CONTENT
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   recipeSelect.addEventListener("change", e => insertFromSelect(e.target));
-  methodSelect.addEventListener("change", e => insertFromSelect(e.target));
+  protocolselect.addEventListener("change", e => insertFromSelect(e.target));
 
   /* ================================
      SAVE + LOAD JOURNAL ENTRIES

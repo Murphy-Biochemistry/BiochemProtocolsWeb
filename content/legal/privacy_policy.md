@@ -105,7 +105,7 @@ If users submit **protocols, SOPs, or other scientific content**, the submitted 
 
 - processing and responding to submitted inquiries  
 - communication with contributors  
-- managing submissions of biochemical methods / SOPs  
+- managing submissions of biochemical protocols / SOPs  
 - proof of consent for rights transfer  
 - optional publication of contributor names as authors  
 - internal documentation and protection against misuse (legitimate interest)
