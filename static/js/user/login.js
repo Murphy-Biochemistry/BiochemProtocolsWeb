@@ -139,11 +139,11 @@ if (registerForm) {
     window.history.replaceState(
       {},
       document.title,
-      '/BiochemProtocols/'
+      '/BiochemProtocolsWeb/'
     );
 
     // Weiterleitung
     window.location.href =
-      '/BiochemProtocols/user/registration/callback/';
+      '/BiochemProtocolsWeb/user/registration/callback/';
   }
 })();

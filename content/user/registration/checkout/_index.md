@@ -56,10 +56,10 @@ required_plan = []
 </script>
 
 
-<a href="/BiochemProtocols/user/registration/checkout/?price=price_1AAA111">
+<a href="/BiochemProtocolsWeb/user/registration/checkout/?price=price_1AAA111">
   Buy Explore
 </a>
 
-<a href="/BiochemProtocols/user/registration/checkout/?price=price_1AAA222">
+<a href="/BiochemProtocolsWeb/user/registration/checkout/?price=price_1AAA222">
   Buy Explore (Yearly)
 </a>

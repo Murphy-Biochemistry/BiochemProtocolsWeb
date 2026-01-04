@@ -9,7 +9,7 @@ title = "Registration successful"
 
   <p class="callback-note">
     If the redirect does not happen automatically,
-    <a href="/BiochemProtocols/">click here</a>.
+    <a href="/BiochemProtocolsWeb/">click here</a>.
   </p>
 </div>
 
@@ -33,7 +33,7 @@ title = "Registration successful"
 
       if (seconds <= 0) {
         clearInterval(timer);
-        window.location.href = "/BiochemProtocols/";
+        window.location.href = "/BiochemProtocolsWeb/";
       }
     }, 1000);
   })();

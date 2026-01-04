@@ -55,7 +55,7 @@ async function logout() {
   window.auth.session = null;
 
   // Optional: redirect to homepage
-  window.location.replace('/BiochemProtocols/');
+  window.location.replace('/BiochemProtocolsWeb/');
 }
 
 // Expose helpers

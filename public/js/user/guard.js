@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // NOW require login
   if (!window.auth.user) {
     window.location.replace(
-      '/BiochemProtocols/user/registration/pricing/?login=1'
+      '/BiochemProtocolsWeb/user/registration/pricing/?login=1'
     );
     return;
   }
@@ -27,6 +27,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     !allowedStatuses.includes(window.subscription.status) ||
     !allowedPlans.includes(window.subscription.plan)
   ) {
-    window.location.replace('/BiochemProtocols/user/registration/pricing/');
+    window.location.replace('/BiochemProtocolsWeb/user/registration/pricing/');
   }
 });

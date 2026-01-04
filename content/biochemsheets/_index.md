@@ -19,11 +19,11 @@ required_plan = ['Learn', 'Admin']
 
 <br>
 
-### 🔬 New chemicals
+### ⚗️ New chemicals
 
 {{< biochemsheets/new_chemicals >}}
 
-### 🧪 New methods
+### 🧫 New methods
 
 {{< biochemsheets/new_methods >}}
 

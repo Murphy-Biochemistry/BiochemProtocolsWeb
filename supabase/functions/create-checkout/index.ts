@@ -87,9 +87,9 @@ serve(async (req) => {
       customer: customerId,
       line_items: [{ price: priceId, quantity: 1 }],
       success_url:
-        "https://spikemurphy.github.io/BiochemProtocols/user/registration/success",
+        "https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/success",
       cancel_url:
-        "https://spikemurphy.github.io/BiochemProtocols/user/registration/pricing",
+        "https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/pricing",
     });
 
     return new Response(JSON.stringify({ url: session.url }), {

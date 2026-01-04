@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pricing on BiochemProtocols</title>
-    <link>https://spikemurphy.github.io/BiochemProtocols/user/registration/pricing/</link>
-    <description>Recent content in Pricing on BiochemProtocols</description>
+    <title>Pricing on BiochemProtocolsWeb</title>
+    <link>https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/pricing/</link>
+    <description>Recent content in Pricing on BiochemProtocolsWeb</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <copyright>© 2025 Murphy Biochemistry UG (haftungsbeschränkt) · All Rights Reserved</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://spikemurphy.github.io/BiochemProtocols/user/registration/pricing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/pricing/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

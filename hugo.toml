@@ -1,6 +1,8 @@
-baseURL = 'https://spikemurphy.github.io/BiochemProtocols/'
+baseURL = 'https://spikemurphy.github.io/BiochemProtocolsWeb/'
 languageCode = 'en-us'
-title = 'BiochemProtocols'
+title = 'BiochemProtocolsWeb'
+author = "Spike Murphy Müller"
+copyright = "© 2025 Murphy Biochemistry UG (haftungsbeschränkt) · All Rights Reserved"
 
 [markup]
   [markup.goldmark]

@@ -1,0 +1,31 @@
+<!-- SHORTCODE_STREAMLINE -->
+
+{{- $now := now -}}
+{{- $cutoff := $now.AddDate 0 0 -30 -}}
+
+{{- $recent := where .Site.RegularPages "Date" "gt" $cutoff -}}
+
+{{- $methods := where $recent "Section" "methods" -}}
+{{- $recipes := where $recent "Section" "recipes" -}}
+
+{{- $methods = sort $methods "Date" "desc" -}}
+{{- $recipes = sort $recipes "Date" "desc" -}}
+
+{{/* -------- methods -------- */}}
+{{- if gt (len $methods) 0 }}
+<ul>
+  {{- range $methods }}
+    <li>
+      {{- if .Params.construction -}}
+      🚧 
+      {{- else if .Params.tested -}}
+      ⭐️ 
+      {{- else -}}
+      ✅ 
+      {{- end -}}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <small>({{ .Date.Format "2006-01-02 15:04" }})</small>
+    </li>
+  {{- end }}
+</ul>
+{{- end }}
