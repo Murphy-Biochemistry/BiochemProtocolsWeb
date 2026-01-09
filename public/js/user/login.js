@@ -100,7 +100,7 @@ if (registerForm) {
       password,
       options: {
         emailRedirectTo:
-          'https://spikemurphy.github.io/BiochemProtocols/user/registration/callback',
+          'https://murphy-biochemistry.github.io/BiochemProtocols/user/registration/callback',
         data: {
           first_name: firstName,
           last_name: lastName,

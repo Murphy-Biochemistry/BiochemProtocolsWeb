@@ -1,4 +1,4 @@
-baseURL = 'https://spikemurphy.github.io/BiochemProtocolsWeb/'
+baseURL = 'https://murphy-biochemistry.github.io/BiochemProtocolsWeb/'
 languageCode = 'en-us'
 title = 'BiochemProtocolsWeb'
 author = "Spike Murphy Müller"

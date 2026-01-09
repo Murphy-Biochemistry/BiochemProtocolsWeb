@@ -1,0 +1,633 @@
+<html lang="en">
+
+<head><script src="/BiochemProtocolsWeb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=BiochemProtocolsWeb/livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/home_content_block.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/navigation.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/login.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/header.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/footer.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/backbone/sponsor_banner.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/styles.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/pricing_table_public.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/buttons.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/dropdowns.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/calc_bacterial_growth.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/table_sds-page_gels.css">
+    
+    
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/biochemsheets/backbone.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/biochemsheets/chemicals.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/biochemsheets/how_to_use.css">
+    <link rel="stylesheet" href="/BiochemProtocolsWeb/css/biochemsheets/table_of_contents.css">
+
+    
+    
+    
+    
+    
+    <title>Document</title>
+</head>
+
+<body  data-required-plan='Execute,Document,Optimize,Admin' >
+
+    
+
+<nav class="navigation">
+    <a href="/BiochemProtocolsWeb/" class="logo-link">
+        <img class="logo logo-light"
+            src="/BiochemProtocolsWeb/images/logos/Logo_Murphy_Biochemistry_Cropped_Light.png"
+            alt="Logo Light">
+        <img class="logo logo-dark"
+            src="/BiochemProtocolsWeb/images/logos/Logo_Murphy_Biochemistry_Cropped_Dark.png"
+            alt="Logo Dark">
+    </a>
+    <ul class="navigation">
+        <li class="navigation"><a href="/BiochemProtocolsWeb/">Home</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/biochemsheets">BiochemSheets</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/recipes">Recipes</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/protocols">Protocols</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/workflows">Workflows</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/labjournal">Labjournal</a></li>
+        <li class="navigation"><a href="/BiochemProtocolsWeb/user/registration/pricing/">Pricing</a></li>
+        <li class="navigation"><button class="btn_login" data-state="logged-out">Login</button></li>
+    </ul>
+</nav>
+
+    
+
+<div class="login_overlay"></div>
+
+<div class="wrapper_login">
+    <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+    <div class="login_register_forms">    
+        <div class="login_form">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn_login_form">Login</button>
+                <div class="login_register">
+                    <p>Don't have an account? <a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="registration_form">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="registration_form_names">
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="first_name" required>
+                        <label>First Name(s)</label>
+                    </div>
+                    <div class="input_box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" name="last_name" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the
+                        <a href="/BiochemProtocolsWeb/legal/privacy_policy/" target="_blank">Privacy Policy</a>
+                        and
+                        <a href="/BiochemProtocolsWeb/legal/terms_of_use/" target="_blank">Terms of Use</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn_login_form">Register</button>
+                <div class="login_register">
+                    <p>Already have an account? <a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/BiochemProtocolsWeb/js/user/login.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    
+      
+
+<header class="protocol-header">
+  <div class="protocol-titles">
+    <h1>xxxxxxotting</h1>
+
+    
+      <h2>Using the BIO-RAD Trans-Blot® Electrophoretic Transfer Cell</h2>
+    
+  </div>
+
+  <div class="protocol-meta">
+
+    
+      <h5 class="protocol-authors">
+        
+          Spike Murphy Müller ¹
+        
+      </h5>
+    
+
+    
+      <div class="protocol-affiliations">
+        
+          
+            <h5>¹ Center for Experimental Medicine, Institute of Biochemistry and Signal Transduction, Working Group Signal Transduction in Cancer</h5>
+          
+        
+      </div>
+    
+
+  </div>
+</header>
+
+    
+    
+    
+
+    <main>
+
+            
+    
+         
+
+
+
+
+  <div class="protocol-variant-switcher">
+    <label>Protocol variant:</label>
+    <select onchange="window.location.href=this.value">
+      
+        <option value="/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/western_blotting/bio-rad-trans-blot/"
+          >
+          Western Blotting – Using the BIO-RAD Trans-Blot® Electrophoretic Transfer Cell
+        </option>
+      
+        <option value="/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/western_blotting/xxxxx/"
+          selected>
+          xxxxxxotting – Using the BIO-RAD Trans-Blot® Electrophoretic Transfer Cell
+        </option>
+      
+    </select>
+  </div>
+
+ 
+
+<div class="tab">
+  <h2 id="materials">Materials</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Equipment &amp; Devices⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">cold room</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left">@ 4 °C</td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Commercial Kits⠀⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">blotting cell <br> BIO-RAD Trans-Blot® Electrophoretic Transfer Cell <a href="https://www.bio-rad.com/sites/default/files/webroot/web/pdf/lsr/literature/M1703910D.pdf"><sup>manual</sup></a></td>
+          <td style="text-align: left">1/2-4 gels</td>
+          <td style="text-align: left">electrode chamber <br> gel holder cassette <br> blotting sponges</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">power source <br> BIO-RAD PowerPack™ 1000 <a href="https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4006213.pdf"><sup>manual</sup></a></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Containers &amp; Consumables</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">small magnetic stir bar</td>
+          <td style="text-align: left">1/2-4 gels</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">filter paper (Whatman paper)</td>
+          <td style="text-align: left">2/gel</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">nitrocellulose membrane</td>
+          <td style="text-align: left">1/gel</td>
+          <td style="text-align: left">default: 0.45µm</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">plastic trays</td>
+          <td style="text-align: left">2/gel</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Reagents &amp; Solutions⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">ethanol <em>EtOH</em> 30 %</td>
+          <td style="text-align: left">~200 mL/gel</td>
+          <td style="text-align: left">for destaining coomassie stained gels</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">dsH<sub>2</sub>O</td>
+          <td style="text-align: left">~200 mL/gel</td>
+          <td style="text-align: left">for equilibrating the nitrocellulose membrane</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="/BiochemProtocolsWeb/recipes/sds-page_and_western_blotting/western_blot_transfer_buffer/">tris-glycine(-SDS)-MeOH Towbin transfer buffer</a></td>
+          <td style="text-align: left">~2500 mL</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ponceau S</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Biological Materials⠀⠀⠀⠀⠀</th>
+          <th style="text-align: left">Amount</th>
+          <th style="text-align: left">Specifications</th>
+          <th style="text-align: left">Location</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">separating gel with protein samples</td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"></td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+ 
+
+<div class="tab">
+  <h2 id="procedure">Procedure</h2>
+<h3 id="preparations-the-day-before">Preparations the Day Before</h3>
+<ol>
+<li><input type="checkbox"> If the SDS-PAGE gel was previously stained with a Coomassie stain, such as Roti®Blue quick, destain in EtOH 30 % @ RT for 30 minutes or @ 4 °C overnight.</li>
+</ol>
+ <div class="countdown-wrapper" data-time="0:30:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:30:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+<ol start="2">
+<li><input type="checkbox"> Prepare 2.5l of transfer buffer by mixing 1750 mL of dsH<sub>2</sub>O with 500 mL of MeOH and 250 mL of 10x Western Blot tris-glycine(-SDS) Towbin transfer buffer.</li>
+<li><input type="checkbox"> Let the transfer buffer cool down to 4 °C overnight.</li>
+</ol>
+<h3 id="pre-transfer-preparations">Pre-Transfer Preparations</h3>
+<ol>
+<li><input type="checkbox"> Prepare a small tray with transfer buffer to fit the gel.</li>
+<li><input type="checkbox"> Prepare a small tray with dsH<sub>2</sub>O to fit the nitrocellulose membrane.</li>
+<li><input type="checkbox"> Place the SDS-PAGE gel into the tray with transfer buffer.</li>
+</ol>
+<div class="infobox info">
+  <strong></strong>
+  <div><p>⚠️ Some Coomassie stains, such as Roti®Blue quick, tend to bind SDS, so the gel needs to be equilibrated in transfer buffer containing of at least 0.1 % SDS for 15 minutes.</p>
+ <div class="countdown-wrapper" data-time="0:15:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">0:15:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div></div>
+</div>
+<ol start="4">
+<li><input type="checkbox"> Cut a nitrocellulose membrane per gel to the size of the SDS-PAGE separating gel.</li>
+<li><input type="checkbox"> Remove the protective foil from the nitrocellulose membrane.</li>
+<li><input type="checkbox"> Place the nitrocellulose membrane into dsH<sub>2</sub>O.</li>
+</ol>
+<div class="infobox info">
+  <strong>Nitrocellulose</strong>
+  <div>⚠️ Do not allow the exposed membrane to contact any surface other than water. Handle only with forceps, gripping the edges.</div>
+</div>
+<ol start="7">
+<li><input type="checkbox"> Cut two filter papers per gel to the size of the SDS-PAGE separating gel.</li>
+<li><input type="checkbox"> Prepare a large tray with transfer buffer to fit the gel holder cassette.</li>
+</ol>
+<h3 id="constructing-the-gel-holder-cassette">Constructing the Gel Holder Cassette</h3>
+<ol>
+<li><input type="checkbox"> Place the gel holder cassette with the cathode facing side (usually black side) down into the tray with transfer buffer.</li>
+<li><input type="checkbox"> Place a blotting sponge on top of the cathode facing side (usually black side) of the gel holder cassette and also soak the second sponge in transfer buffer.</li>
+<li><input type="checkbox"> Place the first filter paper onto the sponge.</li>
+<li><input type="checkbox"> Place SDS-PAGE separating gel onto the first filter paper.</li>
+<li><input type="checkbox"> Place nitrocellulose membrane onto the SDS-PAGE gel.</li>
+</ol>
+<div class="infobox info">
+  <strong>Nitrocellulose</strong>
+  <div>⚠️ Don’t adjust the placement of the membrane, because the transfer starts immediately.</div>
+</div>
+<ol start="6">
+<li><input type="checkbox"> Place the second filter paper onto the nitrocellulose membrane.</li>
+<li><input type="checkbox"> Roll over the filter paper to remove all bubbles.</li>
+</ol>
+<div class="infobox info">
+  <strong>Nitrocellulose</strong>
+  <div>⚠️ Be careful not to move the gel and nitrocellulose membrane. Do not exert unnecessary pressure to avoid rupturing the gel.</div>
+</div>
+<ol start="8">
+<li><input type="checkbox"> Place the second blotting sponge onto the second filter paper.</li>
+<li><input type="checkbox"> Close the gel holder cassette.</li>
+</ol>
+<h3 id="preparing-the-blotting-tank-and-running-the-blot">Preparing the Blotting Tank and Running the Blot</h3>
+<ol>
+<li><input type="checkbox"> Add the remaining transfer buffer to the blotting tank and add a magnetic stir bar.</li>
+<li><input type="checkbox"> Place the gel holder cassette in the blotting tank so the membrane is oriented towards the anode (red) in relation to the gel and the gel is oriented towards the cathode (black) in relation to the membrane (black to black).</li>
+<li><input type="checkbox"> Fill up the tank with the transfer buffer from the trays until the buffer level is high enough to cover where the gel is placed in the gel holder cassette.</li>
+<li><input type="checkbox"> Place the lid onto the tank.</li>
+<li><input type="checkbox"> Place the chamber onto a magnetic stirrer in the cold room.</li>
+<li><input type="checkbox"> Connect the power source with the correct polarity and blot @ 65 V for 1-4 h (default 2 h).</li>
+</ol>
+<div class="infobox info">
+  <strong>Blotting duration</strong>
+  <div><p>⚠️ Transfer duration depends on protein size.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Size</th>
+          <th style="text-align: left">Approximate Duration</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">&lt; 20 kDa</td>
+          <td style="text-align: left">1 h @ 65 V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">20-50 kDa</td>
+          <td style="text-align: left">1-2 h @ 65 V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">50-100 kDa</td>
+          <td style="text-align: left">2 h @ 65 V</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">100-200 kDa</td>
+          <td style="text-align: left">3-4 h @ 65 V or overnight @ 20-30 V</td>
+      </tr>
+  </tbody>
+</table>
+<!-- markdownlint-disable MD033 -->
+<div style="display:flex; gap:20px; align-items:center;">
+ <div class="countdown-wrapper" data-time="1:00:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">1:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="2:00:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">2:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="3:00:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">3:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+ <div class="countdown-wrapper" data-time="4:00:00" data-sound="/BiochemProtocolsWeb/sounds/timer-beep2.mp3"><div class="countdown-row"><div class="countdown-display">4:00:00</div><div class="countdown-bell" data-sound="on">🔔</div></div><button class="countdown-start">Start</button><button class="countdown-reset">Reset</button></div>
+</div>
+<!-- markdownlint-enable MD033 --></div>
+</div>
+<h3 id="post-transfer">Post-Transfer</h3>
+<ol>
+<li><input type="checkbox"> Remove the gel holder cassette from the blotting tank and disassemble the cassette.</li>
+<li><input type="checkbox"> Mark the membrane directly after removing the gel, e.g. on the top right, to always know its orientation.</li>
+<li><input type="checkbox"> Wash the membrane for 2 minutes in dsH<sub>2</sub>O.</li>
+</ol>
+<h3 id="proceed-with-suitable-protocol">Proceed with Suitable Protocol</h3>
+<ul>
+<li><a href="Link">Primary- and Secondary Antibody incubation Following Western Blotting</a> <!-- CONTENT_TODO: insert link --></li>
+<li><a href="/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/single_antibody_following_wb/">Single Antibody incubation Following Western Blotting</a></li>
+<li><a href="/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/ponceau_s_following_wb/">Ponceau S staining Following Western Blotting</a></li>
+</ul>
+
+</div>
+<p> 
+
+<div class="local-comment" data-comment-id="/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/western_blotting/xxxxx/">
+
+  <label><strong>Personal Comments</strong></label><br>
+
+  <textarea rows="4" style="width:100%;"></textarea>
+
+  <div style="margin-top:0.5rem; display:flex; align-items:center; gap:8px;">
+    <button class="lock" title="Toggle lock">🔓</button>
+    <button class="save">Save</button>
+    <span class="status"></span>
+    <button class="delete" style="display:none;">Delete</button>
+  </div>
+</div>
+ 
+
+<button id="save-pdf" type="button">
+  Save page as PDF
+</button></p>
+
+
+<div class="label-preview-wrapper">
+    <div style="padding: 5px 20px;">Label 30x37 mm for HERMA 4390</div>
+  <div id="label-preview" class="label">
+    <div class="label-qr">
+      <canvas id="label-qr-canvas"></canvas>
+    </div>
+    <div class="label-text">
+      <div class="line company"><b>Murphy Biochemistry</b></div>
+      <div class="line website"><b>BiochemProtocolsWeb</b></div>
+      <br>
+      <div class="line title">xxxxxxotting</div>
+      <br>
+      <div class="line date" id="label-date"></div>
+      <div class="line version">Version 1.1.0</div>
+    </div>
+  </div>
+
+  <div class="label-controls" style="padding: 0px 25px">
+    <select id="label-column">
+      <option value="1">Column 1</option>
+      <option value="2">Column 2</option>
+      <option value="3">Column 3</option>
+    </select>
+
+    <select id="label-row">
+      
+      <option value="1">Row 1</option>
+      
+      <option value="2">Row 2</option>
+      
+      <option value="3">Row 3</option>
+      
+      <option value="4">Row 4</option>
+      
+      <option value="5">Row 5</option>
+      
+      <option value="6">Row 6</option>
+      
+      <option value="7">Row 7</option>
+      
+      <option value="8">Row 8</option>
+      
+    </select>
+
+    <button id="label-print-btn">Print</button>
+  </div>
+</div>
+
+<script>
+  window.labelPrintData = {
+    title: "\"xxxxxxotting\"",
+    version: "\"Version 1.1.0\"",
+    url: "\"http://localhost:1313/BiochemProtocolsWeb/protocols/sds-page_and_western_blotting/western_blotting/xxxxx/\""
+  };
+</script>
+
+
+        <div style="text-align: right;">
+        <br>
+        23.12.2025 Version 1.1.0
+        </div>
+    
+
+
+    </main>
+
+    
+
+<footer class="footer">
+    <div class="footer_rights">  </div>
+    <ul class="footer_navigation">
+        <li class="footer_navigation"><a href="/BiochemProtocolsWeb/contact/contact">Contact</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocolsWeb/legal/legal_notice">Legal Notice (Impressum)</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocolsWeb/legal/privacy_policy">Privacy Policy</a></li>
+        <li class="footer_navigation"><a href="/BiochemProtocolsWeb/legal/terms_of_use">Terms of Use</a></li>
+    </ul>
+    <ul class="footer_controls">
+        <li class="footer_controls">
+            <label class="switchbox">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  window.supabaseClient = supabase.createClient(
+    'https://hkcytxqlswwcfwegpjnf.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhrY3l0eHFsc3d3Y2Z3ZWdwam5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY4Mjg2NjIsImV4cCI6MjA4MjQwNDY2Mn0.EPVpZ-1HaM3jhN87FXpJyCP7mmOEzS7zy-HQNZlytF0'
+  );
+</script>
+
+
+<script src="/BiochemProtocolsWeb/js/user/auth.js"></script>
+
+
+<script src="/BiochemProtocolsWeb/js/user/subscription.js"></script>
+
+
+<script src="/BiochemProtocolsWeb/js/user/guard.js"></script>
+
+
+
+<script>
+  window.ACCESS_CODES = ["curriculum","AGJ","düolr","stlsfo"];
+</script>
+<script src="/BiochemProtocolsWeb/js/user/access.js"></script>
+
+
+
+<script src="/BiochemProtocolsWeb/js/theme_toggle.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/age_buffer_select.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/age_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/age_sample_prep_calc.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/age_following_pcr_buffer.js"></script>
+<script src="/BiochemProtocolsWeb/js/timer.js"></script>
+<script src="/BiochemProtocolsWeb/js/calculators/transformation_from_pcr_mastermix_prep_calc.js"></script>
+<script src="/BiochemProtocolsWeb/js/alternative_switches/primer_alternative.js"></script>
+
+<script src="/BiochemProtocolsWeb/js/alternative_switches/"></script> 
+
+<script src="/BiochemProtocolsWeb/js/calculators/calc_recipe_x.js"></script> 
+<script src="/BiochemProtocolsWeb/js/calculators/calc_recipe_vol.js"></script> 
+<script src="/BiochemProtocolsWeb/js/calculators/calc_recipe_mol.js"></script> 
+<script src="/BiochemProtocolsWeb/js/calculators/calc_recipe_amount.js"></script> 
+
+<script src="/BiochemProtocolsWeb/js/comment_box.js"></script>
+
+<script src="/BiochemProtocolsWeb/js/save_page.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script> 
+<script src="/BiochemProtocolsWeb/js/save_journal_label.js"></script>
+
+
+</body>
+
+</html>

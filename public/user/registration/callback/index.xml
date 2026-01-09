@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Registration successful on BiochemProtocolsWeb</title>
-    <link>https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/callback/</link>
+    <link>http://localhost:1313/BiochemProtocolsWeb/user/registration/callback/</link>
     <description>Recent content in Registration successful on BiochemProtocolsWeb</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© 2025 Murphy Biochemistry UG (haftungsbeschränkt) · All Rights Reserved</copyright>
-    <atom:link href="https://spikemurphy.github.io/BiochemProtocolsWeb/user/registration/callback/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/BiochemProtocolsWeb/user/registration/callback/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
